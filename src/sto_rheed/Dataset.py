@@ -490,7 +490,7 @@ class RHEED_parameter_dataset():
 
         """
         if metric_list is None:
-            metric_list = ['img_sum', 'img_rec_sum', 'x', 'y', 'width_x', 'width_y']
+            metric_list = ['img_max', 'img_rec_max', 'x', 'y', 'width_x', 'width_y']
         
         if len(metric_list) == 1:
             if figsize == None:
@@ -505,10 +505,10 @@ class RHEED_parameter_dataset():
             x_curve, y_curve = self.load_multiple_curves(growth_list, spot=spot, metric=metric, head_tail=head_tail, interval=interval) #**kwargs)
             ax.scatter(x_curve, y_curve, color='k', s=1)
             if i < len(metric_list)-1:
-                Viz.set_labels(ax, ylabel=f'{metric} (a.u.)', yaxis_style='sci')
+                Viz.set_labels(ax, ylabel=f'{metric} (a.u.)', yaxis_style='sci', label_fontsize=9)
                 ax.set_xticklabels(['' for tick in ax.get_xticks()])
             else:
-                Viz.set_labels(ax, xlabel='Time (s)', ylabel=f'{metric} (a.u.)', yaxis_style='sci')
+                Viz.set_labels(ax, xlabel='Time (s)', ylabel=f'{metric} (a.u.)', yaxis_style='sci', label_fontsize=9)
             formatter = ticker.ScalarFormatter(useMathText=True)
             formatter.set_powerlimits((-2, 3))  # Adjust the power limits as needed
             ax.yaxis.set_major_formatter(formatter)
@@ -524,7 +524,7 @@ class RHEED_parameter_dataset():
         if printing is not None and filename is not None:
             printing.savefig(fig, filename, **kwargs)
         plt.show()
-        print(f'Gaussian fitted parameters in time: \033[1mFig.\033[0m a: sum of original image, b: sum of reconstructed image, c: spot center in spot x coordinate, d: spot center in y coordinate, e: spot width in x coordinate, f: spot width in y coordinate.')
+        print(f'Gaussian fitted parameters in time: \033[1mFig.\033[0m a: maximum intensity of original cropped RHEED spot, b: maximum intensity of resonstructed cropped RHEED spot, c: spot center in spot x coordinate, d: spot center in y coordinate, e: spot width in x coordinate, f: spot width in y coordinate.')
 
 
     @property

@@ -224,6 +224,7 @@ class Viz:
 
     @staticmethod
     def set_labels(ax, xlabel=None, ylabel=None, title=None, xlim=None, ylim=None, yaxis_style='sci', 
+                   label_fontsize=12, title_fontsize=12, ticklabel_fontsize=10, scientific_notation_fontsize=8,
                    logscale=False, legend=None, ticks_both_sides=True):
         """
         Set labels and other properties of the given axes.
@@ -243,9 +244,9 @@ class Viz:
         Returns:
             None
         """
-        if type(xlabel) != type(None): ax.set_xlabel(xlabel, fontsize=12)
-        if type(ylabel) != type(None): ax.set_ylabel(ylabel, fontsize=12)
-        if type(title) != type(None): ax.set_title(title, fontsize=12)
+        if type(xlabel) != type(None): ax.set_xlabel(xlabel, fontsize=label_fontsize)
+        if type(ylabel) != type(None): ax.set_ylabel(ylabel, fontsize=label_fontsize)
+        if type(title) != type(None): ax.set_title(title, fontsize=title_fontsize)
         if type(xlim) != type(None): ax.set_xlim(xlim)
         if type(ylim) != type(None): ax.set_ylim(ylim)
         
@@ -253,7 +254,7 @@ class Viz:
             formatter = ticker.ScalarFormatter(useMathText=True)
             formatter.set_powerlimits((0, 0))  # Force scientific notation
             ax.yaxis.set_major_formatter(formatter)
-            ax.yaxis.get_offset_text().set_fontsize(8)  # Adjust font size for the magnitude label
+            ax.yaxis.get_offset_text().set_fontsize(scientific_notation_fontsize)  # Adjust font size for the magnitude label
 
         elif yaxis_style == 'float':
             ax.yaxis.set_major_formatter(FormatStrFormatter('%.3f'))
@@ -261,8 +262,8 @@ class Viz:
 
         if logscale: ax.set_yscale("log") 
         if legend: ax.legend(legend)
-        ax.tick_params(axis="x", direction="in", length=5, labelsize=10)
-        ax.tick_params(axis="y", direction="in", length=5, labelsize=10)
+        ax.tick_params(axis="x", direction="in", length=5, labelsize=ticklabel_fontsize)
+        ax.tick_params(axis="y", direction="in", length=5, labelsize=ticklabel_fontsize)
         if ticks_both_sides:
             ax.yaxis.set_ticks_position('both')
             ax.xaxis.set_ticks_position('both')
