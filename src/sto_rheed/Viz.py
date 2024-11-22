@@ -257,7 +257,7 @@ class Viz:
             ax.yaxis.get_offset_text().set_fontsize(scientific_notation_fontsize)  # Adjust font size for the magnitude label
 
         elif yaxis_style == 'float':
-            ax.yaxis.set_major_formatter(FormatStrFormatter('%.3f'))
+            ax.yaxis.set_major_formatter(FormatStrFormatter('%.1f'))
             # ax.ticklabel_format(axis='y', style='plain')   
 
         if logscale: ax.set_yscale("log") 
@@ -499,7 +499,7 @@ class Viz:
                     else:
                         xlabel, ylabel = None, None
                         l1 = axes[i%(10*mod)].plot(x[i], y1[i], marker='.', markersize=2, 
-                                        color=(44/255,123/255,1102/255, 0.5), label='Raw data')
+                                        color=(44/255,123/255,182/255, 0.5), label='Raw data')
                         l2 = axes[i%(10*mod)].plot(x[i], y2[i], linewidth=2, label='Prediction')
                         if not isinstance(y3, type(None)):
                             l3 = axes[i%(10*mod)].plot(x[i], y3[i], linewidth=1, label='Failed')
@@ -532,7 +532,7 @@ class Viz:
                 ylabel='Intensity (a.u.)'
 
                 l1 = axes[i].plot(x[i], y1[i], marker='.', markersize=2, 
-                                color=(44/255,123/255,1102/255, 0.5), label='Raw data')
+                                color=(44/255,123/255,182/255, 0.5), label='Raw data')
                 l2 = axes[i].plot(x[i], y2[i], linewidth=2, label='Prediction')
                 if not isinstance(y3, type(None)):
                     l3 = axes[i].plot(x[i], y3[i], linewidth=1, label='Failed')
