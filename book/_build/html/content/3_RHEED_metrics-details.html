@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -418,7 +418,7 @@
 <span class="kn">from</span> <span class="nn">sto_rheed.Fit</span> <span class="kn">import</span> <span class="n">RHEED_image_processer</span><span class="p">,</span> <span class="n">Gaussian</span><span class="p">,</span> <span class="n">NormalizeData</span>
 
 <span class="n">printing_image</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/1.Fit_RHEED_spot/&#39;</span><span class="p">)</span>
-<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/1.Fit_RHEED_spot/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">])</span>
+<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/1.Fit_RHEED_spot/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">],</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
 
 <span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;printing&quot;</span><span class="p">)</span>
 </pre></div>
@@ -515,7 +515,7 @@ Growth: growth_9, Size of data: f(12568, 300, 300)
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_growth_2_0.svg
 </pre></div>
 </div>
-<img alt="../_images/8693218f2f728b8c23cd43de4164839153f1dd83f3acd85eb0c4b2a37451bed9.png" src="../_images/8693218f2f728b8c23cd43de4164839153f1dd83f3acd85eb0c4b2a37451bed9.png" />
+<img alt="../_images/f1dd8688e3defb590a86baedc4a0579ad948e976e6fa75a8cfb88f8cb60c4281.png" src="../_images/f1dd8688e3defb590a86baedc4a0579ad948e976e6fa75a8cfb88f8cb60c4281.png" />
 </div>
 </div>
 </section>
@@ -699,15 +699,15 @@ height=75.37, x=16.06, y=20.26, width_x=10.33, width_y_max=18.64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
 </pre></div>
 </div>
@@ -721,24 +721,27 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> 
                <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
-<span class="n">D1_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">head_tail</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">300</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
+<span class="n">D1_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">head_tail</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">300</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;S3-treated_213nm-RHEED_metrics&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_spot_2_metrics.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S3-treated_213nm-RHEED_metrics.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S3-treated_213nm-RHEED_metrics.svg
 </pre></div>
 </div>
 <img alt="../_images/559bbe18dac3c67a3fec1c1a3a92d60a2648638c1d50c7a346f007b0f56bd38a.png" src="../_images/559bbe18dac3c67a3fec1c1a3a92d60a2648638c1d50c7a346f007b0f56bd38a.png" />
@@ -797,7 +800,7 @@ Growth: growth_9, Size of data: f(9704, 300, 600)
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_10.svg
 </pre></div>
 </div>
-<img alt="../_images/d60c942f62b392515dd81f7b65ff763d673a1dd96f57e2189737e51dc4abec48.png" src="../_images/d60c942f62b392515dd81f7b65ff763d673a1dd96f57e2189737e51dc4abec48.png" />
+<img alt="../_images/da14143919bce98cd396cffa1875e5b688568981704b97e951844c3a152a9664.png" src="../_images/da14143919bce98cd396cffa1875e5b688568981704b97e951844c3a152a9664.png" />
 </div>
 </div>
 </section>
@@ -924,9 +927,7 @@ height=22.32, x=23.81, y=49.66, width_x=33.31, width_y_max=115.16.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_spot_2_10000_img,img_rec,differerce.png
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_spot_2_10000_img,img_rec,differerce.svg
+../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_spot_2_10000_img,img_rec,differerce.svg
 </pre></div>
 </div>
 <img alt="../_images/4aa01c898979f1da28f655bd1d42ac0df24701cdb44a02579658300b23f95198.png" src="../_images/4aa01c898979f1da28f655bd1d42ac0df24701cdb44a02579658300b23f95198.png" />
@@ -946,15 +947,15 @@ height=52.64, x=11.50, y=22.16, width_x=11.22, width_y_max=22.80
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
 </pre></div>
 </div>
@@ -967,24 +968,27 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
-<span class="n">D2_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
+<span class="n">D2_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;S4-treated_81nm-RHEED_metrics&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_spot_2_metrics.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S4-treated_81nm-RHEED_metrics.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S4-treated_81nm-RHEED_metrics.svg
 </pre></div>
 </div>
 <img alt="../_images/0ee9a9bbee0db93b5a17d3735a21e185b074daad145feb426fa11fc0b87251c6.png" src="../_images/0ee9a9bbee0db93b5a17d3735a21e185b074daad145feb426fa11fc0b87251c6.png" />
@@ -1003,7 +1007,31 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/STO_STO_test9_07142022-standard.h5&#39;</span>
 <span class="n">D3_spot</span> <span class="o">=</span> <span class="n">RHEED_spot_Dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;untreated_162nm&#39;</span><span class="p">)</span>
-<span class="c1"># D3_spot.data_info</span>
+<span class="n">D3_spot</span><span class="o">.</span><span class="n">data_info</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Growth: background_with_heater, Size of data: f(2023, 300, 300)
+Growth: background_without_heater, Size of data: f(3060, 300, 300)
+Growth: growth_1, Size of data: f(13510, 300, 300)
+Growth: growth_10, Size of data: f(12488, 300, 300)
+Growth: growth_11, Size of data: f(12221, 300, 300)
+Growth: growth_12, Size of data: f(12526, 300, 300)
+Growth: growth_13, Size of data: f(12318, 300, 300)
+Growth: growth_14, Size of data: f(12206, 300, 300)
+Growth: growth_15, Size of data: f(12269, 300, 300)
+Growth: growth_16, Size of data: f(12133, 300, 300)
+Growth: growth_17, Size of data: f(12085, 300, 300)
+Growth: growth_18, Size of data: f(12113, 300, 300)
+Growth: growth_2, Size of data: f(9321, 300, 300)
+Growth: growth_3, Size of data: f(12008, 300, 300)
+Growth: growth_4, Size of data: f(13125, 300, 300)
+Growth: growth_5, Size of data: f(12982, 300, 300)
+Growth: growth_6, Size of data: f(12776, 300, 300)
+Growth: growth_7, Size of data: f(12670, 300, 300)
+Growth: growth_8, Size of data: f(12441, 300, 300)
+Growth: growth_9, Size of data: f(12222, 300, 300)
 </pre></div>
 </div>
 </div>
@@ -1013,21 +1041,45 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 <h4>2.3.2 Locate the diffraction spots<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D3_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>  <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D3_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> a: RHEED spot image for growth_2 at index 0.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_0.png
+../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_0.png
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_0.svg
 </pre></div>
 </div>
-<img alt="../_images/4106e8cb796af242679ea22857f4f415246f7c384ad7e3d7b80c14009cdd7dc4.png" src="../_images/4106e8cb796af242679ea22857f4f415246f7c384ad7e3d7b80c14009cdd7dc4.png" />
+<img alt="../_images/fb7c573cd064db0455ddddf17228c6f3603e6ff5d0d7b58af595e2f6b533f544.png" src="../_images/fb7c573cd064db0455ddddf17228c6f3603e6ff5d0d7b58af595e2f6b533f544.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D3_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">label_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">168</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+<span class="n">D3_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">13000</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">label_index</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">168</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> a: RHEED spot image for growth_1 at index 0.
+../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_0.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_0.svg
+</pre></div>
+</div>
+<img alt="../_images/364df2807a4d93fa52d937583edf7c4ed02035709c5bc4b0f70e3837fd40ec6e.png" src="../_images/364df2807a4d93fa52d937583edf7c4ed02035709c5bc4b0f70e3837fd40ec6e.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> b: RHEED spot image for growth_1 at index 13000.
+../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_13000.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_13000.svg
+</pre></div>
+</div>
+<img alt="../_images/741e0d9917e9de1634df5c1fb66b515fd1aced98ea37c30f1b7a8949ea8d0ed8.png" src="../_images/741e0d9917e9de1634df5c1fb66b515fd1aced98ea37c30f1b7a8949ea8d0ed8.png" />
 </div>
 </div>
 </section>
@@ -2025,9 +2077,7 @@ Growth: growth_9:
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_spot_2_100_img,img_rec,differerce.png
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_spot_2_100_img,img_rec,differerce.svg
+../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_spot_2_100_img,img_rec,differerce.svg
 </pre></div>
 </div>
 <img alt="../_images/08694a2a746c0a9c1c7f736a659321362d52131fa5b3b7e95a3cac5b5280ec40.png" src="../_images/08694a2a746c0a9c1c7f736a659321362d52131fa5b3b7e95a3cac5b5280ec40.png" />
@@ -2048,15 +2098,15 @@ height=101.29, x=10.95, y=19.21, width_x=8.27, width_y_max=13.94
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
 </pre></div>
 </div>
@@ -2070,28 +2120,193 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> 
                <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span> <span class="p">,</span> <span class="s1">&#39;growth_13&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_14&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_15&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_16&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_17&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_18&#39;</span><span class="p">]</span>
-<span class="n">D3_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
+<span class="n">D3_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;S5-untreated_162nm-RHEED_metrics&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
-c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:509: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:523: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels([&#39;&#39; for tick in ax.get_xticks()])
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_spot_2_metrics.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S5-untreated_162nm-RHEED_metrics.png
 </pre></div>
 </div>
-<img alt="../_images/b9a8049e44ffe88fafd4c18545d067ff709b2a2adfd265f8760052df2bc4a3bc.png" src="../_images/b9a8049e44ffe88fafd4c18545d067ff709b2a2adfd265f8760052df2bc4a3bc.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Gaussian fitted parameters in time: <span class=" -Color -Color-Bold">Fig.</span> a: maximum intensity of original cropped RHEED spot, b: maximum intensity of resonstructed cropped RHEED spot, c: spot center in spot x coordinate, d: spot center in y coordinate, e: spot width in x coordinate, f: spot width in y coordinate.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S5-untreated_162nm-RHEED_metrics.svg
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">42</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> 
+<span class="g g-Whitespace">      </span><span class="mi">2</span>                <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span> <span class="p">,</span> <span class="s1">&#39;growth_13&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_14&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_15&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_16&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_17&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_18&#39;</span><span class="p">]</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">D3_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;S5-untreated_162nm-RHEED_metrics&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="nn">File c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Dataset.py:541,</span> in <span class="ni">RHEED_parameter_dataset.viz_RHEED_parameter_trend</span><span class="nt">(self, growth_list, spot, metric_list, head_tail, interval, figsize, filename, printing, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">539</span> <span class="c1"># prints the figure</span>
+<span class="g g-Whitespace">    </span><span class="mi">540</span> <span class="k">if</span> <span class="n">printing</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">filename</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">541</span>     <span class="n">printing</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">542</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">543</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Gaussian fitted parameters in time: </span><span class="se">\033</span><span class="s1">[1mFig.</span><span class="se">\033</span><span class="s1">[0m a: maximum intensity of original cropped RHEED spot, b: maximum intensity of resonstructed cropped RHEED spot, c: spot center in spot x coordinate, d: spot center in y coordinate, e: spot width in x coordinate, f: spot width in y coordinate.&#39;</span><span class="p">)</span>
+
+<span class="nn">File c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\viz\printing.py:40,</span> in <span class="ni">printer.savefig</span><span class="nt">(self, fig, name, tight_layout, basepath, label_figs, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="k">for</span> <span class="n">fileformat</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileformats</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span>     <span class="nb">print</span><span class="p">(</span><span class="n">basepath</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> <span class="o">+</span> <span class="n">fileformat</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">40</span>     <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span>         <span class="n">basepath</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> <span class="o">+</span> <span class="n">fileformat</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span>         <span class="n">dpi</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dpi</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span>         <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span>     <span class="p">)</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\figure.py:3395,</span> in <span class="ni">Figure.savefig</span><span class="nt">(self, fname, transparent, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3393</span>     <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">axes</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">3394</span>         <span class="n">_recursively_make_axes_transparent</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">ax</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3395</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backend_bases.py:2204,</span> in <span class="ni">FigureCanvasBase.print_figure</span><span class="nt">(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2200</span> <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2201</span>     <span class="c1"># _get_renderer may change the figure dpi (as vector formats</span>
+<span class="g g-Whitespace">   </span><span class="mi">2202</span>     <span class="c1"># force the figure dpi to 72), so we need to set it again here.</span>
+<span class="g g-Whitespace">   </span><span class="mi">2203</span>     <span class="k">with</span> <span class="n">cbook</span><span class="o">.</span><span class="n">_setattr_cm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">2204</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">print_method</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">2205</span>             <span class="n">filename</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2206</span>             <span class="n">facecolor</span><span class="o">=</span><span class="n">facecolor</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2207</span>             <span class="n">edgecolor</span><span class="o">=</span><span class="n">edgecolor</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2208</span>             <span class="n">orientation</span><span class="o">=</span><span class="n">orientation</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2209</span>             <span class="n">bbox_inches_restore</span><span class="o">=</span><span class="n">_bbox_inches_restore</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2210</span>             <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2211</span> <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">2212</span>     <span class="k">if</span> <span class="n">bbox_inches</span> <span class="ow">and</span> <span class="n">restore_bbox</span><span class="p">:</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backend_bases.py:2054,</span> in <span class="ni">FigureCanvasBase._switch_canvas_and_return_print_method.&lt;locals&gt;.&lt;lambda&gt;</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2050</span>     <span class="n">optional_kws</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># Passed by print_figure for other renderers.</span>
+<span class="g g-Whitespace">   </span><span class="mi">2051</span>         <span class="s2">&quot;dpi&quot;</span><span class="p">,</span> <span class="s2">&quot;facecolor&quot;</span><span class="p">,</span> <span class="s2">&quot;edgecolor&quot;</span><span class="p">,</span> <span class="s2">&quot;orientation&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2052</span>         <span class="s2">&quot;bbox_inches_restore&quot;</span><span class="p">}</span>
+<span class="g g-Whitespace">   </span><span class="mi">2053</span>     <span class="n">skip</span> <span class="o">=</span> <span class="n">optional_kws</span> <span class="o">-</span> <span class="p">{</span><span class="o">*</span><span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="n">meth</span><span class="p">)</span><span class="o">.</span><span class="n">parameters</span><span class="p">}</span>
+<span class="ne">-&gt; </span><span class="mi">2054</span>     <span class="n">print_method</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">meth</span><span class="p">)(</span><span class="k">lambda</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">meth</span><span class="p">(</span>
+<span class="nn">   2055         *args, **{k: v for k, v</span> in <span class="ni">kwargs.items</span><span class="nt">() if k not in skip}))</span>
+<span class="g g-Whitespace">   </span><span class="mi">2056</span> <span class="k">else</span><span class="p">:</span>  <span class="c1"># Let third-parties do as they see fit.</span>
+<span class="g g-Whitespace">   </span><span class="mi">2057</span>     <span class="n">print_method</span> <span class="o">=</span> <span class="n">meth</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:1339,</span> in <span class="ni">FigureCanvasSVG.print_svg</span><span class="nt">(self, filename, bbox_inches_restore, metadata)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1334</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="mi">72</span><span class="p">,</span> <span class="n">height</span> <span class="o">*</span> <span class="mi">72</span>
+<span class="g g-Whitespace">   </span><span class="mi">1335</span> <span class="n">renderer</span> <span class="o">=</span> <span class="n">MixedModeRenderer</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1336</span>     <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">dpi</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1337</span>     <span class="n">RendererSVG</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">fh</span><span class="p">,</span> <span class="n">image_dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1338</span>     <span class="n">bbox_inches_restore</span><span class="o">=</span><span class="n">bbox_inches_restore</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1339</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1340</span> <span class="n">renderer</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\artist.py:95,</span> in <span class="ni">_finalize_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer, *args, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">93</span> <span class="nd">@wraps</span><span class="p">(</span><span class="n">draw</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span> <span class="k">def</span> <span class="nf">draw_wrapper</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">95</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="k">if</span> <span class="n">renderer</span><span class="o">.</span><span class="n">_rasterizing</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">stop_rasterizing</span><span class="p">()</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\artist.py:72,</span> in <span class="ni">allow_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer)</span>
+<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">70</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">start_filter</span><span class="p">()</span>
+<span class="ne">---&gt; </span><span class="mi">72</span>     <span class="k">return</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\figure.py:3162,</span> in <span class="ni">Figure.draw</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3159</span>             <span class="c1"># ValueError can occur when resizing a window.</span>
+<span class="g g-Whitespace">   </span><span class="mi">3161</span>     <span class="bp">self</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3162</span>     <span class="n">mimage</span><span class="o">.</span><span class="n">_draw_list_compositing_images</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">3163</span>         <span class="n">renderer</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">artists</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">suppressComposite</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3165</span>     <span class="n">renderer</span><span class="o">.</span><span class="n">close_group</span><span class="p">(</span><span class="s1">&#39;figure&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3166</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\image.py:132,</span> in <span class="ni">_draw_list_compositing_images</span><span class="nt">(renderer, parent, artists, suppress_composite)</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span> <span class="k">if</span> <span class="n">not_composite</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">has_images</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>     <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">artists</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">132</span>         <span class="n">a</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="c1"># Composite any adjacent images together</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span>     <span class="n">image_group</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\artist.py:72,</span> in <span class="ni">allow_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer)</span>
+<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">70</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">start_filter</span><span class="p">()</span>
+<span class="ne">---&gt; </span><span class="mi">72</span>     <span class="k">return</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\axes\_base.py:3137,</span> in <span class="ni">_AxesBase.draw</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3134</span> <span class="k">if</span> <span class="n">artists_rasterized</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">3135</span>     <span class="n">_draw_rasterized</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">artists_rasterized</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3137</span> <span class="n">mimage</span><span class="o">.</span><span class="n">_draw_list_compositing_images</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">3138</span>     <span class="n">renderer</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">artists</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">suppressComposite</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3140</span> <span class="n">renderer</span><span class="o">.</span><span class="n">close_group</span><span class="p">(</span><span class="s1">&#39;axes&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3141</span> <span class="bp">self</span><span class="o">.</span><span class="n">stale</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\image.py:132,</span> in <span class="ni">_draw_list_compositing_images</span><span class="nt">(renderer, parent, artists, suppress_composite)</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span> <span class="k">if</span> <span class="n">not_composite</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">has_images</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>     <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">artists</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">132</span>         <span class="n">a</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="c1"># Composite any adjacent images together</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span>     <span class="n">image_group</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\artist.py:72,</span> in <span class="ni">allow_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer)</span>
+<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">70</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">start_filter</span><span class="p">()</span>
+<span class="ne">---&gt; </span><span class="mi">72</span>     <span class="k">return</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\collections.py:1005,</span> in <span class="ni">_CollectionWithSizes.draw</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1002</span> <span class="nd">@artist</span><span class="o">.</span><span class="n">allow_rasterization</span>
+<span class="g g-Whitespace">   </span><span class="mi">1003</span> <span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">renderer</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1004</span>     <span class="bp">self</span><span class="o">.</span><span class="n">set_sizes</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sizes</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">dpi</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1005</span>     <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\artist.py:72,</span> in <span class="ni">allow_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer)</span>
+<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">70</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">start_filter</span><span class="p">()</span>
+<span class="ne">---&gt; </span><span class="mi">72</span>     <span class="k">return</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\collections.py:411,</span> in <span class="ni">Collection.draw</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">    </span><span class="mi">409</span>     <span class="n">gc</span><span class="o">.</span><span class="n">set_antialiased</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_antialiaseds</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="g g-Whitespace">    </span><span class="mi">410</span>     <span class="n">gc</span><span class="o">.</span><span class="n">set_url</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_urls</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="ne">--&gt; </span><span class="mi">411</span>     <span class="n">renderer</span><span class="o">.</span><span class="n">draw_markers</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">412</span>         <span class="n">gc</span><span class="p">,</span> <span class="n">paths</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">combined_transform</span><span class="o">.</span><span class="n">frozen</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">413</span>         <span class="n">mpath</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">offsets</span><span class="p">),</span> <span class="n">offset_trf</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">facecolors</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="g g-Whitespace">    </span><span class="mi">414</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">415</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_gapcolor</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">416</span>         <span class="c1"># First draw paths within the gaps.</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:712,</span> in <span class="ni">RendererSVG.draw_markers</span><span class="nt">(self, gc, marker_path, marker_trans, path, trans, rgbFace)</span>
+<span class="g g-Whitespace">    </span><span class="mi">710</span>         <span class="n">attrib</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_short_float_fmt</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">711</span>         <span class="n">attrib</span><span class="p">[</span><span class="s1">&#39;style&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_style</span><span class="p">(</span><span class="n">gc</span><span class="p">,</span> <span class="n">rgbFace</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">712</span>         <span class="n">writer</span><span class="o">.</span><span class="n">element</span><span class="p">(</span><span class="s1">&#39;use&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="n">attrib</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">713</span> <span class="n">writer</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:244,</span> in <span class="ni">XMLWriter.element</span><span class="nt">(self, tag, text, attrib, **extra)</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span> <span class="k">if</span> <span class="n">text</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">243</span>     <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">244</span> <span class="bp">self</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="n">indent</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:216,</span> in <span class="ni">XMLWriter.end</span><span class="nt">(self, tag, indent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span> <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">__open</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">215</span>     <span class="bp">self</span><span class="o">.</span><span class="n">__open</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="ne">--&gt; </span><span class="mi">216</span>     <span class="bp">self</span><span class="o">.</span><span class="n">__write</span><span class="p">(</span><span class="s2">&quot;/&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">217</span>     <span class="k">return</span>
+<span class="g g-Whitespace">    </span><span class="mi">218</span> <span class="k">if</span> <span class="n">indent</span><span class="p">:</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
 </div>
 </div>

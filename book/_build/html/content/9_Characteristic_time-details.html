@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -430,7 +430,7 @@
 <span class="kn">from</span> <span class="nn">sto_rheed.Fit</span> <span class="kn">import</span> <span class="n">NormalizeData</span>
 
 <span class="n">printing</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/4.Characteristic_time/&#39;</span><span class="p">)</span>
-<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/4.Characteristic_time/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">])</span>
+<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/4.Characteristic_time/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">])</span>
 
 <span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;printing&quot;</span><span class="p">)</span>
 
@@ -499,28 +499,40 @@
 <span class="n">color_array</span> <span class="o">=</span> <span class="n">Viz</span><span class="o">.</span><span class="n">two_color_array</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="n">x_y1</span><span class="p">,</span> <span class="n">x_y2</span><span class="p">,</span> <span class="n">bgc1</span><span class="p">,</span> <span class="n">bgc2</span><span class="p">,</span> <span class="n">transparency</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">color_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">color_array</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_fit_details</span><span class="p">(</span><span class="n">xs_all</span><span class="p">,</span> <span class="n">ys_nor_all</span><span class="p">,</span> <span class="n">ys_nor_fit_all</span><span class="p">,</span> <span class="n">ys_nor_fit_failed_all</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_all</span><span class="p">)),</span> 
-                     <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;fitting_details_treated_213nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
+                     <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;S10-fitting_details_treated_213nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:519: UserWarning: The figure layout has changed to tight
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:565: UserWarning: The figure layout has changed to tight
   plt.tight_layout(pad=-0.5, w_pad=-1, h_pad=-0.5)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_213nm-1.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-1.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-1.svg
 </pre></div>
 </div>
 <img alt="../_images/3e954e783de6204ec1a56075178d642e398265c0be4418a0436c564773686052.png" src="../_images/3e954e783de6204ec1a56075178d642e398265c0be4418a0436c564773686052.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_213nm-2.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-2.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-2.svg
 </pre></div>
 </div>
 <img alt="../_images/d2c982eccc865576b9c80a60b807ea8a31802115aa728f00343db2788f058587.png" src="../_images/d2c982eccc865576b9c80a60b807ea8a31802115aa728f00343db2788f058587.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_213nm-3.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-3.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-3.svg
 </pre></div>
 </div>
 <img alt="../_images/6c605c1a3a99a0b2d8b07fbe25bf1e4f3ac33df7cf4b28f295a7790810ea4040.png" src="../_images/6c605c1a3a99a0b2d8b07fbe25bf1e4f3ac33df7cf4b28f295a7790810ea4040.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_213nm-4.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-4.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-4.svg
 </pre></div>
 </div>
 <img alt="../_images/5e9f8344e1fd0279120eeae5c0724fd9066783f3be13b6fca74d55c7c39d9c7b.png" src="../_images/5e9f8344e1fd0279120eeae5c0724fd9066783f3be13b6fca74d55c7c39d9c7b.png" />
@@ -536,13 +548,16 @@
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Fitted a (a.u.)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">130</span><span class="p">))</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Fitted b (a.u.)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">130</span><span class="p">))</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Characteristic Time (s)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">130</span><span class="p">))</span>
-<span class="n">printing_plot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;treated_213nm-a_b_tau&#39;</span><span class="p">)</span>
+<span class="n">printing_plot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;S7-treated_213nm-a_b_tau&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_213nm-a_b_tau.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S7-treated_213nm-a_b_tau.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S7-treated_213nm-a_b_tau.svg
 </pre></div>
 </div>
 <img alt="../_images/b40cc15086897cea0b2e935f9067a56829cf1227244560de2412385aa47bc93c.png" src="../_images/b40cc15086897cea0b2e935f9067a56829cf1227244560de2412385aa47bc93c.png" />
@@ -645,28 +660,40 @@
 <span class="n">color_array</span> <span class="o">=</span> <span class="n">Viz</span><span class="o">.</span><span class="n">two_color_array</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="n">x_y1</span><span class="p">,</span> <span class="n">x_y2</span><span class="p">,</span> <span class="n">bgc1</span><span class="p">,</span> <span class="n">bgc2</span><span class="p">,</span> <span class="n">transparency</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">color_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">color_array</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_fit_details</span><span class="p">(</span><span class="n">xs_all</span><span class="p">,</span> <span class="n">ys_nor_all</span><span class="p">,</span> <span class="n">ys_nor_fit_all</span><span class="p">,</span> <span class="n">ys_nor_fit_failed_all</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_all</span><span class="p">)),</span> 
-                     <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;fitting_details_treated_81nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
+                     <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;S11-fitting_details_treated_81nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:519: UserWarning: The figure layout has changed to tight
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:565: UserWarning: The figure layout has changed to tight
   plt.tight_layout(pad=-0.5, w_pad=-1, h_pad=-0.5)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_81nm-1.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-1.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-1.svg
 </pre></div>
 </div>
 <img alt="../_images/ce76e490c3c29b0472138c88d02f8d118f5d15f14baccd5b62b948768b275b0a.png" src="../_images/ce76e490c3c29b0472138c88d02f8d118f5d15f14baccd5b62b948768b275b0a.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_81nm-2.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-2.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-2.svg
 </pre></div>
 </div>
 <img alt="../_images/da24d443c41e720faeb2eb64b96465074c03e8718819aba581ceaf5e028747df.png" src="../_images/da24d443c41e720faeb2eb64b96465074c03e8718819aba581ceaf5e028747df.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_81nm-3.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-3.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-3.svg
 </pre></div>
 </div>
 <img alt="../_images/7227c5894920b909bf766b60942e018c64555ba45648fc62b6c0a3597f1d5140.png" src="../_images/7227c5894920b909bf766b60942e018c64555ba45648fc62b6c0a3597f1d5140.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_treated_81nm-4.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-4.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-4.svg
 </pre></div>
 </div>
 <img alt="../_images/53014b812c08e975fbcd1e218476004a512d90b9d2bf43ed8f471a5abb86392f.png" src="../_images/53014b812c08e975fbcd1e218476004a512d90b9d2bf43ed8f471a5abb86392f.png" />
@@ -683,13 +710,16 @@
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Fitted a (a.u.)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">115</span><span class="p">))</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Fitted b (a.u.)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">115</span><span class="p">))</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Characteristic Time (s)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">115</span><span class="p">))</span>
-<span class="n">printing_plot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;treated_81nm-a_b_tau&#39;</span><span class="p">)</span>
+<span class="n">printing_plot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;S8-treated_81nm-a_b_tau&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_81nm-a_b_tau.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S8-treated_81nm-a_b_tau.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S8-treated_81nm-a_b_tau.svg
 </pre></div>
 </div>
 <img alt="../_images/35cdd60a1bb0bfaf952294d10a9a55e64e91749c440e3b8b6f5524fc79af6049.png" src="../_images/35cdd60a1bb0bfaf952294d10a9a55e64e91749c440e3b8b6f5524fc79af6049.png" />
@@ -790,32 +820,40 @@
 <span class="n">color_array</span> <span class="o">=</span> <span class="n">Viz</span><span class="o">.</span><span class="n">two_color_array</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="n">x_y1</span><span class="p">,</span> <span class="n">x_y2</span><span class="p">,</span> <span class="n">bgc1</span><span class="p">,</span> <span class="n">bgc2</span><span class="p">,</span> <span class="n">transparency</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">color_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">color_array</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_fit_details</span><span class="p">(</span><span class="n">xs_all</span><span class="p">,</span> <span class="n">ys_nor_all</span><span class="p">,</span> <span class="n">ys_nor_fit_all</span><span class="p">,</span> <span class="n">ys_nor_fit_failed_all</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_all</span><span class="p">)),</span> 
-                     <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;fitting_details_untreated_162nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
+                     <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;S12-fitting_details_untreated_162nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:519: UserWarning: The figure layout has changed to tight
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:565: UserWarning: The figure layout has changed to tight
   plt.tight_layout(pad=-0.5, w_pad=-1, h_pad=-0.5)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_untreated_162nm-1.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-1.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-1.svg
 </pre></div>
 </div>
 <img alt="../_images/95d68bcdffd0a2f877bc3574fae60f645047c898fbaf33fe0570c56bedda069c.png" src="../_images/95d68bcdffd0a2f877bc3574fae60f645047c898fbaf33fe0570c56bedda069c.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_untreated_162nm-2.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-2.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-2.svg
 </pre></div>
 </div>
 <img alt="../_images/bf69f1827c44ccaa6d39644173a46e377690e0639c20d7167e37045788ed3b7b.png" src="../_images/bf69f1827c44ccaa6d39644173a46e377690e0639c20d7167e37045788ed3b7b.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_untreated_162nm-3.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-3.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-3.svg
 </pre></div>
 </div>
 <img alt="../_images/40407c578e9ce826f279dda6e5f6c366d815e1c6120e31238b6b3c503640d846.png" src="../_images/40407c578e9ce826f279dda6e5f6c366d815e1c6120e31238b6b3c503640d846.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_untreated_162nm-4.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-4.png
 </pre></div>
 </div>
-<img alt="../_images/c22f3db02ee1690c94203a511b50d647ccfaef7b7e10ed276d52180838b34d2c.png" src="../_images/c22f3db02ee1690c94203a511b50d647ccfaef7b7e10ed276d52180838b34d2c.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/fitting_details_untreated_162nm-5.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-4.svg
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
@@ -824,77 +862,28 @@
 <span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">color_array</span> <span class="o">=</span> <span class="n">Viz</span><span class="o">.</span><span class="n">two_color_array</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="n">x_y1</span><span class="p">,</span> <span class="n">x_y2</span><span class="p">,</span> <span class="n">bgc1</span><span class="p">,</span> <span class="n">bgc2</span><span class="p">,</span> <span class="n">transparency</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="n">color_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">x_coor_all</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">color_array</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="ne">---&gt; </span><span class="mi">12</span> <span class="n">Viz</span><span class="o">.</span><span class="n">plot_fit_details</span><span class="p">(</span><span class="n">xs_all</span><span class="p">,</span> <span class="n">ys_nor_all</span><span class="p">,</span> <span class="n">ys_nor_fit_all</span><span class="p">,</span> <span class="n">ys_nor_fit_failed_all</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_all</span><span class="p">)),</span> 
-<span class="g g-Whitespace">     </span><span class="mi">13</span>                      <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;fitting_details_untreated_162nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>                      <span class="n">save_name</span><span class="o">=</span><span class="s1">&#39;S12-fitting_details_untreated_162nm&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">)</span>
 
-<span class="nn">File c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:522,</span> in <span class="ni">Viz.plot_fit_details</span><span class="nt">(x, y1, y2, y3, labels, figsize, mod, style, logscale, layout, save_name, printing)</span>
-<span class="g g-Whitespace">    </span><span class="mi">520</span>         <span class="k">if</span> <span class="n">save_name</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">521</span>             <span class="n">printing</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">save_name</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
-<span class="ne">--&gt; </span><span class="mi">522</span>         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">523</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">524</span>     <span class="k">if</span> <span class="n">figsize</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+<span class="nn">File c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Viz.py:567,</span> in <span class="ni">Viz.plot_fit_details</span><span class="nt">(x, y1, y2, y3, labels, figsize, mod, style, logscale, layout, save_name, printing)</span>
+<span class="g g-Whitespace">    </span><span class="mi">565</span>         <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">(</span><span class="n">pad</span><span class="o">=-</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">w_pad</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">h_pad</span><span class="o">=-</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">566</span>         <span class="k">if</span> <span class="n">save_name</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">567</span>             <span class="n">printing</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="n">save_name</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">568</span>         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">569</span> <span class="k">else</span><span class="p">:</span>
 
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\pyplot.py:612,</span> in <span class="ni">show</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">568</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">569</span><span class="sd"> Display all open figures.</span>
-<span class="g g-Whitespace">    </span><span class="mi">570</span><span class="sd"> </span>
-<span class="sd">   (...)</span>
-<span class="g g-Whitespace">    </span><span class="mi">609</span><span class="sd"> explicitly there.</span>
-<span class="g g-Whitespace">    </span><span class="mi">610</span><span class="sd"> &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">611</span> <span class="n">_warn_if_gui_out_of_main_thread</span><span class="p">()</span>
-<span class="ne">--&gt; </span><span class="mi">612</span> <span class="k">return</span> <span class="n">_get_backend_mod</span><span class="p">()</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="nn">File c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\viz\printing.py:40,</span> in <span class="ni">printer.savefig</span><span class="nt">(self, fig, name, tight_layout, basepath, label_figs, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="k">for</span> <span class="n">fileformat</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">fileformats</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span>     <span class="nb">print</span><span class="p">(</span><span class="n">basepath</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> <span class="o">+</span> <span class="n">fileformat</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">40</span>     <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span>         <span class="n">basepath</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span> <span class="o">+</span> <span class="n">fileformat</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span>         <span class="n">dpi</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dpi</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span>         <span class="n">bbox_inches</span><span class="o">=</span><span class="s2">&quot;tight&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span>     <span class="p">)</span>
 
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib_inline\backend_inline.py:90,</span> in <span class="ni">show</span><span class="nt">(close, block)</span>
-<span class="g g-Whitespace">     </span><span class="mi">88</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">89</span>     <span class="k">for</span> <span class="n">figure_manager</span> <span class="ow">in</span> <span class="n">Gcf</span><span class="o">.</span><span class="n">get_all_fig_managers</span><span class="p">():</span>
-<span class="ne">---&gt; </span><span class="mi">90</span>         <span class="n">display</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">91</span>             <span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">92</span>             <span class="n">metadata</span><span class="o">=</span><span class="n">_fetch_figure_metadata</span><span class="p">(</span><span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">93</span>         <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">94</span> <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">show</span><span class="o">.</span><span class="n">_to_draw</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\IPython\core\display_functions.py:298,</span> in <span class="ni">display</span><span class="nt">(include, exclude, metadata, transient, display_id, raw, clear, *objs, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">296</span>     <span class="n">publish_display_data</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">obj</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">297</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">298</span>     <span class="n">format_dict</span><span class="p">,</span> <span class="n">md_dict</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">299</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">format_dict</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">300</span>         <span class="c1"># nothing to display (e.g. _ipython_display_ took over)</span>
-<span class="g g-Whitespace">    </span><span class="mi">301</span>         <span class="k">continue</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\IPython\core\formatters.py:182,</span> in <span class="ni">DisplayFormatter.format</span><span class="nt">(self, obj, include, exclude)</span>
-<span class="g g-Whitespace">    </span><span class="mi">180</span> <span class="n">md</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">181</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">182</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">formatter</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">183</span> <span class="k">except</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">184</span>     <span class="c1"># FIXME: log the exception</span>
-<span class="g g-Whitespace">    </span><span class="mi">185</span>     <span class="k">raise</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\decorator.py:232,</span> in <span class="ni">decorate.&lt;locals&gt;.fun</span><span class="nt">(*args, **kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">kwsyntax</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">231</span>     <span class="n">args</span><span class="p">,</span> <span class="n">kw</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">232</span> <span class="k">return</span> <span class="n">caller</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">extras</span> <span class="o">+</span> <span class="n">args</span><span class="p">),</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\IPython\core\formatters.py:226,</span> in <span class="ni">catch_format_error</span><span class="nt">(method, self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;show traceback on failed format call&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">225</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">226</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">227</span> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">228</span>     <span class="c1"># don&#39;t warn on NotImplementedErrors</span>
-<span class="g g-Whitespace">    </span><span class="mi">229</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_return</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\IPython\core\formatters.py:343,</span> in <span class="ni">BaseFormatter.__call__</span><span class="nt">(self, obj)</span>
-<span class="g g-Whitespace">    </span><span class="mi">341</span>     <span class="k">pass</span>
-<span class="g g-Whitespace">    </span><span class="mi">342</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">343</span>     <span class="k">return</span> <span class="n">printer</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">344</span> <span class="c1"># Finally look for special method names</span>
-<span class="g g-Whitespace">    </span><span class="mi">345</span> <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\IPython\core\pylabtools.py:170,</span> in <span class="ni">print_figure</span><span class="nt">(fig, fmt, bbox_inches, base64, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">167</span>     <span class="kn">from</span> <span class="nn">matplotlib.backend_bases</span> <span class="kn">import</span> <span class="n">FigureCanvasBase</span>
-<span class="g g-Whitespace">    </span><span class="mi">168</span>     <span class="n">FigureCanvasBase</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">170</span> <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">bytes_io</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">171</span> <span class="n">data</span> <span class="o">=</span> <span class="n">bytes_io</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">172</span> <span class="k">if</span> <span class="n">fmt</span> <span class="o">==</span> <span class="s1">&#39;svg&#39;</span><span class="p">:</span>
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\figure.py:3395,</span> in <span class="ni">Figure.savefig</span><span class="nt">(self, fname, transparent, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3393</span>     <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">axes</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">3394</span>         <span class="n">_recursively_make_axes_transparent</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">ax</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3395</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
 <span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backend_bases.py:2204,</span> in <span class="ni">FigureCanvasBase.print_figure</span><span class="nt">(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)</span>
 <span class="g g-Whitespace">   </span><span class="mi">2200</span> <span class="k">try</span><span class="p">:</span>
@@ -921,35 +910,14 @@
 <span class="g g-Whitespace">   </span><span class="mi">2056</span> <span class="k">else</span><span class="p">:</span>  <span class="c1"># Let third-parties do as they see fit.</span>
 <span class="g g-Whitespace">   </span><span class="mi">2057</span>     <span class="n">print_method</span> <span class="o">=</span> <span class="n">meth</span>
 
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_agg.py:496,</span> in <span class="ni">FigureCanvasAgg.print_png</span><span class="nt">(self, filename_or_obj, metadata, pil_kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">449</span> <span class="k">def</span> <span class="nf">print_png</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename_or_obj</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pil_kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">450</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">451</span><span class="sd">     Write the figure to a PNG file.</span>
-<span class="g g-Whitespace">    </span><span class="mi">452</span><span class="sd"> </span>
-<span class="sd">   (...)</span>
-<span class="g g-Whitespace">    </span><span class="mi">494</span><span class="sd">         *metadata*, including the default &#39;Software&#39; key.</span>
-<span class="g g-Whitespace">    </span><span class="mi">495</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">496</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_print_pil</span><span class="p">(</span><span class="n">filename_or_obj</span><span class="p">,</span> <span class="s2">&quot;png&quot;</span><span class="p">,</span> <span class="n">pil_kwargs</span><span class="p">,</span> <span class="n">metadata</span><span class="p">)</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_agg.py:444,</span> in <span class="ni">FigureCanvasAgg._print_pil</span><span class="nt">(self, filename_or_obj, fmt, pil_kwargs, metadata)</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span> <span class="k">def</span> <span class="nf">_print_pil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename_or_obj</span><span class="p">,</span> <span class="n">fmt</span><span class="p">,</span> <span class="n">pil_kwargs</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">440</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">441</span><span class="sd">     Draw the canvas, then save it using `.image.imsave` (to which</span>
-<span class="g g-Whitespace">    </span><span class="mi">442</span><span class="sd">     *pil_kwargs* and *metadata* are forwarded).</span>
-<span class="g g-Whitespace">    </span><span class="mi">443</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">444</span>     <span class="n">FigureCanvasAgg</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">445</span>     <span class="n">mpl</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">imsave</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">446</span>         <span class="n">filename_or_obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">buffer_rgba</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="n">fmt</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s2">&quot;upper&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">447</span>         <span class="n">dpi</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">dpi</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="n">pil_kwargs</span><span class="o">=</span><span class="n">pil_kwargs</span><span class="p">)</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_agg.py:387,</span> in <span class="ni">FigureCanvasAgg.draw</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">384</span> <span class="c1"># Acquire a lock on the shared font cache.</span>
-<span class="g g-Whitespace">    </span><span class="mi">385</span> <span class="k">with</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toolbar</span><span class="o">.</span><span class="n">_wait_cursor_for_draw_cm</span><span class="p">()</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolbar</span>
-<span class="g g-Whitespace">    </span><span class="mi">386</span>       <span class="k">else</span> <span class="n">nullcontext</span><span class="p">()):</span>
-<span class="ne">--&gt; </span><span class="mi">387</span>     <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">388</span>     <span class="c1"># A GUI class may be need to update a window using this draw, so</span>
-<span class="g g-Whitespace">    </span><span class="mi">389</span>     <span class="c1"># don&#39;t forget to call the superclass.</span>
-<span class="g g-Whitespace">    </span><span class="mi">390</span>     <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:1339,</span> in <span class="ni">FigureCanvasSVG.print_svg</span><span class="nt">(self, filename, bbox_inches_restore, metadata)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1334</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="mi">72</span><span class="p">,</span> <span class="n">height</span> <span class="o">*</span> <span class="mi">72</span>
+<span class="g g-Whitespace">   </span><span class="mi">1335</span> <span class="n">renderer</span> <span class="o">=</span> <span class="n">MixedModeRenderer</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1336</span>     <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">dpi</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1337</span>     <span class="n">RendererSVG</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">fh</span><span class="p">,</span> <span class="n">image_dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1338</span>     <span class="n">bbox_inches_restore</span><span class="o">=</span><span class="n">bbox_inches_restore</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1339</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1340</span> <span class="n">renderer</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span>
 
 <span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\artist.py:95,</span> in <span class="ni">_finalize_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer, *args, **kwargs)</span>
 <span class="g g-Whitespace">     </span><span class="mi">93</span> <span class="nd">@wraps</span><span class="p">(</span><span class="n">draw</span><span class="p">)</span>
@@ -1011,43 +979,39 @@
 <span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
 <span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
 
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\text.py:751,</span> in <span class="ni">Text.draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">748</span> <span class="n">renderer</span><span class="o">.</span><span class="n">open_group</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_gid</span><span class="p">())</span>
-<span class="g g-Whitespace">    </span><span class="mi">750</span> <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cm_set</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_get_wrapped_text</span><span class="p">()):</span>
-<span class="ne">--&gt; </span><span class="mi">751</span>     <span class="n">bbox</span><span class="p">,</span> <span class="n">info</span><span class="p">,</span> <span class="n">descent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_layout</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">752</span>     <span class="n">trans</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_transform</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">754</span>     <span class="c1"># don&#39;t use self.get_position here, which refers to text</span>
-<span class="g g-Whitespace">    </span><span class="mi">755</span>     <span class="c1"># position in Text:</span>
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\lines.py:872,</span> in <span class="ni">Line2D.draw</span><span class="nt">(self, renderer)</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Don&#39;t scale for pixels, and don&#39;t stroke them</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="n">marker_trans</span> <span class="o">=</span> <span class="n">marker_trans</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">872</span> <span class="n">renderer</span><span class="o">.</span><span class="n">draw_markers</span><span class="p">(</span><span class="n">gc</span><span class="p">,</span> <span class="n">marker_path</span><span class="p">,</span> <span class="n">marker_trans</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">873</span>                       <span class="n">subsampled</span><span class="p">,</span> <span class="n">affine</span><span class="o">.</span><span class="n">frozen</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>                       <span class="n">fc_rgba</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span> <span class="n">alt_marker_path</span> <span class="o">=</span> <span class="n">marker</span><span class="o">.</span><span class="n">get_alt_path</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span> <span class="k">if</span> <span class="n">alt_marker_path</span><span class="p">:</span>
 
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\text.py:381,</span> in <span class="ni">Text._get_layout</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">379</span> <span class="n">clean_line</span><span class="p">,</span> <span class="n">ismath</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_preprocess_math</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">380</span> <span class="k">if</span> <span class="n">clean_line</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">381</span>     <span class="n">w</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">d</span> <span class="o">=</span> <span class="n">_get_text_metrics_with_cache</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">382</span>         <span class="n">renderer</span><span class="p">,</span> <span class="n">clean_line</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fontproperties</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">383</span>         <span class="n">ismath</span><span class="o">=</span><span class="n">ismath</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">dpi</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">384</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">385</span>     <span class="n">w</span> <span class="o">=</span> <span class="n">h</span> <span class="o">=</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:712,</span> in <span class="ni">RendererSVG.draw_markers</span><span class="nt">(self, gc, marker_path, marker_trans, path, trans, rgbFace)</span>
+<span class="g g-Whitespace">    </span><span class="mi">710</span>         <span class="n">attrib</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_short_float_fmt</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">711</span>         <span class="n">attrib</span><span class="p">[</span><span class="s1">&#39;style&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_style</span><span class="p">(</span><span class="n">gc</span><span class="p">,</span> <span class="n">rgbFace</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">712</span>         <span class="n">writer</span><span class="o">.</span><span class="n">element</span><span class="p">(</span><span class="s1">&#39;use&#39;</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="n">attrib</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">713</span> <span class="n">writer</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
 
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\text.py:69,</span> in <span class="ni">_get_text_metrics_with_cache</span><span class="nt">(renderer, text, fontprop, ismath, dpi)</span>
-<span class="g g-Whitespace">     </span><span class="mi">66</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Call ``renderer.get_text_width_height_descent``, caching the results.&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">     </span><span class="mi">67</span> <span class="c1"># Cached based on a copy of fontprop so that later in-place mutations of</span>
-<span class="g g-Whitespace">     </span><span class="mi">68</span> <span class="c1"># the passed-in argument do not mess up the cache.</span>
-<span class="ne">---&gt; </span><span class="mi">69</span> <span class="k">return</span> <span class="n">_get_text_metrics_with_cache_impl</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">70</span>     <span class="n">weakref</span><span class="o">.</span><span class="n">ref</span><span class="p">(</span><span class="n">renderer</span><span class="p">),</span> <span class="n">text</span><span class="p">,</span> <span class="n">fontprop</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">ismath</span><span class="p">,</span> <span class="n">dpi</span><span class="p">)</span>
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:241,</span> in <span class="ni">XMLWriter.element</span><span class="nt">(self, tag, text, attrib, **extra)</span>
+<span class="g g-Whitespace">    </span><span class="mi">235</span> <span class="k">def</span> <span class="nf">element</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrib</span><span class="o">=</span><span class="p">{},</span> <span class="o">**</span><span class="n">extra</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">236</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">237</span><span class="sd">     Add an entire element.  This is the same as calling :meth:`start`,</span>
+<span class="g g-Whitespace">    </span><span class="mi">238</span><span class="sd">     :meth:`data`, and :meth:`end` in sequence. The *text* argument can be</span>
+<span class="g g-Whitespace">    </span><span class="mi">239</span><span class="sd">     omitted.</span>
+<span class="g g-Whitespace">    </span><span class="mi">240</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">241</span>     <span class="bp">self</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">tag</span><span class="p">,</span> <span class="n">attrib</span><span class="p">,</span> <span class="o">**</span><span class="n">extra</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">242</span>     <span class="k">if</span> <span class="n">text</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">243</span>         <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\text.py:77,</span> in <span class="ni">_get_text_metrics_with_cache_impl</span><span class="nt">(renderer_ref, text, fontprop, ismath, dpi)</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="nd">@functools</span><span class="o">.</span><span class="n">lru_cache</span><span class="p">(</span><span class="mi">4096</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span> <span class="k">def</span> <span class="nf">_get_text_metrics_with_cache_impl</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">75</span>         <span class="n">renderer_ref</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">fontprop</span><span class="p">,</span> <span class="n">ismath</span><span class="p">,</span> <span class="n">dpi</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">76</span>     <span class="c1"># dpi is unused, but participates in cache invalidation (via the renderer).</span>
-<span class="ne">---&gt; </span><span class="mi">77</span>     <span class="k">return</span> <span class="n">renderer_ref</span><span class="p">()</span><span class="o">.</span><span class="n">get_text_width_height_descent</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">fontprop</span><span class="p">,</span> <span class="n">ismath</span><span class="p">)</span>
-
-<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_agg.py:220,</span> in <span class="ni">RendererAgg.get_text_width_height_descent</span><span class="nt">(self, s, prop, ismath)</span>
-<span class="g g-Whitespace">    </span><span class="mi">217</span>     <span class="k">return</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">descent</span>
-<span class="g g-Whitespace">    </span><span class="mi">219</span> <span class="n">font</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prepare_font</span><span class="p">(</span><span class="n">prop</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">220</span> <span class="n">font</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">get_hinting_flag</span><span class="p">())</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span> <span class="n">w</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">font</span><span class="o">.</span><span class="n">get_width_height</span><span class="p">()</span>  <span class="c1"># width and height of unrotated string</span>
-<span class="g g-Whitespace">    </span><span class="mi">222</span> <span class="n">d</span> <span class="o">=</span> <span class="n">font</span><span class="o">.</span><span class="n">get_descent</span><span class="p">()</span>
+<span class="nn">File ~\Anaconda3\envs\RHEED\lib\site-packages\matplotlib\backends\backend_svg.py:165,</span> in <span class="ni">XMLWriter.start</span><span class="nt">(self, tag, attrib, **extra)</span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span>         <span class="n">k</span> <span class="o">=</span> <span class="n">_escape_cdata</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">164</span>         <span class="n">v</span> <span class="o">=</span> <span class="n">_quote_escape_attrib</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">165</span>         <span class="bp">self</span><span class="o">.</span><span class="n">__write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s1">=</span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">166</span> <span class="bp">self</span><span class="o">.</span><span class="n">__open</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="g g-Whitespace">    </span><span class="mi">167</span> <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__tags</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1064,13 +1028,14 @@
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Fitted a (a.u.)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">125</span><span class="p">))</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Fitted b (a.u.)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">125</span><span class="p">))</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">plot_curve</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">x_coor_all</span><span class="p">,</span> <span class="n">parameters_all</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="n">plot_type</span><span class="o">=</span><span class="s1">&#39;lineplot&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Characteristic Time (s)&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">125</span><span class="p">))</span>
-<span class="n">printing_plot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;untreated_162nm-a_b_tau&#39;</span><span class="p">)</span>
+<span class="n">printing_plot</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;S9-untreated_162nm-a_b_tau&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/untreated_162nm-a_b_tau.png
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S9-untreated_162nm-a_b_tau.png
+../Figures/4.Characteristic_time/S9-untreated_162nm-a_b_tau.svg
 </pre></div>
 </div>
 <img alt="../_images/85252f9b4299e4b8e48a81e128ea7389fee4f159479b739963c00dac3ffca654.png" src="../_images/85252f9b4299e4b8e48a81e128ea7389fee4f159479b739963c00dac3ffca654.png" />
@@ -1186,6 +1151,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_213nm-no_bg.png
+../Figures/4.Characteristic_time/treated_213nm-no_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/02869524afcfeb549dc1a9a24fe569da6244b1ac836e2e742106bdf24069f501.png" src="../_images/02869524afcfeb549dc1a9a24fe569da6244b1ac836e2e742106bdf24069f501.png" />
@@ -1212,6 +1178,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_213nm-tau_bg.png
+../Figures/4.Characteristic_time/treated_213nm-tau_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/460c7bfb2385ee25b32020321ac40f19da8ce78c867a9b7963d15b9b65fa9e9e.png" src="../_images/460c7bfb2385ee25b32020321ac40f19da8ce78c867a9b7963d15b9b65fa9e9e.png" />
@@ -1239,6 +1206,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_213nm-growth_bg.png
+../Figures/4.Characteristic_time/treated_213nm-growth_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/12a217231946cc272013d9e1d1c1bbbcc1c213ee0e750ed84634e4f3be046bb7.png" src="../_images/12a217231946cc272013d9e1d1c1bbbcc1c213ee0e750ed84634e4f3be046bb7.png" />
@@ -1286,6 +1254,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_81nm-no_bg.png
+../Figures/4.Characteristic_time/treated_81nm-no_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/c5d3c430b45104f7e7ead8b7607a99a7582d3d6afaaf62a3e20cb0df6c42b932.png" src="../_images/c5d3c430b45104f7e7ead8b7607a99a7582d3d6afaaf62a3e20cb0df6c42b932.png" />
@@ -1312,6 +1281,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_81nm-tau_bg.png
+../Figures/4.Characteristic_time/treated_81nm-tau_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/9a8aae1b99d698c1cdf258ae89ed669473ea2d9edb15e5bfc77edfcd01d0f94e.png" src="../_images/9a8aae1b99d698c1cdf258ae89ed669473ea2d9edb15e5bfc77edfcd01d0f94e.png" />
@@ -1339,6 +1309,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_81nm-growth_bg.png
+../Figures/4.Characteristic_time/treated_81nm-growth_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/019dcb0abeda4ef8c776e074a4b5151d7964fd5f46dafe655f9babbf61815b40.png" src="../_images/019dcb0abeda4ef8c776e074a4b5151d7964fd5f46dafe655f9babbf61815b40.png" />
@@ -1386,6 +1357,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/untreated_162nm-no_bg.png
+../Figures/4.Characteristic_time/untreated_162nm-no_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/0b9c8e2cc2ffc1bfae48295b3b4eb64b1e4decb7a6044ccf7c7ebbb86f0c1efc.png" src="../_images/0b9c8e2cc2ffc1bfae48295b3b4eb64b1e4decb7a6044ccf7c7ebbb86f0c1efc.png" />
@@ -1412,6 +1384,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/untreated_162nm-tau_bg.png
+../Figures/4.Characteristic_time/untreated_162nm-tau_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/393c099da3a9bc20aa87d0f10c0a2c1d082e99d765acf59586fb1d09acfaff58.png" src="../_images/393c099da3a9bc20aa87d0f10c0a2c1d082e99d765acf59586fb1d09acfaff58.png" />
@@ -1440,6 +1413,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/untreated_162nm-growth_bg.png
+../Figures/4.Characteristic_time/untreated_162nm-growth_bg.svg
 </pre></div>
 </div>
 <img alt="../_images/348d05c3b076c9884683e3a317c55d22dd3504f5cb003d6164f77f6f770c00df.png" src="../_images/348d05c3b076c9884683e3a317c55d22dd3504f5cb003d6164f77f6f770c00df.png" />
@@ -1581,9 +1555,9 @@
           <span class="s1">&#39;Untreated substrate</span><span class="se">\n</span><span class="s1">(step width=162±83μm)&#39;</span><span class="p">]</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">tau_clean_sample1</span><span class="p">,</span> <span class="n">tau_clean_sample2</span><span class="p">,</span> <span class="n">tau_clean_sample3</span><span class="p">],</span> 
-                    <span class="n">palette</span><span class="o">=</span><span class="p">[</span><span class="n">color_blue</span><span class="p">,</span> <span class="n">color_orange</span><span class="p">,</span> <span class="n">color_purple</span><span class="p">],</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+                    <span class="n">palette</span><span class="o">=</span><span class="p">[</span><span class="n">color_blue</span><span class="p">,</span> <span class="n">color_orange</span><span class="p">,</span> <span class="n">color_purple</span><span class="p">],</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">inner</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">set_labels</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Characteristic Time (s)&#39;</span><span class="p">,</span> <span class="n">ticks_both_sides</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">yaxis_style</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
-<span class="n">Viz</span><span class="o">.</span><span class="n">label_violinplot</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="p">[</span><span class="n">tau_clean_sample1</span><span class="p">,</span> <span class="n">tau_clean_sample2</span><span class="p">,</span> <span class="n">tau_clean_sample3</span><span class="p">],</span> <span class="n">label_type</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="n">text_pos</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">Viz</span><span class="o">.</span><span class="n">label_violinplot</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="p">[</span><span class="n">tau_clean_sample1</span><span class="p">,</span> <span class="n">tau_clean_sample2</span><span class="p">,</span> <span class="n">tau_clean_sample3</span><span class="p">],</span> <span class="n">label_type</span><span class="o">=</span><span class="s1">&#39;median&#39;</span><span class="p">,</span> <span class="n">text_pos</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">titles</span><span class="p">)</span>
 <span class="n">printing</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;violinplot_plot&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -1591,7 +1565,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_53396\3930682489.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_4020\1078332159.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels(titles)
 </pre></div>
 </div>
@@ -1599,7 +1573,7 @@
 ../Figures/4.Characteristic_time/violinplot_plot.svg
 </pre></div>
 </div>
-<img alt="../_images/a81d7bf5e70a85baa12aed1837be29a66ccab45da99637e95a0a9698c5557781.png" src="../_images/a81d7bf5e70a85baa12aed1837be29a66ccab45da99637e95a0a9698c5557781.png" />
+<img alt="../_images/d16688dea7452fe9890ca3b776d61a32c6adfd4cc4d8f15bd97fcd537092625c.png" src="../_images/d16688dea7452fe9890ca3b776d61a32c6adfd4cc4d8f15bd97fcd537092625c.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1610,9 +1584,9 @@
           <span class="s1">&#39;Untreated substrate</span><span class="se">\n</span><span class="s1">(step width=162±83μm)&#39;</span><span class="p">]</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">violinplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">tau_clean_sample1</span><span class="p">,</span> <span class="n">tau_clean_sample2</span><span class="p">,</span> <span class="n">tau_clean_sample3</span><span class="p">],</span> 
-                    <span class="n">palette</span><span class="o">=</span><span class="p">[</span><span class="n">color_blue</span><span class="p">,</span> <span class="n">color_orange</span><span class="p">,</span> <span class="n">color_purple</span><span class="p">],</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+                    <span class="n">palette</span><span class="o">=</span><span class="p">[</span><span class="n">color_blue</span><span class="p">,</span> <span class="n">color_orange</span><span class="p">,</span> <span class="n">color_purple</span><span class="p">],</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">inner</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 <span class="n">Viz</span><span class="o">.</span><span class="n">set_labels</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Characteristic Time (s)&#39;</span><span class="p">,</span> <span class="n">ticks_both_sides</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">yaxis_style</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
-<span class="n">Viz</span><span class="o">.</span><span class="n">label_violinplot</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="p">[</span><span class="n">tau_clean_sample1</span><span class="p">,</span> <span class="n">tau_clean_sample2</span><span class="p">,</span> <span class="n">tau_clean_sample3</span><span class="p">],</span> <span class="n">label_type</span><span class="o">=</span><span class="s1">&#39;average&#39;</span><span class="p">,</span> <span class="n">text_pos</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">Viz</span><span class="o">.</span><span class="n">label_violinplot</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="p">[</span><span class="n">tau_clean_sample1</span><span class="p">,</span> <span class="n">tau_clean_sample2</span><span class="p">,</span> <span class="n">tau_clean_sample3</span><span class="p">],</span> <span class="n">label_type</span><span class="o">=</span><span class="s1">&#39;average&#39;</span><span class="p">,</span> <span class="n">text_pos</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">titles</span><span class="p">)</span>
 <span class="n">printing</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">fig</span><span class="p">,</span> <span class="s1">&#39;violinplot_plot&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -1620,7 +1594,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_53396\3061213354.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_4020\3436764359.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels(titles)
 </pre></div>
 </div>
@@ -1628,7 +1602,7 @@
 ../Figures/4.Characteristic_time/violinplot_plot.svg
 </pre></div>
 </div>
-<img alt="../_images/a8469b759835bcefb361b14d13155b9eb2d7c5b890b33ad4ad1c16c1cf65a938.png" src="../_images/a8469b759835bcefb361b14d13155b9eb2d7c5b890b33ad4ad1c16c1cf65a938.png" />
+<img alt="../_images/9e15474793f109b7ec68e84ae3893f8865750ad310441c10a8b57975f768d245.png" src="../_images/9e15474793f109b7ec68e84ae3893f8865750ad310441c10a8b57975f768d245.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1664,7 +1638,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_53396\3436764359.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_4020\3436764359.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels(titles)
 </pre></div>
 </div>
@@ -1784,6 +1758,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/growth_bg-characterization_time.png
+../Figures/4.Characteristic_time/growth_bg-characterization_time.svg
 </pre></div>
 </div>
 <img alt="../_images/84349fb17bb7d921960f63b8f7d5effa16b9e9f7aeef2775cf783b7bda15f8ff.png" src="../_images/84349fb17bb7d921960f63b8f7d5effa16b9e9f7aeef2775cf783b7bda15f8ff.png" />
