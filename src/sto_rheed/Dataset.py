@@ -215,7 +215,7 @@ class RHEED_spot_Dataset:
                 else:
                     return np.array(h5[growth][index])
                                 
-    def viz_RHEED_spot(self, growth, index, figsize=(2, 2), viz_mode='print', clim=None, filename = None, printing=None, **kwargs):
+    def viz_RHEED_spot(self, growth, index, figsize=(2, 2), viz_mode='print', clim=None, label_index=0, filename = None, printing=None, **kwargs):
         """
         Visualizes a specific RHEED spot.
 
@@ -230,7 +230,8 @@ class RHEED_spot_Dataset:
             **kwargs: Additional keyword arguments to pass to the printing object.
 
         """
-        print(f'\033[1mFig.\033[0m a: RHEED spot image for {growth} at index {index}.')
+        alpha = {'0': 'a', '1': 'b', '2': 'c', '3': 'd', '4': 'e', '5': 'f', '6': 'g', '7': 'h', '8': 'i', '9': 'j'}[str(label_index)]
+        print(f'\033[1mFig.\033[0m {alpha}: RHEED spot image for {growth} at index {index}.')
 
         # fig, axes = layout_fig(1, figsize=figsize)
 
@@ -244,15 +245,28 @@ class RHEED_spot_Dataset:
             im.show()
         elif viz_mode=='print':
             fig, ax = plt.subplots(1, 1, figsize=figsize)
-            im = ax.imshow(data)
+            
+            if clim:
+                im = ax.imshow(data, vmin=clim[0], vmax=clim[1])
+            else:
+                im = ax.imshow(data)
+                
             divider = make_axes_locatable(ax)
             cax = divider.append_axes("right", size="10%", pad=0.05)
-            cbar = fig.colorbar(im, ticks=[data.min(), data.max(), np.mean([data.min(), data.max()])], cax=cax, format="%.2e")
+            if clim:
+                cbar = fig.colorbar(im, ticks=[clim[0], clim[1], np.mean(clim)], cax=cax)
+            else:
+                cbar = fig.colorbar(im, ticks=[data.min(), data.max(), np.mean([data.min(), data.max()])], cax=cax)
+            formatter = ticker.ScalarFormatter(useMathText=True)
+            formatter.set_scientific(True)
+            formatter.set_powerlimits((-1, 1))
+            cbar.ax.yaxis.set_major_formatter(formatter)
+            
             ax.set_yticklabels("")
             ax.set_xticklabels("")
             ax.set_yticks([])
             ax.set_xticks([])
-            labelfigs(ax, 0)
+            labelfigs(ax, label_index)
             if filename is True: 
                 filename = f"RHEED_{self.sample_name}_{growth}_{index}"
 
@@ -517,7 +531,9 @@ class RHEED_parameter_dataset():
 
         fig.subplots_adjust(hspace=0)
 
-        if filename: 
+        if isinstance(filename, str):
+            pass
+        elif filename == True: 
             filename = f"RHEED_{self.sample_name}_{spot}_metrics"
                 
         # prints the figure

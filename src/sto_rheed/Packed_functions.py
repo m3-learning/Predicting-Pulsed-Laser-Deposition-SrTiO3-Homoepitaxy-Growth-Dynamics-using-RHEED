@@ -167,7 +167,7 @@ def compare_growth_mechanism(align_time=False, normalize=False):
 
 
 
-def visualize_characteristic_time(align_time=False):
+def visualize_characteristic_time(align_time=False, normalize=False):
     """
     Visualize the characteristic time for different samples.
 
@@ -175,7 +175,7 @@ def visualize_characteristic_time(align_time=False):
         None
     """
     seq_colors = ['#00429d','#2e59a8','#4771b2','#5d8abd','#73a2c6','#8abccf','#a5d5d8','#c5eddf','#ffffe0']
-    fig, axes = layout_fig(3, 1, figsize=(6, 6))
+    fig, axes = layout_fig(3, 1, figsize=(8, 8))
     ax1, ax3, ax5 = axes[0], axes[1], axes[2]
 
     x_all_sample1, y_all_sample1 = np.load('../Data/Plume_results/treated_213nm-x_all.npy'), np.load('../Data/Plume_results/treated_213nm-y_all.npy')
@@ -210,7 +210,12 @@ def visualize_characteristic_time(align_time=False):
         x_sklearn_sample3 = x_sklearn_sample3[x_sklearn_sample3<110]
         bg_growth_sample3 = bg_growth_sample3[bg_growth_sample3[:, 0]<110]
 
-
+    
+    if normalize:
+        y_all_sample1 = NormalizeData(y_all_sample1, lb=np.min(y_all_sample1), ub=np.max(y_all_sample1))
+        y_all_sample2 = NormalizeData(y_all_sample2, lb=np.min(y_all_sample2), ub=np.max(y_all_sample2))
+        y_all_sample3 = NormalizeData(y_all_sample3, lb=np.min(y_all_sample3), ub=np.max(y_all_sample3))
+    
     x_sklearn_sample1, tau_clean_sample1 = remove_outlier(x_sklearn_sample1, tau_sklearn_sample1, 0.95)
     tau_smooth_sample1 = smooth(tau_clean_sample1, 3)
     
@@ -223,7 +228,7 @@ def visualize_characteristic_time(align_time=False):
     
     Viz.draw_background_colors(ax1, bg_growth_sample1)
     ax1.scatter(x_all_sample1, y_all_sample1, color='k', s=1)
-    Viz.set_labels(ax1, xlabel='Time (s)', ylabel='Intensity (a.u.)', xlim=(-2, 130), title='Treated_213nm', ticks_both_sides=False)
+    Viz.set_labels(ax1, xlabel='Time (s)', ylabel='Intensity (a.u.)', xlim=(-2, 130), ticks_both_sides=False)
 
     ax2 = ax1.twinx()
     ax2.scatter(x_sklearn_sample1, tau_clean_sample1, color=seq_colors[0], s=3)
@@ -236,7 +241,7 @@ def visualize_characteristic_time(align_time=False):
 
     Viz.draw_background_colors(ax3, bg_growth_sample2)
     ax3.scatter(x_all_sample2, y_all_sample2, color='k', s=1)
-    Viz.set_labels(ax3, xlabel='Time (s)', ylabel='Intensity (a.u.)', xlim=(-2, 115), title='Treated_81nm', ticks_both_sides=False)
+    Viz.set_labels(ax3, xlabel='Time (s)', ylabel='Intensity (a.u.)', xlim=(-2, 115), ticks_both_sides=False)
 
     ax4 = ax3.twinx()
     ax4.scatter(x_sklearn_sample2, tau_clean_sample2, color=seq_colors[0], s=3)
@@ -249,7 +254,7 @@ def visualize_characteristic_time(align_time=False):
 
     Viz.draw_background_colors(ax5, bg_growth_sample3)
     ax5.scatter(x_all_sample3, y_all_sample3, color='k', s=1)
-    Viz.set_labels(ax5, xlabel='Time (s)', ylabel='Intensity (a.u.)', xlim=(-2, 125), title='Untreated_163nm', ticks_both_sides=False)
+    Viz.set_labels(ax5, xlabel='Time (s)', ylabel='Intensity (a.u.)', xlim=(-2, 125), ticks_both_sides=False)
 
     ax6 = ax5.twinx()
     ax6.scatter(x_sklearn_sample3, tau_clean_sample3, color=seq_colors[0], s=3)
@@ -305,8 +310,8 @@ def violinplot_characteristic_time(align_time=False):
               'Treated substrate\n(step width=81±44nm)',
               'Untreated substrate\n(step width=162±83μm)']
     ax = sns.violinplot(data=[tau_clean_sample1, tau_clean_sample2, tau_clean_sample3], 
-                        palette=[color_blue, color_orange, color_purple], linewidth=0.8)
+                        palette=[color_blue, color_orange, color_purple], linewidth=0.8, inner=None)
     ax.set_xticklabels(titles)
     Viz.set_labels(ax, ylabel='Characteristic Time (s)', ticks_both_sides=False, yaxis_style='linear')
-    Viz.label_violinplot(ax, [tau_clean_sample1, tau_clean_sample2, tau_clean_sample3], label_type='average', text_pos='right')
+    Viz.label_violinplot(ax, [tau_clean_sample1, tau_clean_sample2, tau_clean_sample3], label_type='average', text_pos='center')
     plt.show()

@@ -7,7 +7,7 @@ import glob
 from matplotlib import ticker, cm, colors
 
 
-def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequence=[]):
+def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequence=[], label_size=10, tick_size=8, legend_size=10):
     """
     Plot X-ray diffraction patterns.
 
@@ -49,9 +49,10 @@ def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequenc
             Y = Y * diff**(len(Ys)-i-1)
         ax.plot(X, Y, label=labels[i])
         
-    ax.set_xlabel(r"2$\Theta$")
-    ax.set_ylabel('Intensity [a.u.]')
-    ax.legend()
+    ax.set_xlabel(r"2$\Theta$", fontsize=label_size)
+    ax.set_ylabel('Intensity [a.u.]', fontsize=label_size)
+    ax.tick_params(axis='both', which='major', labelsize=tick_size)
+    ax.legend(fontsize=legend_size)
 
     ax.set_yscale('log',base=10) 
     ax.set_xlim(xrange)
@@ -59,7 +60,7 @@ def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequenc
     # ax.set_xticks(np.arange(*xrange, 1))
 
 
-def plot_rsm(ax, file, reciprocal_space=True, title=None):
+def plot_rsm(ax, file, reciprocal_space=True, title=None, label_size=10, tick_size=8, vmin=3, vmax=1e5):
     """
     Plot a reciprocal space map or a real space map.
 
@@ -80,7 +81,9 @@ def plot_rsm(ax, file, reciprocal_space=True, title=None):
     two_theta = two_theta.reshape(curve_shape)
     intensity = intensity.reshape(curve_shape)
     intensity[intensity==0]=1
-
+    intensity[intensity <= vmin] = vmin - 1e-10
+    intensity[intensity >= vmax] = vmax - 1e-10
+        
     if reciprocal_space:
         wavelength = 1.54 # unit: angstrom
         Qz = (1/wavelength)*(np.sin(np.deg2rad(two_theta-omega))+np.sin(np.deg2rad(omega))) 
@@ -90,8 +93,11 @@ def plot_rsm(ax, file, reciprocal_space=True, title=None):
         cs = ax.contourf(omega, two_theta, intensity, locator=ticker.LogLocator(), cmap=cm.viridis, norm=colors.LogNorm())
 
     formatter = ticker.LogFormatterMathtext(base=10, labelOnlyBase=False)
-    ax.set_xlabel(r"Qx r'$\AA$'")
-    ax.set_ylabel(r"Qz r'$\AA$'")
+    ax.set_xlabel(r'$Q_x$ [$\AA^{-1}$]', fontsize=label_size)
+    ax.set_ylabel(r'$Q_z$ [$\AA^{-1}$]', fontsize=label_size)
+    ax.tick_params(axis='both', which='major', labelsize=tick_size)
 
-    plt.colorbar(cs, ax=ax, format=formatter)
+    cbar = plt.colorbar(cs, ax=ax, format=formatter)
+    cbar.ax.tick_params(labelsize=tick_size)  # Set tick label size
+
     if title: ax.set_title(title)

@@ -7,6 +7,52 @@ import seaborn as sns
 from scipy.signal import savgol_filter
 from viz.layout import layout_fig, labelfigs
 
+
+def viz_color(color):
+    """
+    Visualize an RGB or RGBA color.
+    
+    Parameters:
+        color (tuple): A tuple representing an RGB (R, G, B) or RGBA (R, G, B, A) color. 
+                       Values should be in the range [0, 1].
+        figsize (tuple): Size of the figure (default: (2, 2)).
+    """
+    # Create a blank image filled with the specified color
+    image = np.ones((10, 10, 4))  # RGBA by default
+    if len(color) == 3:  # If only RGB is provided, add full alpha
+        color = (*color, 1)
+    image[:, :, :] = color  # Fill the image with the color
+
+    # Plot the image
+    plt.figure(figsize=(1, 1))
+    plt.imshow(image)
+    plt.axis('off')  # Hide axes
+    plt.show()
+    
+def rgba_to_rgb(rgba_color, background_rgb=(1, 1, 1)):
+    """
+    Convert RGBA colors to RGB representation.
+    
+    Parameters:
+        rgba_colors (numpy.ndarray): Array of RGBA colors with shape (n, 4).
+        background_rgb (tuple): Background color as an RGB tuple (default: white).
+    
+    Returns:
+        numpy.ndarray: Array of RGB colors with shape (n, 3).
+    """
+    rgba_color = np.array(rgba_color)
+    background_rgb = np.array(background_rgb)
+    
+    # Extract alpha and RGB components
+    alpha = rgba_color[3:4]  # Keep as a column vector
+    rgba_rgb = rgba_color[:3]
+    
+    # Apply the blending formula
+    rgb_color = alpha * rgba_rgb + (1 - alpha) * background_rgb
+    
+    return tuple(rgb_color)
+
+
 def trim_axes(axs, N):
     """
     Reduce *axs* to *N* Axes. All further Axes are removed from the figure.

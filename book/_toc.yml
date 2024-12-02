@@ -1,0 +1,14 @@
+# Table of contents
+format: jb-book
+root: content/index
+
+chapters:
+  - file: content/1_Abstract
+  - file: content/2_RHEED_metrics
+  - file: content/3_RHEED_metrics-details
+  - file: content/4_AFM_and_XRD
+  - file: content/5_AFM_and_XRD-details
+  - file: content/6_Growth_mechanism
+  - file: content/7_Growth_mechanism-details
+  - file: content/8_Characteristic_time
+  - file: content/9_Characteristic_time-details
