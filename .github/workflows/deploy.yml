@@ -3,7 +3,7 @@ name: deploy-book
 on:
   push:
     branches:
-      - main  # Adjust branch name if necessary
+      - main # Adjust branch name if necessary
 
 env:
   BASE_URL: /${{ github.event.repository.name }}
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
