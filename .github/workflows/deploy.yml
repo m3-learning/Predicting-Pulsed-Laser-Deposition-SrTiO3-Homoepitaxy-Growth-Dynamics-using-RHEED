@@ -17,7 +17,7 @@ jobs:
     if: |
       github.repository == 'm3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED' &&
       contains(github.event.head_commit.message, '#push')
-    runs-on: shenron
+    runs-on: ubuntu-latest
     permissions:
       pages: write
       id-token: write
@@ -26,6 +26,18 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            libgl1-mesa-dev \
+            libglu1-mesa-dev \
+            libxt-dev \
+            libxext-dev \
+            libxrender-dev \
+            libsm-dev
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
