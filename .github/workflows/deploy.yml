@@ -27,7 +27,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - name: Install Conda and dependencies
+      - name: Install Conda
         run: |
           sudo apt-get update
           sudo apt-get install -y wget
@@ -35,29 +35,27 @@ jobs:
           bash miniconda.sh -b -p $HOME/miniconda
           export PATH="$HOME/miniconda/bin:$PATH"
           conda init bash
+
+      - name: Create and Activate Conda Environment
+        shell: bash -l {0}
+        run: |
+          source $HOME/.bashrc
           conda create -n book python=3.11 -y
           conda activate book
           conda install -c conda-forge mayavi -y
 
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-
-      - name: Cache Python dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
+      - name: Install Dependencies
+        shell: bash -l {0}
         run: |
+          source $HOME/.bashrc
+          conda activate book
           pip install -r requirements.txt
 
       - name: Build the book
+        shell: bash -l {0}
         run: |
+          source $HOME/.bashrc
+          conda activate book
           rm -rf ./book/_build
           jupyter-book build ./book
 
