@@ -40,6 +40,7 @@ jobs:
         shell: bash -l {0}
         run: |
           source $HOME/.bashrc
+          conda init bash
           conda create -n book python=3.11 -y
           conda activate book
           conda install -c conda-forge mayavi -y
@@ -48,6 +49,7 @@ jobs:
         shell: bash -l {0}
         run: |
           source $HOME/.bashrc
+          conda init bash
           conda activate book
           pip install -r requirements.txt
 
@@ -55,6 +57,7 @@ jobs:
         shell: bash -l {0}
         run: |
           source $HOME/.bashrc
+          conda init bash
           conda activate book
           rm -rf ./book/_build
           jupyter-book build ./book
