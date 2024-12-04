@@ -27,9 +27,17 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - name: Install system dependencies
+      - name: Install Conda and dependencies
         run: |
-          pip install numpy vtk pyqt5
+          sudo apt-get update
+          sudo apt-get install -y wget
+          wget -qO- https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > miniconda.sh
+          bash miniconda.sh -b -p $HOME/miniconda
+          export PATH="$HOME/miniconda/bin:$PATH"
+          conda init bash
+          conda create -n book python=3.11 -y
+          conda activate book
+          conda install -c conda-forge mayavi -y
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v4
@@ -56,5 +64,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           publish_dir: ./book/_build/html
