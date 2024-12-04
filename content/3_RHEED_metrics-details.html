@@ -1,0 +1,1138 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>RHEED Metrics with Details &#8212; The Predicting Pulsed-Laser Deposition SrTiO3 Homoepitaxy Growth Dynamics using High-Speed Reflection High-Energy Electron Diffraction</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme.css?v=1a2d7c0a" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/3_RHEED_metrics-details';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="AFM and XRD" href="4_AFM_and_XRD.html" />
+    <link rel="prev" title="RHEED Metrics" href="2_RHEED_metrics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/Drexel_blue_Logo_square_Light.png" class="logo__image only-light" alt="The Predicting Pulsed-Laser Deposition SrTiO3 Homoepitaxy Growth Dynamics using High-Speed Reflection High-Energy Electron Diffraction - Home"/>
+    <img src="../_static/Drexel_blue_Logo_square_Light.png" class="logo__image only-dark pst-js-only" alt="The Predicting Pulsed-Laser Deposition SrTiO3 Homoepitaxy Growth Dynamics using High-Speed Reflection High-Energy Electron Diffraction - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Welcome to the Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_Abstract.html">Predicting Pulsed-Laser Deposition SrTiO3 Homoepitaxy Growth Dynamics using High-Speed Reflection High-Energy Electron Diffraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_RHEED_metrics.html">RHEED Metrics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">RHEED Metrics with Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_AFM_and_XRD.html">AFM and XRD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_AFM_and_XRD-details.html">AFM and XRD with Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_Growth_mechanism.html">Growth Mechanism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_Growth_mechanism-details.html">Growth Mechanism with Details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8_Characteristic_time.html">Characteristic Time</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9_Characteristic_time-details.html">Characteristic Time with Details</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED/blob/master/content/3_RHEED_metrics-details.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED/issues/new?title=Issue%20on%20page%20%2Fcontent/3_RHEED_metrics-details.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/3_RHEED_metrics-details.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>RHEED Metrics with Details</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-datasets-from-zenodo">1. Download datasets from Zenodo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-the-rheed-dataset">2. Fitting the RHEED Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-treated-213nm">2.1 Sample treated_213nm</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-the-dataset">2.1.1 Loading the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#locate-the-diffraction-spots">2.1.2 Locate the diffraction spots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-an-example">2.1.3 Visualize an example</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-the-dataset">2.1.4 Exam the dataset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-treated-81nm">2.2 Sample treated_81nm</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2.1 Loading the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.2.2 Locate the diffraction spots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.2.3 Visualize an example</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.2.4 Exam the dataset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-untreated-162nm">2.3 Sample untreated_162nm</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.3.1 Loading the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.3.2 Locate the diffraction spots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.3.3 Visualize an example</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examine-the-dataset">2.3.4 Examine the dataset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merged-plot-for-rheed-intensity">Merged plot for RHEED intensity</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="rheed-metrics-with-details">
+<h1>RHEED Metrics with Details<a class="headerlink" href="#rheed-metrics-with-details" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">util.file_IO</span> <span class="kn">import</span> <span class="n">download_and_unzip</span>
+<span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
+<span class="kn">from</span> <span class="nn">viz.layout</span> <span class="kn">import</span> <span class="n">layout_fig</span><span class="p">,</span> <span class="n">labelfigs</span>
+<span class="kn">from</span> <span class="nn">sto_rheed.Dataset</span> <span class="kn">import</span> <span class="n">RHEED_spot_Dataset</span><span class="p">,</span> <span class="n">RHEED_parameter_dataset</span>
+<span class="kn">from</span> <span class="nn">sto_rheed.Viz</span> <span class="kn">import</span> <span class="n">Viz</span>
+<span class="kn">from</span> <span class="nn">sto_rheed.Fit</span> <span class="kn">import</span> <span class="n">RHEED_image_processer</span><span class="p">,</span> <span class="n">Gaussian</span><span class="p">,</span> <span class="n">NormalizeData</span>
+
+<span class="n">printing_image</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/1.Fit_RHEED_spot/&#39;</span><span class="p">)</span>
+<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/1.Fit_RHEED_spot/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">],</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+
+<span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;printing&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span> <span class="nn">util.file_IO</span> <span class="kn">import</span> <span class="n">download_and_unzip</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;util&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="download-datasets-from-zenodo">
+<h2>1. Download datasets from Zenodo<a class="headerlink" href="#download-datasets-from-zenodo" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># # Download the data file from Zenodo</span>
+<span class="c1"># download=False</span>
+<span class="c1"># if download:</span>
+<span class="c1">#     # full size version</span>
+<span class="c1">#     urls = [&#39;https://zenodo.org/record/7950043/files/STO_STO_test6_06292022-standard.h5?download=1&#39;,</span>
+<span class="c1">#             &#39;https://zenodo.org/record/7950043/files/STO_STO_test7_06292022-standard.h5?download=1&#39;,</span>
+<span class="c1">#             &#39;https://zenodo.org/record/7950043/files/STO_STO_test9_07142022-standard.h5?download=1&#39;,</span>
+<span class="c1">#             &#39;https://zenodo.org/record/7950043/files/test6_gaussian_fit_parameters_all-04232023.h5?download=1&#39;,</span>
+<span class="c1">#             &#39;https://zenodo.org/record/7950043/files/test7_gaussian_fit_parameters_all-04232023.h5?download=1&#39;,</span>
+<span class="c1">#             &#39;https://zenodo.org/record/7950043/files/test9_gaussian_fit_parameters_all-04232023.h5?download=1&#39;]</span>
+
+<span class="c1">#     # compressed version</span>
+<span class="c1">#     urls_compressed = [&#39;https://zenodo.org/record/7948591/files/STO_STO_test6_06292022-standard-compressed.h5?download=1&#39;,</span>
+<span class="c1">#                         &#39;https://zenodo.org/record/7948591/files/STO_STO_test7_06292022-standard-compressed.h5?download=1&#39;,</span>
+<span class="c1">#                         &#39;https://zenodo.org/record/7948591/files/STO_STO_test9_07142022-standard-compressed.h5?download=1&#39;,</span>
+<span class="c1">#                         &#39;https://zenodo.org/record/7948591/files/test6_gaussian_fit_parameters_all-04232023-compressed.h5?download=1&#39;,</span>
+<span class="c1">#                         &#39;https://zenodo.org/record/7948591/files/test7_gaussian_fit_parameters_all-04232023-compressed.h5?download=1&#39;,</span>
+<span class="c1">#                         &#39;https://zenodo.org/record/7948591/files/test9_gaussian_fit_parameters_all-04232023-compressed.h5?download=1&#39;]   </span>
+
+<span class="c1">#     for url in urls:</span>
+<span class="c1">#         # Specify the filename and the path to save the file</span>
+<span class="c1">#         filename = re.split(r&#39;\?&#39;, os.path.basename(url))[0]</span>
+<span class="c1">#         save_path = &#39;./../2023_RHEED_PLD_SrTiO3/Datasets/&#39;</span>
+
+<span class="c1">#         # download the file</span>
+<span class="c1">#         download_and_unzip(filename, url, save_path)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="fitting-the-rheed-dataset">
+<h2>2. Fitting the RHEED Dataset<a class="headerlink" href="#fitting-the-rheed-dataset" title="Link to this heading">#</a></h2>
+<section id="sample-treated-213nm">
+<h3>2.1 Sample treated_213nm<a class="headerlink" href="#sample-treated-213nm" title="Link to this heading">#</a></h3>
+<section id="loading-the-dataset">
+<h4>2.1.1 Loading the Dataset<a class="headerlink" href="#loading-the-dataset" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/STO_STO_test6_06292022-standard.h5&#39;</span>
+<span class="n">D1_spot</span> <span class="o">=</span> <span class="n">RHEED_spot_Dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;treated_213nm&#39;</span><span class="p">)</span>
+<span class="n">D1_spot</span><span class="o">.</span><span class="n">data_info</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="locate-the-diffraction-spots">
+<h4>2.1.2 Locate the diffraction spots<a class="headerlink" href="#locate-the-diffraction-spots" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D1_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="visualize-an-example">
+<h4>2.1.3 Visualize an example<a class="headerlink" href="#visualize-an-example" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">crop_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;spot_1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">80</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">160</span><span class="p">},</span> 
+             <span class="s1">&#39;spot_2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">137</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">166</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">147</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">195</span><span class="p">},</span> 
+             <span class="s1">&#39;spot_3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">230</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">262</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">115</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">180</span><span class="p">}}</span>
+
+<span class="n">fit_function</span> <span class="o">=</span> <span class="n">Gaussian</span><span class="p">()</span><span class="o">.</span><span class="n">recreate_gaussian</span>
+<span class="n">processor</span> <span class="o">=</span> <span class="n">RHEED_image_processer</span><span class="p">(</span><span class="n">D1_spot</span><span class="p">,</span> <span class="n">crop_dict</span><span class="p">,</span> <span class="n">fit_function</span><span class="p">)</span>
+<span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_1&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_12&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_1&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_12&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_3&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_12&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_3&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="exam-the-dataset">
+<h4>2.1.4 Exam the dataset<a class="headerlink" href="#exam-the-dataset" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/test6_gaussian_fit_parameters_all-04232023.h5&#39;</span>
+<span class="n">D1_para</span> <span class="o">=</span> <span class="n">RHEED_parameter_dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">camera_freq</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;treated_213nm&#39;</span><span class="p">)</span>
+<span class="c1"># D1_para.data_info   </span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D1_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D1_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D1_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">10000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
+<span class="n">D1_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric_list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;img_sum&#39;</span><span class="p">,</span> <span class="s1">&#39;img_rec_sum&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;width_x&#39;</span><span class="p">,</span> <span class="s1">&#39;width_y&#39;</span><span class="p">],</span> 
+                                  <span class="n">head_tail</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">500</span><span class="p">),</span> <span class="n">interval</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
+<span class="n">D1_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">head_tail</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">300</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;S3-treated_213nm-RHEED_metrics&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sample-treated-81nm">
+<h3>2.2 Sample treated_81nm<a class="headerlink" href="#sample-treated-81nm" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h4>2.2.1 Loading the Dataset<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/STO_STO_test7_06292022-standard.h5&#39;</span>
+<span class="n">D2_spot</span> <span class="o">=</span> <span class="n">RHEED_spot_Dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;treated_81nm&#39;</span><span class="p">)</span>
+<span class="n">D2_spot</span><span class="o">.</span><span class="n">data_info</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h4>2.2.2 Locate the diffraction spots<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D2_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id3">
+<h4>2.2.3 Visualize an example<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">crop_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;spot_1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">80</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">340</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">450</span><span class="p">},</span>
+             <span class="s1">&#39;spot_2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">143</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">165</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">415</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">455</span><span class="p">},</span>
+             <span class="s1">&#39;spot_3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">220</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">260</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">340</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">450</span><span class="p">}}</span>
+<span class="n">fit_function</span> <span class="o">=</span> <span class="n">Gaussian</span><span class="p">()</span><span class="o">.</span><span class="n">recreate_gaussian</span>
+<span class="n">processor</span> <span class="o">=</span> <span class="n">RHEED_image_processer</span><span class="p">(</span><span class="n">D2_spot</span><span class="p">,</span> <span class="n">crop_dict</span><span class="p">,</span> <span class="n">fit_function</span><span class="p">)</span>
+<span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_1&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_12&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_1&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_12&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_3&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_12&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_3&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id4">
+<h4>2.2.4 Exam the dataset<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/test7_gaussian_fit_parameters_all-04232023.h5&#39;</span>
+<span class="n">D2_para</span> <span class="o">=</span> <span class="n">RHEED_parameter_dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">camera_freq</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;treated_81nm&#39;</span><span class="p">)</span>
+<span class="c1"># D2_para.data_info</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D2_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
+<span class="n">D2_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric_list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;img_sum&#39;</span><span class="p">,</span> <span class="s1">&#39;img_rec_sum&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;width_x&#39;</span><span class="p">,</span> <span class="s1">&#39;width_y&#39;</span><span class="p">],</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
+<span class="n">D2_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;S4-treated_81nm-RHEED_metrics&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sample-untreated-162nm">
+<h3>2.3 Sample untreated_162nm<a class="headerlink" href="#sample-untreated-162nm" title="Link to this heading">#</a></h3>
+<section id="id5">
+<h4>2.3.1 Loading the Dataset<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/STO_STO_test9_07142022-standard.h5&#39;</span>
+<span class="n">D3_spot</span> <span class="o">=</span> <span class="n">RHEED_spot_Dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;untreated_162nm&#39;</span><span class="p">)</span>
+<span class="n">D3_spot</span><span class="o">.</span><span class="n">data_info</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id6">
+<h4>2.3.2 Locate the diffraction spots<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D3_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D3_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">label_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">168</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+<span class="n">D3_spot</span><span class="o">.</span><span class="n">viz_RHEED_spot</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">13000</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">label_index</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">clim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">168</span><span class="p">),</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id7">
+<h4>2.3.3 Visualize an example<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># sets where to crop the image to extact the peaks</span>
+<span class="n">crop_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;spot_1&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">50</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">72</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">150</span><span class="p">},</span>
+             <span class="s1">&#39;spot_2&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">143</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">162</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">150</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">190</span><span class="p">},</span>
+             <span class="s1">&#39;spot_3&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;y_start&#39;</span><span class="p">:</span><span class="mi">218</span><span class="p">,</span> <span class="s1">&#39;y_end&#39;</span><span class="p">:</span><span class="mi">262</span><span class="p">,</span> <span class="s1">&#39;x_start&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;x_end&#39;</span><span class="p">:</span><span class="mi">165</span><span class="p">}}</span>
+<span class="n">fit_function</span> <span class="o">=</span> <span class="n">Gaussian</span><span class="p">()</span><span class="o">.</span><span class="n">recreate_gaussian</span>
+<span class="n">processor</span> <span class="o">=</span> <span class="n">RHEED_image_processer</span><span class="p">(</span><span class="n">D3_spot</span><span class="p">,</span> <span class="n">crop_dict</span><span class="p">,</span> <span class="n">fit_function</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_1&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_18&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_1&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_18&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_3&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">,</span> <span class="n">img_rec</span><span class="p">,</span> <span class="n">parameters</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">visualize</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_18&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_3&#39;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="examine-the-dataset">
+<h4>2.3.4 Examine the dataset<a class="headerlink" href="#examine-the-dataset" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/test9_gaussian_fit_parameters_all-04232023.h5&#39;</span>
+<span class="n">D3_para</span> <span class="o">=</span> <span class="n">RHEED_parameter_dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">camera_freq</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;untreated_162nm&#39;</span><span class="p">)</span>
+<span class="n">D3_para</span><span class="o">.</span><span class="n">data_info</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">D3_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter</span><span class="p">(</span><span class="n">growth</span><span class="o">=</span><span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_image</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span> <span class="p">,</span> <span class="s1">&#39;growth_13&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_14&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_15&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_16&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_17&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_18&#39;</span><span class="p">]</span>
+<span class="n">D3_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric_list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;img_sum&#39;</span><span class="p">,</span> <span class="s1">&#39;img_rec_sum&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;width_x&#39;</span><span class="p">,</span> <span class="s1">&#39;width_y&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span> <span class="p">,</span> <span class="s1">&#39;growth_13&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_14&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_15&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_16&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_17&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_18&#39;</span><span class="p">]</span>
+<span class="n">D3_para</span><span class="o">.</span><span class="n">viz_RHEED_parameter_trend</span><span class="p">(</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;S5-untreated_162nm-RHEED_metrics&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing_plot</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="merged-plot-for-rheed-intensity">
+<h3>Merged plot for RHEED intensity<a class="headerlink" href="#merged-plot-for-rheed-intensity" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_all_list</span><span class="p">,</span> <span class="n">y_all_list</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+
+<span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
+<span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span> <span class="o">=</span> <span class="n">D1_para</span><span class="o">.</span><span class="n">load_multiple_curves</span><span class="p">(</span><span class="n">growth_list</span><span class="o">=</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;img_rec_sum&#39;</span><span class="p">)</span>
+<span class="n">x_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x_all</span><span class="p">)</span>
+<span class="n">y_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y_all</span><span class="p">)</span>
+
+<span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span><span class="p">]</span>
+<span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span> <span class="o">=</span> <span class="n">D2_para</span><span class="o">.</span><span class="n">load_multiple_curves</span><span class="p">(</span><span class="n">growth_list</span><span class="o">=</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;img_rec_sum&#39;</span><span class="p">)</span>
+<span class="n">x_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x_all</span><span class="p">)</span>
+<span class="n">y_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y_all</span><span class="p">)</span>
+
+<span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_4&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_5&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_6&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_7&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_8&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_9&#39;</span><span class="p">,</span> 
+               <span class="s1">&#39;growth_10&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_11&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_12&#39;</span> <span class="p">,</span> <span class="s1">&#39;growth_13&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_14&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_15&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_16&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_17&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_18&#39;</span><span class="p">]</span>
+<span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span> <span class="o">=</span> <span class="n">D3_para</span><span class="o">.</span><span class="n">load_multiple_curves</span><span class="p">(</span><span class="n">growth_list</span><span class="o">=</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;img_rec_sum&#39;</span><span class="p">)</span>
+<span class="n">x_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x_all</span><span class="p">)</span>
+<span class="n">y_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y_all</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">color_blue</span> <span class="o">=</span> <span class="p">(</span><span class="mi">44</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">123</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">182</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">color_orange</span> <span class="o">=</span> <span class="p">(</span><span class="mi">217</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">95</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">2</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">color_purple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">117</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">112</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">179</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">three_colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">color_blue</span><span class="p">,</span> <span class="n">color_orange</span><span class="p">,</span> <span class="n">color_purple</span><span class="p">]</span>
+<span class="n">y_max_list</span><span class="p">,</span> <span class="n">y_min_list</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+
+<span class="n">dashed_lines_x_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">122</span><span class="p">,</span> <span class="mi">134</span><span class="p">,</span> <span class="mi">140</span><span class="p">,</span> <span class="mi">148</span><span class="p">,</span> <span class="mi">159</span><span class="p">,</span> <span class="mi">166</span><span class="p">,</span> <span class="mi">173</span><span class="p">,</span>
+                    <span class="c1"># 182, 187, 192, 197, 207.5, 212, 216.5, 222.5, </span>
+                    <span class="c1"># 227, 231.5, 235, 238.5, 243, 247, 251.5, 255.5, 259.5, 264, 268, 272, 276,</span>
+                    <span class="p">]</span>
+<span class="n">dashed_lines_x_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">23</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mf">74.5</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">111</span><span class="p">,</span> <span class="mf">118.5</span><span class="p">,</span> <span class="mf">126.5</span><span class="p">,</span> <span class="mf">135.5</span><span class="p">,</span> <span class="mi">143</span><span class="p">,</span> <span class="mi">151</span><span class="p">]</span>
+<span class="n">dashed_lines_x_3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="mi">164</span><span class="p">,</span> <span class="mi">198</span><span class="p">,</span> <span class="mi">210</span><span class="p">,</span> <span class="mi">222</span><span class="p">,</span> <span class="mi">235</span><span class="p">,</span> <span class="mi">248</span><span class="p">,</span> <span class="mi">260</span><span class="p">,</span> <span class="mi">272</span><span class="p">,</span> <span class="mi">284</span><span class="p">,</span> <span class="mi">297</span><span class="p">]</span>
+<span class="n">dashed_lines_x_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">dashed_lines_x_1</span><span class="p">,</span> <span class="n">dashed_lines_x_2</span><span class="p">,</span> <span class="n">dashed_lines_x_3</span><span class="p">]</span>
+<span class="n">xlim_list</span> <span class="o">=</span> <span class="p">[(</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">308</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">,</span> <span class="mi">262</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span> <span class="mi">450</span><span class="p">)]</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">layout_fig</span><span class="p">(</span><span class="n">graph</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">mod</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">layout</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">dashed_lines_x</span><span class="p">,</span> <span class="n">xlim</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">x_all_list</span><span class="p">,</span> <span class="n">y_all_list</span><span class="p">,</span> <span class="n">three_colors</span><span class="p">,</span> <span class="n">dashed_lines_x_list</span><span class="p">,</span> <span class="n">xlim_list</span><span class="p">):</span>
+    
+    <span class="c1"># normalize the intensity</span>
+    <span class="n">y_min_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">y_all</span><span class="p">))</span>
+    <span class="n">y_max_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">y_all</span><span class="p">))</span>
+    <span class="n">y_all</span> <span class="o">=</span> <span class="n">NormalizeData</span><span class="p">(</span><span class="n">y_all</span><span class="p">,</span> <span class="n">lb</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">y_all</span><span class="p">),</span> <span class="n">ub</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">y_all</span><span class="p">))</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dashed_lines_x</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">],</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">y_all</span><span class="o">-</span><span class="mf">0.05</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">y_all</span><span class="o">+</span><span class="mf">0.05</span><span class="p">)],</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">xlim</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+    <span class="n">Viz</span><span class="o">.</span><span class="n">set_labels</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Intensity (a.u.)&#39;</span><span class="p">,</span> <span class="n">yaxis_style</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;../Figures/1.Fit_RHEED_spot/summarized_spot_2_sum.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x_all_list</span><span class="p">,</span> <span class="n">y_all_list</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+
+<span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">]</span>
+<span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span> <span class="o">=</span> <span class="n">D1_para</span><span class="o">.</span><span class="n">load_multiple_curves</span><span class="p">(</span><span class="n">growth_list</span><span class="o">=</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;img_rec_sum&#39;</span><span class="p">)</span>
+<span class="n">y_all</span> <span class="o">=</span> <span class="n">y_all</span><span class="p">[(</span><span class="n">x_all</span><span class="o">&gt;</span><span class="mi">28</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x_all</span><span class="o">&lt;</span><span class="mi">65</span><span class="p">)]</span>
+<span class="n">x_all</span> <span class="o">=</span> <span class="n">x_all</span><span class="p">[(</span><span class="n">x_all</span><span class="o">&gt;</span><span class="mi">28</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x_all</span><span class="o">&lt;</span><span class="mi">65</span><span class="p">)]</span>
+<span class="n">x_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x_all</span><span class="p">)</span> 
+<span class="n">y_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y_all</span><span class="p">)</span>
+
+<span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_3&#39;</span><span class="p">]</span>
+<span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span> <span class="o">=</span> <span class="n">D2_para</span><span class="o">.</span><span class="n">load_multiple_curves</span><span class="p">(</span><span class="n">growth_list</span><span class="o">=</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;img_rec_sum&#39;</span><span class="p">)</span>
+<span class="n">y_all</span> <span class="o">=</span> <span class="n">y_all</span><span class="p">[(</span><span class="n">x_all</span><span class="o">&gt;</span><span class="mi">23</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x_all</span><span class="o">&lt;</span><span class="mi">60</span><span class="p">)]</span>
+<span class="n">x_all</span> <span class="o">=</span> <span class="n">x_all</span><span class="p">[(</span><span class="n">x_all</span><span class="o">&gt;</span><span class="mi">23</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x_all</span><span class="o">&lt;</span><span class="mi">60</span><span class="p">)]</span>
+<span class="n">x_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x_all</span><span class="p">)</span>
+<span class="n">y_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y_all</span><span class="p">)</span>
+
+<span class="n">growth_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;growth_1&#39;</span><span class="p">,</span> <span class="s1">&#39;growth_2&#39;</span><span class="p">]</span>
+<span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span> <span class="o">=</span> <span class="n">D3_para</span><span class="o">.</span><span class="n">load_multiple_curves</span><span class="p">(</span><span class="n">growth_list</span><span class="o">=</span><span class="n">growth_list</span><span class="p">,</span> <span class="n">spot</span><span class="o">=</span><span class="s1">&#39;spot_2&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;img_rec_sum&#39;</span><span class="p">)</span>
+<span class="n">y_all</span> <span class="o">=</span> <span class="n">y_all</span><span class="p">[(</span><span class="n">x_all</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x_all</span><span class="o">&lt;</span><span class="mi">39</span><span class="p">)]</span>
+<span class="n">x_all</span> <span class="o">=</span> <span class="n">x_all</span><span class="p">[(</span><span class="n">x_all</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x_all</span><span class="o">&lt;</span><span class="mi">39</span><span class="p">)]</span>
+<span class="n">x_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x_all</span><span class="p">)</span>
+<span class="n">y_all_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">y_all</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">layout_fig</span><span class="p">(</span><span class="n">graph</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">mod</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">layout</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span><span class="p">,</span> <span class="n">y_min</span><span class="p">,</span> <span class="n">y_max</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">dashed_lines_x</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">x_all_list</span><span class="p">,</span> <span class="n">y_all_list</span><span class="p">,</span> <span class="n">y_min_list</span><span class="p">,</span> <span class="n">y_max_list</span><span class="p">,</span> <span class="n">three_colors</span><span class="p">,</span> <span class="n">dashed_lines_x_list</span><span class="p">):</span>
+    <span class="n">x_all</span> <span class="o">=</span> <span class="n">x_all</span> <span class="o">-</span> <span class="n">x_all</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">y_all</span> <span class="o">=</span> <span class="n">NormalizeData</span><span class="p">(</span><span class="n">y_all</span><span class="p">,</span> <span class="n">lb</span><span class="o">=</span><span class="n">y_min</span><span class="p">,</span> <span class="n">ub</span><span class="o">=</span><span class="n">y_max</span><span class="p">)</span>
+    
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_all</span><span class="p">,</span> <span class="n">y_all</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">)</span>
+    
+    <span class="n">Viz</span><span class="o">.</span><span class="n">set_labels</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;Intensity (a.u.)&#39;</span><span class="p">,</span> <span class="n">yaxis_style</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;../Figures/1.Fit_RHEED_spot/summarized_single_unit_cell_growth.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span> <span class="n">transparent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="2_RHEED_metrics.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">RHEED Metrics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="4_AFM_and_XRD.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">AFM and XRD</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-datasets-from-zenodo">1. Download datasets from Zenodo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-the-rheed-dataset">2. Fitting the RHEED Dataset</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-treated-213nm">2.1 Sample treated_213nm</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-the-dataset">2.1.1 Loading the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#locate-the-diffraction-spots">2.1.2 Locate the diffraction spots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-an-example">2.1.3 Visualize an example</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-the-dataset">2.1.4 Exam the dataset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-treated-81nm">2.2 Sample treated_81nm</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2.1 Loading the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.2.2 Locate the diffraction spots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.2.3 Visualize an example</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.2.4 Exam the dataset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-untreated-162nm">2.3 Sample untreated_162nm</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.3.1 Loading the Dataset</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.3.2 Locate the diffraction spots</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.3.3 Visualize an example</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examine-the-dataset">2.3.4 Examine the dataset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merged-plot-for-rheed-intensity">Merged plot for RHEED intensity</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
