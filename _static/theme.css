@@ -121,7 +121,7 @@ html[data-theme="dark"] {
 
     .admonition-title {
         color: var(--pst-color-primary);
-        background-color: #000000!important;
+        background-color: #000000 !important;
     }
 
     /* Admonition styling for dark theme */
@@ -137,14 +137,16 @@ html[data-theme="dark"] {
 
     /* Change the color of code comments */
     .highlight .c1 {
-    /* For generic comments */
+        /* For generic comments */
         color: #dcc6e0;
     }
+
     /* Change the color of code comments */
     .highlight .nb {
         /* For generic comments */
         color: #B7BF10;
     }
+
     /* Change the color of code comments */
     .highlight .mi {
         /* For generic comments */
