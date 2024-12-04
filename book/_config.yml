@@ -25,7 +25,6 @@ language: "en"
 # Launch buttons (optional)
 launch_buttons:
   colab_url: "https://colab.research.google.com/"
-  path_to_book: book
   github_url: "https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED"
 
 repository:
@@ -39,5 +38,5 @@ html:
   static_path:
     - _static
   css:
-    - theme.css
+    - custom.css
   logo:
