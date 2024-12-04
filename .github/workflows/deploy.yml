@@ -17,7 +17,7 @@ jobs:
     if: |
       github.repository == 'm3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED' &&
       contains(github.event.head_commit.message, '#push')
-    runs-on: ubuntu-latest
+    runs-on: shenron
     permissions:
       pages: write
       id-token: write
