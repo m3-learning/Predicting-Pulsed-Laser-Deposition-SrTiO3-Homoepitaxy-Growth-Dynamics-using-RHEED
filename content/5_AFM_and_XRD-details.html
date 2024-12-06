@@ -456,7 +456,7 @@
 <span class="kn">from</span> <span class="nn">sto_rheed.XRD</span> <span class="kn">import</span> <span class="n">plot_xrd</span><span class="p">,</span> <span class="n">plot_rsm</span>
 
 <span class="c1"># from be.Dataset import BE_Dataset</span>
-<span class="n">printing</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/2.AFM_XRD/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">],</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<span class="n">printing</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/2.AFM_XRD/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">,</span> <span class="s1">&#39;tif&#39;</span><span class="p">],</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 <span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;printing&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -516,7 +516,7 @@
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">visualize_afm_image</span><span class="p">(</span><span class="n">img1</span><span class="p">,</span> <span class="n">colorbar_range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">4e-10</span><span class="p">,</span> <span class="mf">4e-10</span><span class="p">],</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">scalebar_dict</span><span class="o">=</span><span class="n">scalebar_dict</span><span class="p">,</span> 
 <span class="g g-Whitespace">      </span><span class="mi">4</span>                     <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;treated_213nm-substrate&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing</span><span class="p">)</span>
 
-<span class="nn">File ~/.local/lib/python3.10/site-packages/numpy/lib/npyio.py:1373,</span> in <span class="ni">loadtxt</span><span class="nt">(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding, max_rows, quotechar, like)</span>
+<span class="nn">File ~/.local/lib/python3.12/site-packages/numpy/lib/npyio.py:1373,</span> in <span class="ni">loadtxt</span><span class="nt">(fname, dtype, comments, delimiter, converters, skiprows, usecols, unpack, ndmin, encoding, max_rows, quotechar, like)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1370</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">delimiter</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
 <span class="g g-Whitespace">   </span><span class="mi">1371</span>     <span class="n">delimiter</span> <span class="o">=</span> <span class="n">delimiter</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
 <span class="ne">-&gt; </span><span class="mi">1373</span> <span class="n">arr</span> <span class="o">=</span> <span class="n">_read</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="n">comment</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="n">delimiter</span><span class="p">,</span>
@@ -525,14 +525,14 @@
 <span class="g g-Whitespace">   </span><span class="mi">1376</span>             <span class="n">max_rows</span><span class="o">=</span><span class="n">max_rows</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="n">quotechar</span><span class="p">)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1378</span> <span class="k">return</span> <span class="n">arr</span>
 
-<span class="nn">File ~/.local/lib/python3.10/site-packages/numpy/lib/npyio.py:992,</span> in <span class="ni">_read</span><span class="nt">(fname, delimiter, comment, quote, imaginary_unit, usecols, skiplines, max_rows, converters, ndmin, unpack, dtype, encoding)</span>
+<span class="nn">File ~/.local/lib/python3.12/site-packages/numpy/lib/npyio.py:992,</span> in <span class="ni">_read</span><span class="nt">(fname, delimiter, comment, quote, imaginary_unit, usecols, skiplines, max_rows, converters, ndmin, unpack, dtype, encoding)</span>
 <span class="g g-Whitespace">    </span><span class="mi">990</span>     <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fspath</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">991</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
 <span class="ne">--&gt; </span><span class="mi">992</span>     <span class="n">fh</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">lib</span><span class="o">.</span><span class="n">_datasource</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;rt&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">993</span>     <span class="k">if</span> <span class="n">encoding</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
 <span class="g g-Whitespace">    </span><span class="mi">994</span>         <span class="n">encoding</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="s1">&#39;encoding&#39;</span><span class="p">,</span> <span class="s1">&#39;latin1&#39;</span><span class="p">)</span>
 
-<span class="nn">File ~/.local/lib/python3.10/site-packages/numpy/lib/_datasource.py:193,</span> in <span class="ni">open</span><span class="nt">(path, mode, destpath, encoding, newline)</span>
+<span class="nn">File ~/.local/lib/python3.12/site-packages/numpy/lib/_datasource.py:193,</span> in <span class="ni">open</span><span class="nt">(path, mode, destpath, encoding, newline)</span>
 <span class="g g-Whitespace">    </span><span class="mi">156</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="g g-Whitespace">    </span><span class="mi">157</span><span class="sd"> Open `path` with `mode` and return the file object.</span>
 <span class="g g-Whitespace">    </span><span class="mi">158</span><span class="sd"> </span>
@@ -542,7 +542,7 @@
 <span class="g g-Whitespace">    </span><span class="mi">192</span> <span class="n">ds</span> <span class="o">=</span> <span class="n">DataSource</span><span class="p">(</span><span class="n">destpath</span><span class="p">)</span>
 <span class="ne">--&gt; </span><span class="mi">193</span> <span class="k">return</span> <span class="n">ds</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="n">newline</span><span class="p">)</span>
 
-<span class="nn">File ~/.local/lib/python3.10/site-packages/numpy/lib/_datasource.py:533,</span> in <span class="ni">DataSource.open</span><span class="nt">(self, path, mode, encoding, newline)</span>
+<span class="nn">File ~/.local/lib/python3.12/site-packages/numpy/lib/_datasource.py:533,</span> in <span class="ni">DataSource.open</span><span class="nt">(self, path, mode, encoding, newline)</span>
 <span class="g g-Whitespace">    </span><span class="mi">530</span>     <span class="k">return</span> <span class="n">_file_openers</span><span class="p">[</span><span class="n">ext</span><span class="p">](</span><span class="n">found</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span>
 <span class="g g-Whitespace">    </span><span class="mi">531</span>                               <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="n">newline</span><span class="p">)</span>
 <span class="g g-Whitespace">    </span><span class="mi">532</span> <span class="k">else</span><span class="p">:</span>
@@ -562,6 +562,13 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/treated_213nm-film.png
+../Figures/2.AFM_XRD/treated_213nm-film.svg
+</pre></div>
+</div>
+<img alt="../_images/a470631f77313aca2cf8b8caff8258dff3ba645e1d8ac2bf9c7072b83e5ffc96.png" src="../_images/a470631f77313aca2cf8b8caff8258dff3ba645e1d8ac2bf9c7072b83e5ffc96.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -572,6 +579,13 @@
                     <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;treated_213nm-film-high_res&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/treated_213nm-film-high_res.png
+../Figures/2.AFM_XRD/treated_213nm-film-high_res.svg
+</pre></div>
+</div>
+<img alt="../_images/1835c8261d8b6eba3440399e8fec35e26838010b84233c76e72d50dff7b11c9b.png" src="../_images/1835c8261d8b6eba3440399e8fec35e26838010b84233c76e72d50dff7b11c9b.png" />
 </div>
 </div>
 </section>
@@ -586,6 +600,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/d91535fdb4d999640d03d9babf56de816fe9b6314daecec5bb3d54da16d3f1b0.png" src="../_images/d91535fdb4d999640d03d9babf56de816fe9b6314daecec5bb3d54da16d3f1b0.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -595,6 +612,9 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/bb2ebe45779dac8bf0f21e108e171e445f815508ee9a42246aa4a28988a08c37.png" src="../_images/bb2ebe45779dac8bf0f21e108e171e445f815508ee9a42246aa4a28988a08c37.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -602,12 +622,34 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># with the provided height from literature</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_simple</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">peak_indices</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_substrate_properties</span><span class="p">(</span><span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span><span class="p">,</span> <span class="n">xz_angle</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">prominence</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;simple&#39;</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="p">,</span> <span class="n">std_range</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step 1: Height = 3.91e-10, Width = 1.62e-07, Miscut = 0.138°
+Step 2: Height = 3.91e-10, Width = 1.40e-07, Miscut = 0.160°
+Step 3: Height = 3.91e-10, Width = 1.08e-07, Miscut = 0.208°
+Step 4: Height = 3.91e-10, Width = 9.57e-08, Miscut = 0.234°
+Step 5: Height = 3.91e-10, Width = 1.94e-07, Miscut = 0.115°
+Step 6: Height = 3.91e-10, Width = 1.71e-07, Miscut = 0.131°
+Step 7: Height = 3.91e-10, Width = 3.99e-08, Miscut = 0.561°
+Step 8: Height = 3.91e-10, Width = 1.23e-07, Miscut = 0.183°
+Step 9: Height = 3.91e-10, Width = 2.11e-07, Miscut = 0.106°
+Results:
+  Average step height = 3.91e-10, Standard deviation = 0.00e+00
+  Average step width = 1.38e-07, Standard deviation = 5.03e-08
+  Average miscut = 0.204°, Standard deviation = 0.132°
+Step height = 3.91e-10 +- 0.00e+00
+Step width = 2.13e-07 +- 8.87e-08
+Miscut = 0.131° +- 0.074°
 </pre></div>
 </div>
 </div>
@@ -620,11 +662,51 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step 1: Height = 1.73e-10, Width = 1.62e-07, Miscut = 0.061°
+Step 2: Height = 1.21e-10, Width = 1.40e-07, Miscut = 0.050°
+Step 3: Height = -1.00e-10, Width = 1.08e-07, Miscut = -0.053°
+Step 4: Height = 1.45e-10, Width = 9.57e-08, Miscut = 0.087°
+Step 5: Height = 1.32e-10, Width = 1.94e-07, Miscut = 0.039°
+Step 6: Height = 8.74e-11, Width = 1.71e-07, Miscut = 0.029°
+Step 7: Height = 1.63e-11, Width = 3.99e-08, Miscut = 0.023°
+Step 8: Height = 2.25e-11, Width = 1.23e-07, Miscut = 0.011°
+Step 9: Height = 1.05e-10, Width = 2.11e-07, Miscut = 0.029°
+Results:
+  Average step height = 7.79e-11, Standard deviation = 8.01e-11
+  Average step width = 1.38e-07, Standard deviation = 5.03e-08
+  Average miscut = 0.031°, Standard deviation = 0.037°
+Step height = 1.50e-10 +- 1.28e-10
+Step width = 2.13e-07 +- 8.87e-08
+Miscut = 0.042° +- 0.038°
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">peak_indices</span><span class="p">,</span> <span class="n">valley_indices</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">slice_rotate</span><span class="p">(</span><span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span><span class="p">,</span> <span class="n">j</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">prominence</span><span class="o">=</span><span class="mf">1e-11</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">xz_angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">peak_indices</span><span class="p">,</span> <span class="n">valley_indices</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>step 1: step_width: 1.10e-10, left_peak: (4.99e-07, -4.60e-10), valley: (5.41e-07, -5.11e-10), right_peak: (6.93e-07, -2.94e-10)
+step 2: step_width: 4.97e-10, left_peak: (6.93e-07, -2.94e-10), valley: (8.18e-07, -3.74e-10), right_peak: (8.87e-07, -1.42e-10)
+step 3: step_width: 2.44e-10, left_peak: (9.57e-07, -1.84e-10), valley: (1.03e-06, -2.97e-10), right_peak: (1.15e-06, -6.09e-11)
+step 4: step_width: 2.04e-10, left_peak: (1.33e-06, 1.19e-10), valley: (1.40e-06, 2.98e-11), right_peak: (1.52e-06, 2.37e-10)
+step 5: step_width: 2.84e-10, left_peak: (1.52e-06, 2.37e-10), valley: (1.58e-06, 1.46e-10), right_peak: (1.65e-06, 3.88e-10)
+step 6: step_width: 3.97e-10, left_peak: (1.73e-06, 2.83e-10), valley: (1.87e-06, 1.73e-10), right_peak: (1.97e-06, 3.74e-10)
+step 7: step_width: 5.13e-10, left_peak: (1.97e-06, 3.74e-10), valley: (2.11e-06, 1.85e-10), right_peak: (2.19e-06, 3.79e-10)
+step 8: step_width: 2.68e-10, left_peak: (2.19e-06, 3.79e-10), valley: (2.26e-06, 3.16e-10), right_peak: (2.33e-06, 5.22e-10)
+step 9: step_width: 4.10e-10, left_peak: (2.33e-06, 5.22e-10), valley: (2.41e-06, 4.52e-10), right_peak: (2.47e-06, 6.79e-10)
+step 10: step_width: 4.29e-10, left_peak: (2.47e-06, 6.79e-10), valley: (2.63e-06, 5.62e-10), right_peak: (2.76e-06, 7.97e-10)
+step 11: step_width: 2.41e-10, left_peak: (2.76e-06, 7.97e-10), valley: (2.81e-06, 7.03e-10), right_peak: (2.91e-06, 9.61e-10)
+step 12: step_width: 5.79e-11, left_peak: (2.91e-06, 9.61e-10), valley: (2.94e-06, 9.25e-10), right_peak: (2.97e-06, 9.47e-10)
+Results:
+  Average step height = 3.91e-10, Standard deviation = 0.00e+00
+  Average step width = 3.05e-10, Standard deviation = 1.40e-10
+  Average miscut = 54.187°, Standard deviation = 13.357°
 </pre></div>
 </div>
 </div>
@@ -650,6 +732,13 @@ Miscut = 0.131° +- 0.074°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/treated_81nm-substrate.png
+../Figures/2.AFM_XRD/treated_81nm-substrate.svg
+</pre></div>
+</div>
+<img alt="../_images/0f98788bc74bcbd4c67ed90b109b1423385e10caddc8913b1785881527c1fb8f.png" src="../_images/0f98788bc74bcbd4c67ed90b109b1423385e10caddc8913b1785881527c1fb8f.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -660,6 +749,13 @@ Miscut = 0.131° +- 0.074°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/treated_81nm-film.png
+../Figures/2.AFM_XRD/treated_81nm-film.svg
+</pre></div>
+</div>
+<img alt="../_images/3c781c1fb037eb61298fc12792e13e0e7d0eef7c534251333112056b06719677.png" src="../_images/3c781c1fb037eb61298fc12792e13e0e7d0eef7c534251333112056b06719677.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -669,6 +765,13 @@ Miscut = 0.131° +- 0.074°
                     <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;treated_81nm-film-high_res&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/treated_81nm-film-high_res.png
+../Figures/2.AFM_XRD/treated_81nm-film-high_res.svg
+</pre></div>
+</div>
+<img alt="../_images/019abddb504903f957accf2ceb527446b4a53d63e765ded95be99f159f784037.png" src="../_images/019abddb504903f957accf2ceb527446b4a53d63e765ded95be99f159f784037.png" />
 </div>
 </div>
 </section>
@@ -683,6 +786,9 @@ Miscut = 0.131° +- 0.074°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/004b46b82a666a678ed9c7f8abe5199e6f644851ced44f09a148db2e9001ae8e.png" src="../_images/004b46b82a666a678ed9c7f8abe5199e6f644851ced44f09a148db2e9001ae8e.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -691,6 +797,9 @@ Miscut = 0.131° +- 0.074°
 <span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">rotate_image</span><span class="p">(</span><span class="n">angle</span><span class="o">=-</span><span class="mi">56</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/c88f0aaa9d8c8565f4612489babab96528de871823b32b55e73f5015c72e080d.png" src="../_images/c88f0aaa9d8c8565f4612489babab96528de871823b32b55e73f5015c72e080d.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -702,6 +811,8 @@ Miscut = 0.131° +- 0.074°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -709,6 +820,36 @@ Miscut = 0.131° +- 0.074°
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_simple</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">peak_indices</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-5</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_substrate_properties</span><span class="p">(</span><span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span><span class="p">,</span> <span class="n">xz_angle</span><span class="o">=</span><span class="n">xz_angle</span><span class="p">,</span> <span class="n">prominence</span><span class="o">=</span><span class="n">prominence</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> 
                                                     <span class="n">style</span><span class="o">=</span><span class="s1">&#39;simple&#39;</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="p">,</span> <span class="n">std_range</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step 1: Height = 3.91e-05, Width = 1.69e-07, Miscut = 89.753°
+Step 2: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 3: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 4: Height = 3.91e-05, Width = 9.85e-08, Miscut = 89.856°
+Step 5: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 6: Height = 3.91e-05, Width = 1.13e-07, Miscut = 89.835°
+Step 7: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 8: Height = 3.91e-05, Width = 8.44e-08, Miscut = 89.876°
+Step 9: Height = 3.91e-05, Width = 1.13e-07, Miscut = 89.835°
+Step 10: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 11: Height = 3.91e-05, Width = 1.27e-07, Miscut = 89.814°
+Step 12: Height = 3.91e-05, Width = 1.69e-07, Miscut = 89.753°
+Step 13: Height = 3.91e-05, Width = 1.69e-07, Miscut = 89.753°
+Step 14: Height = 3.91e-05, Width = 1.27e-07, Miscut = 89.814°
+Step 15: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 16: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 17: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 18: Height = 3.91e-05, Width = 5.63e-08, Miscut = 89.918°
+Step 19: Height = 3.91e-05, Width = 1.13e-07, Miscut = 89.835°
+Results:
+  Average step height = 3.91e-05, Standard deviation = 6.78e-21
+  Average step width = 9.40e-08, Standard deviation = 4.16e-08
+  Average miscut = 89.862°, Standard deviation = 0.061°
+Step height = 3.91e-10 +- 5.17e-26
+Step width = 8.07e-08 +- 4.39e-08
+Miscut = 0.330° +- 0.113°
 </pre></div>
 </div>
 </div>
@@ -721,6 +862,36 @@ Miscut = 0.131° +- 0.074°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step 1: Height = -4.61e-11, Width = 1.69e-07, Miscut = -0.016°
+Step 2: Height = -1.44e-11, Width = 5.63e-08, Miscut = -0.015°
+Step 3: Height = -2.18e-11, Width = 5.63e-08, Miscut = -0.022°
+Step 4: Height = -3.33e-11, Width = 9.85e-08, Miscut = -0.019°
+Step 5: Height = -6.26e-12, Width = 5.63e-08, Miscut = -0.006°
+Step 6: Height = -2.23e-11, Width = 1.13e-07, Miscut = -0.011°
+Step 7: Height = 1.97e-11, Width = 5.63e-08, Miscut = 0.020°
+Step 8: Height = 3.62e-11, Width = 8.44e-08, Miscut = 0.025°
+Step 9: Height = 1.46e-11, Width = 1.13e-07, Miscut = 0.007°
+Step 10: Height = 5.60e-11, Width = 5.63e-08, Miscut = 0.057°
+Step 11: Height = 1.11e-11, Width = 1.27e-07, Miscut = 0.005°
+Step 12: Height = 1.05e-10, Width = 1.69e-07, Miscut = 0.036°
+Step 13: Height = 6.57e-11, Width = 1.69e-07, Miscut = 0.022°
+Step 14: Height = -1.67e-10, Width = 1.27e-07, Miscut = -0.076°
+Step 15: Height = -4.48e-12, Width = 5.63e-08, Miscut = -0.005°
+Step 16: Height = -1.28e-12, Width = 5.63e-08, Miscut = -0.001°
+Step 17: Height = -1.74e-11, Width = 5.63e-08, Miscut = -0.018°
+Step 18: Height = -2.77e-11, Width = 5.63e-08, Miscut = -0.028°
+Step 19: Height = 3.06e-12, Width = 1.13e-07, Miscut = 0.002°
+Results:
+  Average step height = -2.65e-12, Standard deviation = 5.32e-11
+  Average step width = 9.40e-08, Standard deviation = 4.16e-08
+  Average miscut = -0.002°, Standard deviation = 0.027°
+Step height = 3.53e-13 +- 3.97e-11
+Step width = 8.05e-08 +- 5.22e-08
+Miscut = 0.008° +- 0.031°
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -729,11 +900,66 @@ Miscut = 0.131° +- 0.074°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>step 1: step_width: 4.33e-11, left_peak: (5.35e-07, -7.14e-11), valley: (5.49e-07, -9.73e-11), right_peak: (5.91e-07, -4.48e-11)
+step 2: step_width: 3.45e-11, left_peak: (6.75e-07, 7.57e-12), valley: (6.89e-07, -8.11e-12), right_peak: (7.46e-07, 6.73e-11)
+step 3: step_width: 1.00e-10, left_peak: (7.46e-07, 6.73e-11), valley: (7.74e-07, 1.30e-11), right_peak: (7.88e-07, 3.60e-11)
+step 4: step_width: 6.81e-11, left_peak: (7.88e-07, 3.60e-11), valley: (8.16e-07, -4.68e-12), right_peak: (8.44e-07, 2.27e-11)
+step 5: step_width: 7.35e-11, left_peak: (8.44e-07, 2.27e-11), valley: (8.72e-07, -1.13e-11), right_peak: (9.14e-07, 4.78e-11)
+step 6: step_width: 4.25e-11, left_peak: (9.14e-07, 4.78e-11), valley: (9.29e-07, 2.03e-11), right_peak: (9.71e-07, 6.54e-11)
+step 7: step_width: 6.54e-11, left_peak: (9.71e-07, 6.54e-11), valley: (9.99e-07, 1.68e-11), right_peak: (1.03e-06, 3.35e-11)
+step 10: step_width: 1.13e-10, left_peak: (1.17e-06, -4.47e-12), valley: (1.21e-06, -4.84e-11), right_peak: (1.24e-06, -2.20e-12)
+step 11: step_width: 1.05e-10, left_peak: (1.24e-06, -2.20e-12), valley: (1.27e-06, -6.07e-11), right_peak: (1.29e-06, -1.44e-11)
+step 12: step_width: 7.03e-11, left_peak: (1.29e-06, -1.44e-11), valley: (1.32e-06, -4.34e-11), right_peak: (1.36e-06, 1.86e-11)
+step 13: step_width: 6.72e-11, left_peak: (1.36e-06, 1.86e-11), valley: (1.39e-06, -1.50e-11), right_peak: (1.44e-06, 3.55e-11)
+step 14: step_width: 6.50e-11, left_peak: (1.44e-06, 3.55e-11), valley: (1.45e-06, -1.48e-11), right_peak: (1.49e-06, 2.91e-11)
+step 15: step_width: 4.30e-11, left_peak: (1.49e-06, 2.91e-11), valley: (1.51e-06, 7.15e-12), right_peak: (1.53e-06, 4.92e-11)
+step 16: step_width: 7.76e-11, left_peak: (1.53e-06, 4.92e-11), valley: (1.58e-06, -1.30e-11), right_peak: (1.60e-06, -2.78e-12)
+step 17: step_width: 2.38e-11, left_peak: (1.60e-06, -2.78e-12), valley: (1.62e-06, -1.16e-11), right_peak: (1.66e-06, 3.35e-11)
+step 18: step_width: 8.43e-11, left_peak: (1.66e-06, 3.35e-11), valley: (1.69e-06, -4.80e-12), right_peak: (1.73e-06, 6.42e-11)
+step 19: step_width: 5.16e-11, left_peak: (1.73e-06, 6.42e-11), valley: (1.76e-06, 4.10e-11), right_peak: (1.79e-06, 6.94e-11)
+step 20: step_width: 5.74e-11, left_peak: (1.79e-06, 6.94e-11), valley: (1.81e-06, 4.28e-11), right_peak: (1.84e-06, 7.36e-11)
+step 21: step_width: 1.08e-10, left_peak: (1.84e-06, 7.36e-11), valley: (1.89e-06, 1.93e-11), right_peak: (1.91e-06, 5.54e-11)
+step 22: step_width: 7.02e-11, left_peak: (1.94e-06, 6.42e-11), valley: (2.00e-06, 3.07e-11), right_peak: (2.03e-06, 4.91e-11)
+step 23: step_width: 7.65e-11, left_peak: (2.03e-06, 4.91e-11), valley: (2.05e-06, 2.29e-11), right_peak: (2.07e-06, 4.80e-11)
+step 24: step_width: 6.56e-11, left_peak: (2.07e-06, 4.80e-11), valley: (2.11e-06, 1.31e-11), right_peak: (2.14e-06, 3.36e-11)
+step 25: step_width: 7.12e-11, left_peak: (2.14e-06, 3.36e-11), valley: (2.17e-06, 1.70e-11), right_peak: (2.19e-06, 7.16e-11)
+step 26: step_width: 1.53e-10, left_peak: (2.19e-06, 7.16e-11), valley: (2.24e-06, 1.91e-11), right_peak: (2.25e-06, 5.26e-11)
+step 27: step_width: 8.46e-11, left_peak: (2.25e-06, 5.26e-11), valley: (2.28e-06, -1.28e-11), right_peak: (2.31e-06, 6.36e-12)
+step 28: step_width: 1.33e-10, left_peak: (2.35e-06, -3.54e-11), valley: (2.42e-06, -8.75e-11), right_peak: (2.45e-06, -5.49e-11)
+step 29: step_width: 8.35e-11, left_peak: (2.45e-06, -5.49e-11), valley: (2.48e-06, -1.07e-10), right_peak: (2.50e-06, -7.59e-11)
+step 30: step_width: 7.23e-11, left_peak: (2.50e-06, -7.59e-11), valley: (2.53e-06, -1.03e-10), right_peak: (2.56e-06, -5.79e-11)
+step 31: step_width: 8.29e-11, left_peak: (2.56e-06, -5.79e-11), valley: (2.60e-06, -7.78e-11), right_peak: (2.65e-06, -1.48e-11)
+step 32: step_width: 2.00e-10, left_peak: (2.65e-06, -1.48e-11), valley: (2.72e-06, -7.31e-11), right_peak: (2.76e-06, 1.16e-11)
+step 33: step_width: 8.06e-11, left_peak: (2.76e-06, 1.16e-11), valley: (2.79e-06, -4.12e-11), right_peak: (2.83e-06, 3.85e-13)
+step 34: step_width: 6.10e-11, left_peak: (2.83e-06, 3.85e-13), valley: (2.84e-06, -3.85e-11), right_peak: (2.88e-06, 2.77e-11)
+step 35: step_width: 9.80e-11, left_peak: (2.88e-06, 2.77e-11), valley: (2.91e-06, -3.05e-12), right_peak: (2.94e-06, 6.43e-11)
+step 36: step_width: 7.45e-11, left_peak: (2.94e-06, 6.43e-11), valley: (2.97e-06, 3.25e-11), right_peak: (3.00e-06, 7.53e-11)
+step 37: step_width: 1.10e-10, left_peak: (3.00e-06, 7.53e-11), valley: (3.04e-06, 4.39e-11), right_peak: (3.08e-06, 1.23e-10)
+step 38: step_width: 6.71e-11, left_peak: (3.08e-06, 1.23e-10), valley: (3.10e-06, 7.49e-11), right_peak: (3.12e-06, 1.13e-10)
+step 39: step_width: 1.10e-10, left_peak: (3.12e-06, 1.13e-10), valley: (3.15e-06, 5.41e-11), right_peak: (3.18e-06, 1.05e-10)
+step 40: step_width: 1.91e-10, left_peak: (3.18e-06, 1.05e-10), valley: (3.26e-06, -1.77e-11), right_peak: (3.29e-06, 5.28e-12)
+step 41: step_width: 4.12e-11, left_peak: (3.29e-06, 5.28e-12), valley: (3.31e-06, -1.66e-11), right_peak: (3.35e-06, 4.16e-11)
+step 42: step_width: 7.53e-11, left_peak: (3.35e-06, 4.16e-11), valley: (3.38e-06, 6.47e-12), right_peak: (3.42e-06, 6.67e-11)
+Results:
+  Average step height = 3.91e-10, Standard deviation = 0.00e+00
+  Average step width = 8.24e-11, Standard deviation = 3.67e-11
+  Average miscut = 78.209°, Standard deviation = 4.957°
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># with the provided height from literature</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_substrate_properties</span><span class="p">(</span><span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span><span class="p">,</span> <span class="n">xz_angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">prominence</span><span class="o">=</span><span class="mf">1e-13</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;fit&#39;</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="p">,</span> <span class="n">std_range</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step height = 3.91e-10 +- 0.00e+00
+Step width = 8.55e-11 +- 4.62e-11
+Miscut = 77.852° +- 5.976°
 </pre></div>
 </div>
 </div>
@@ -760,6 +986,13 @@ Miscut = 0.330° +- 0.113°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/untreated_162nm-substrate.png
+../Figures/2.AFM_XRD/untreated_162nm-substrate.svg
+</pre></div>
+</div>
+<img alt="../_images/49446750c6f98b16dd267ec850627af13e64493bea56de5c69b993c7543a0a87.png" src="../_images/49446750c6f98b16dd267ec850627af13e64493bea56de5c69b993c7543a0a87.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -770,6 +1003,13 @@ Miscut = 0.330° +- 0.113°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/untreated_162nm-film.png
+../Figures/2.AFM_XRD/untreated_162nm-film.svg
+</pre></div>
+</div>
+<img alt="../_images/4407854bb7c93b86c8b3d8e5b6668d5e1f0a2b70265cc279a9b05437d3cf1ad0.png" src="../_images/4407854bb7c93b86c8b3d8e5b6668d5e1f0a2b70265cc279a9b05437d3cf1ad0.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -779,6 +1019,13 @@ Miscut = 0.330° +- 0.113°
                     <span class="n">scalebar_dict</span><span class="o">=</span><span class="n">scalebar_dict</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;untreated_162nm-film-high_res&#39;</span><span class="p">,</span> <span class="n">printing</span><span class="o">=</span><span class="n">printing</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/untreated_162nm-film-high_res.png
+../Figures/2.AFM_XRD/untreated_162nm-film-high_res.svg
+</pre></div>
+</div>
+<img alt="../_images/8e013ad029f532a2677b41ef95ba40d11accf2ae9a0c75efeac8717ec2d9bc91.png" src="../_images/8e013ad029f532a2677b41ef95ba40d11accf2ae9a0c75efeac8717ec2d9bc91.png" />
 </div>
 </div>
 </section>
@@ -793,6 +1040,9 @@ Miscut = 0.330° +- 0.113°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/e4dd75f78a08916031b1ee0f318148fc79b480ff68411919df050d8b16c06bf5.png" src="../_images/e4dd75f78a08916031b1ee0f318148fc79b480ff68411919df050d8b16c06bf5.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -802,6 +1052,9 @@ Miscut = 0.330° +- 0.113°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/9d99a103b71180ec31084966086ce0580c59ed5a8c6263e8371a3b50ae4394fa.png" src="../_images/9d99a103b71180ec31084966086ce0580c59ed5a8c6263e8371a3b50ae4394fa.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -809,12 +1062,38 @@ Miscut = 0.330° +- 0.113°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># with the provided height from literature</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_simple</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">peak_indices</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_substrate_properties</span><span class="p">(</span><span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span><span class="p">,</span> <span class="n">xz_angle</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">prominence</span><span class="o">=</span><span class="mf">1e-13</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;simple&#39;</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">std_range</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step 1: Height = 1.95e-10, Width = 9.41e-08, Miscut = 0.119°
+Step 2: Height = 1.95e-10, Width = 9.42e-08, Miscut = 0.119°
+Step 3: Height = 1.95e-10, Width = 2.48e-07, Miscut = 0.045°
+Step 4: Height = 1.95e-10, Width = 1.30e-07, Miscut = 0.086°
+Step 5: Height = 1.95e-10, Width = 1.03e-07, Miscut = 0.109°
+Step 6: Height = 1.95e-10, Width = 1.40e-07, Miscut = 0.080°
+Step 7: Height = 1.95e-10, Width = 1.09e-07, Miscut = 0.103°
+Step 8: Height = 1.95e-10, Width = 1.50e-07, Miscut = 0.075°
+Step 9: Height = 1.95e-10, Width = 1.44e-07, Miscut = 0.078°
+Step 10: Height = 1.95e-10, Width = 1.47e-07, Miscut = 0.076°
+Step 11: Height = 1.95e-10, Width = 1.51e-07, Miscut = 0.074°
+Step 12: Height = 1.95e-10, Width = 1.64e-07, Miscut = 0.068°
+Step 13: Height = 1.95e-10, Width = 1.29e-07, Miscut = 0.087°
+Results:
+  Average step height = 1.95e-10, Standard deviation = 0.00e+00
+  Average step width = 1.39e-07, Standard deviation = 3.84e-08
+  Average miscut = 0.086°, Standard deviation = 0.020°
+Step height = 1.95e-10 +- 0.00e+00
+Step width = 1.62e-07 +- 8.27e-08
+Miscut = 0.090° +- 0.135°
 </pre></div>
 </div>
 </div>
@@ -827,11 +1106,64 @@ Miscut = 0.330° +- 0.113°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step 1: Height = 1.17e-10, Width = 9.41e-08, Miscut = 0.071°
+Step 2: Height = -7.96e-11, Width = 9.42e-08, Miscut = -0.048°
+Step 3: Height = 3.26e-11, Width = 2.48e-07, Miscut = 0.008°
+Step 4: Height = -1.59e-10, Width = 1.30e-07, Miscut = -0.070°
+Step 5: Height = 3.95e-10, Width = 1.03e-07, Miscut = 0.221°
+Step 6: Height = -2.97e-10, Width = 1.40e-07, Miscut = -0.121°
+Step 7: Height = 1.14e-10, Width = 1.09e-07, Miscut = 0.060°
+Step 8: Height = 1.53e-10, Width = 1.50e-07, Miscut = 0.058°
+Step 9: Height = -3.56e-10, Width = 1.44e-07, Miscut = -0.141°
+Step 10: Height = -1.48e-12, Width = 1.47e-07, Miscut = -0.001°
+Step 11: Height = -4.59e-11, Width = 1.51e-07, Miscut = -0.017°
+Step 12: Height = -3.21e-11, Width = 1.64e-07, Miscut = -0.011°
+Step 13: Height = 3.85e-11, Width = 1.29e-07, Miscut = 0.017°
+Results:
+  Average step height = -9.24e-12, Standard deviation = 1.88e-10
+  Average step width = 1.39e-07, Standard deviation = 3.84e-08
+  Average miscut = 0.002°, Standard deviation = 0.089°
+Step height = 2.92e-12 +- 1.98e-10
+Step width = 1.62e-07 +- 8.27e-08
+Miscut = 0.020° +- 0.260°
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">peak_indices</span><span class="p">,</span> <span class="n">valley_indices</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">slice_rotate</span><span class="p">(</span><span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span><span class="p">,</span> <span class="n">j</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">prominence</span><span class="o">=</span><span class="mf">1e-10</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">xz_angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">peak_indices</span><span class="p">,</span> <span class="n">valley_indices</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>step 0: step_width: 2.91e-09, left_peak: (1.62e-07, 1.37e-10), valley: (2.79e-07, -7.53e-11), right_peak: (2.94e-07, 2.61e-10)
+step 1: step_width: 6.61e-10, left_peak: (2.94e-07, 2.61e-10), valley: (3.53e-07, -1.69e-10), right_peak: (4.70e-07, 2.93e-10)
+step 2: step_width: 7.06e-10, left_peak: (4.70e-07, 2.93e-10), valley: (5.44e-07, -1.95e-10), right_peak: (5.88e-07, -6.45e-11)
+step 3: step_width: 3.13e-10, left_peak: (5.88e-07, -6.45e-11), valley: (6.17e-07, -1.77e-10), right_peak: (6.47e-07, 2.45e-11)
+step 4: step_width: 2.24e-10, left_peak: (6.47e-07, 2.45e-11), valley: (6.61e-07, -1.39e-10), right_peak: (7.20e-07, 1.04e-10)
+step 5: step_width: 4.08e-10, left_peak: (7.20e-07, 1.04e-10), valley: (7.79e-07, -6.47e-11), right_peak: (8.23e-07, 1.15e-10)
+step 6: step_width: 3.86e-10, left_peak: (8.23e-07, 1.15e-10), valley: (8.52e-07, -1.05e-10), right_peak: (9.26e-07, 3.10e-10)
+step 7: step_width: 2.25e-09, left_peak: (9.26e-07, 3.10e-10), valley: (1.01e-06, -5.36e-10), right_peak: (1.04e-06, -6.95e-11)
+step 8: step_width: 2.22e-10, left_peak: (1.04e-06, -6.95e-11), valley: (1.09e-06, -1.74e-10), right_peak: (1.13e-06, -5.75e-11)
+step 11: step_width: 6.30e-09, left_peak: (1.32e-06, 1.54e-10), valley: (1.50e-06, -1.42e-10), right_peak: (1.51e-06, 3.58e-10)
+step 12: step_width: 8.73e-10, left_peak: (1.51e-06, 3.58e-10), valley: (1.56e-06, -2.73e-11), right_peak: (1.59e-06, 2.98e-10)
+step 13: step_width: 9.07e-10, left_peak: (1.59e-06, 2.98e-10), valley: (1.69e-06, -3.23e-10), right_peak: (1.84e-06, 8.45e-11)
+step 14: step_width: 4.62e-10, left_peak: (1.84e-06, 8.45e-11), valley: (1.94e-06, -1.68e-10), right_peak: (2.04e-06, 4.15e-11)
+step 15: step_width: 1.42e-09, left_peak: (2.04e-06, 4.15e-11), valley: (2.16e-06, -3.13e-10), right_peak: (2.20e-06, 8.66e-11)
+step 16: step_width: 5.52e-09, left_peak: (2.20e-06, 8.66e-11), valley: (2.40e-06, -3.71e-10), right_peak: (2.41e-06, 1.87e-11)
+step 17: step_width: 4.86e-10, left_peak: (2.41e-06, 1.87e-11), valley: (2.45e-06, -2.14e-10), right_peak: (2.54e-06, 2.92e-10)
+step 18: step_width: 1.52e-09, left_peak: (2.54e-06, 2.92e-10), valley: (2.63e-06, -3.69e-11), right_peak: (2.66e-06, 3.61e-10)
+step 19: step_width: 1.19e-09, left_peak: (2.66e-06, 3.61e-10), valley: (2.76e-06, -2.50e-10), right_peak: (2.84e-06, 1.63e-10)
+step 20: step_width: 1.03e-09, left_peak: (2.84e-06, 1.63e-10), valley: (2.94e-06, -1.20e-10), right_peak: (2.97e-06, 9.47e-11)
+step 21: step_width: 3.41e-10, left_peak: (2.97e-06, 9.47e-11), valley: (3.03e-06, -8.17e-11), right_peak: (3.07e-06, 4.20e-11)
+step 22: step_width: 4.06e-10, left_peak: (3.07e-06, 4.20e-11), valley: (3.10e-06, -1.61e-10), right_peak: (3.16e-06, 2.45e-10)
+Results:
+  Average step height = 1.95e-10, Standard deviation = 0.00e+00
+  Average step width = 1.36e-09, Standard deviation = 1.62e-09
+  Average miscut = 17.713°, Standard deviation = 11.870°
 </pre></div>
 </div>
 </div>
@@ -841,6 +1173,13 @@ Miscut = 0.330° +- 0.113°
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># with the provided height from literature</span>
 <span class="n">step_heights</span><span class="p">,</span> <span class="n">step_widths</span><span class="p">,</span> <span class="n">miscut</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">calculate_substrate_properties</span><span class="p">(</span><span class="n">img_rot</span><span class="p">,</span> <span class="n">size_rot</span><span class="p">,</span> <span class="n">xz_angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">prominence</span><span class="o">=</span><span class="mf">1e-10</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
 <span class="n">style</span><span class="o">=</span><span class="s1">&#39;fit&#39;</span><span class="p">,</span> <span class="n">fixed_height</span><span class="o">=</span><span class="mf">3.91e-10</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">std_range</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">demo</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Step height = 1.95e-10 +- 2.58e-26
+Step width = 8.41e-10 +- 5.97e-10
+Miscut = 18.522° +- 10.322°
 </pre></div>
 </div>
 </div>
@@ -870,6 +1209,9 @@ Miscut = 0.090° +- 0.135°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/59018f3593a41084994f2aaf16ab1d465a9a12c1ac55923e98007844dd6672cc.png" src="../_images/59018f3593a41084994f2aaf16ab1d465a9a12c1ac55923e98007844dd6672cc.png" />
+</div>
 </div>
 </section>
 <section id="symmetric-reciprocal-space-mapping-002">
@@ -890,6 +1232,12 @@ Miscut = 0.090° +- 0.135°
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/b8b65ac1a758ef6187cdcc9ba6ee4151954575cd7bf68c04ed003fa6ec499068.png" src="../_images/b8b65ac1a758ef6187cdcc9ba6ee4151954575cd7bf68c04ed003fa6ec499068.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> reciprocal space mapping in (002) for sample a: treated_213nm, b: treated_81nm, c: untreated_162nm.
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="symmetric-reciprocal-space-mapping-103">
@@ -907,6 +1255,12 @@ Miscut = 0.090° +- 0.135°
     <span class="n">labelfigs</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;tr&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\033</span><span class="s1">[1mFig.</span><span class="se">\033</span><span class="s1">[0m reciprocal space mapping in (103) for sample a: treated_213nm, b: treated_81nm, c: untreated_162nm.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/3c030322148b05e1162b1c6db3b9c3029aa038d48d17900cb649a1482829d775.png" src="../_images/3c030322148b05e1162b1c6db3b9c3029aa038d48d17900cb649a1482829d775.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> reciprocal space mapping in (103) for sample a: treated_213nm, b: treated_81nm, c: untreated_162nm.
 </pre></div>
 </div>
 </div>
@@ -948,6 +1302,17 @@ Miscut = 0.090° +- 0.135°
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="se">\033</span><span class="s1">[1mFig. S2 a</span><span class="se">\033</span><span class="s1">[0m X-ray Diffraction result for a typical SrTiO3 substrate and samples. </span><span class="se">\</span>
 <span class="se">\033</span><span class="s1">[1mb, c, d</span><span class="se">\033</span><span class="s1">[0m Reciprocal Space Mapping results in (002) orientaion for sample treated_213nm, treated_81nm and untreated_162nm, respectively. </span><span class="se">\</span>
 <span class="se">\033</span><span class="s1">[1me, f, g</span><span class="se">\033</span><span class="s1">[0m Reciprocal Space Mapping results in (103) orientaion for sample treated_213nm, treated_81nm and untreated_162nm, respectively.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/2.AFM_XRD/S2-XRD_RSM.png
+../Figures/2.AFM_XRD/S2-XRD_RSM.svg
+../Figures/2.AFM_XRD/S2-XRD_RSM.tif
+</pre></div>
+</div>
+<img alt="../_images/3e6458b83243f6fe68b93ae91ea1c4bbcceae308d9c3c92efa025b179e17e3a4.png" src="../_images/3e6458b83243f6fe68b93ae91ea1c4bbcceae308d9c3c92efa025b179e17e3a4.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig. S2 a</span> X-ray Diffraction result for a typical SrTiO3 substrate and samples. <span class=" -Color -Color-Bold">b, c, d</span> Reciprocal Space Mapping results in (002) orientaion for sample treated_213nm, treated_81nm and untreated_162nm, respectively. <span class=" -Color -Color-Bold">e, f, g</span> Reciprocal Space Mapping results in (103) orientaion for sample treated_213nm, treated_81nm and untreated_162nm, respectively.
 </pre></div>
 </div>
 </div>

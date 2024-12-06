@@ -1,17 +1,20 @@
 Traceback (most recent call last):
-  File "/home/runner/.local/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+  File "/home/runner/.local/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
     executenb(
-  File "/home/runner/.local/lib/python3.10/site-packages/nbclient/client.py", line 1314, in execute
+  File "/home/runner/.local/lib/python3.12/site-packages/nbclient/client.py", line 1314, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-  File "/home/runner/.local/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
     return loop.run_until_complete(inner)
-  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
     return future.result()
-  File "/home/runner/.local/lib/python3.10/site-packages/nbclient/client.py", line 709, in async_execute
+           ^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
     await self.async_execute_cell(
-  File "/home/runner/.local/lib/python3.10/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+  File "/home/runner/.local/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "/home/runner/.local/lib/python3.10/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+  File "/home/runner/.local/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
@@ -31,7 +34,7 @@ from sto_rheed.Viz import Viz
 from sto_rheed.Fit import RHEED_image_processer, Gaussian, NormalizeData
 
 printing_image = printer(basepath = '../Figures/1.Fit_RHEED_spot/')
-printing_plot = printer(basepath = '../Figures/1.Fit_RHEED_spot/', fileformats=['png', 'svg'], dpi=300)
+printing_plot = printer(basepath = '../Figures/1.Fit_RHEED_spot/', fileformats=['png', 'svg', 'tif'], dpi=300)
 
 set_style("printing")
 ------------------
