@@ -24,8 +24,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }}
 
       - name: Install System Dependencies
         run: |
@@ -34,18 +32,20 @@ jobs:
                                   liblcms2-dev libwebp-dev libtiff-dev \
                                   libopenjp2-7 libavif-dev libgeos-dev
 
-      - name: Install Conda
+      - name: Install and Configure Conda
         run: |
           wget -qO- https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > miniconda.sh
           bash miniconda.sh -b -p $HOME/miniconda
-          export PATH="$HOME/miniconda/bin:$PATH"
+          echo ". $HOME/miniconda/etc/profile.d/conda.sh" >> ~/.bashrc
+          echo "export PATH=\"$HOME/miniconda/bin:\$PATH\"" >> ~/.bashrc
+          source ~/.bashrc
           conda init bash
 
       - name: Create and Activate Conda Environment
         shell: bash -l {0}
         run: |
-          source $HOME/.bashrc
-          conda init bash
+          source ~/.bashrc
+          conda activate
           conda create -n book python=3.11 -y
           conda activate book
           conda install -c conda-forge mayavi -y
@@ -53,19 +53,17 @@ jobs:
       - name: Install Dependencies
         shell: bash -l {0}
         run: |
-          source $HOME/.bashrc
-          conda init bash
+          source ~/.bashrc
           conda activate book
           pip install -r requirements.txt
 
       - name: Build the book
         shell: bash -l {0}
         run: |
-          source $HOME/.bashrc
-          conda init bash
+          source ~/.bashrc
           conda activate book
           rm -rf ./book/_build
-          jupyter-book build ./book --config baseurl="${{ github.event.repository.name }}"
+          jupyter-book build ./book
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
