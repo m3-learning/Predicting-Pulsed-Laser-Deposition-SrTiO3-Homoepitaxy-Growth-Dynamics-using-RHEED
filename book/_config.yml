@@ -1,5 +1,7 @@
 # Book title
 title: "The Predicting Pulsed-Laser Deposition SrTiO3 Homoepitaxy Growth Dynamics using High-Speed Reflection High-Energy Electron Diffraction"
+copyright: "2025" # Copyright year to be placed in the footer
+logo: ./_static/Drexel_blue_Logo_square_Light.png # A path to the book logo for light mode
 
 authors:
   - name: "Yichen Guo"
@@ -11,6 +13,11 @@ authors:
   - name: "Lane W. Martin"
   - name: "Joshua C. Agar"
 
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: cache
+  timeout: 600
 
 # Book language
 language: "en"
@@ -18,9 +25,18 @@ language: "en"
 # Launch buttons (optional)
 launch_buttons:
   colab_url: "https://colab.research.google.com/"
-  binderhub_url: "https://mybinder.org"
-  notebook_interface: "classic"
-  github_url: "https://github.com/M3-Learning-Experiments/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED.git"
+  github_url: "https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED"
 
 repository:
-  url: "https://github.com/M3-Learning-Experiments/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED.git"
+  url: "https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED"
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+  static_path:
+    - _static
+  css:
+    - theme.css
+  logo:
