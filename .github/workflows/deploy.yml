@@ -27,10 +27,15 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
 
-      - name: Install Conda
+      - name: Install System Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget
+          sudo apt-get install -y wget libjpeg-dev zlib1g-dev libfreetype6-dev \
+                                  liblcms2-dev libwebp-dev libtiff-dev \
+                                  libopenjp2-7 libavif-dev libgeos-dev
+
+      - name: Install Conda
+        run: |
           wget -qO- https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > miniconda.sh
           bash miniconda.sh -b -p $HOME/miniconda
           export PATH="$HOME/miniconda/bin:$PATH"
