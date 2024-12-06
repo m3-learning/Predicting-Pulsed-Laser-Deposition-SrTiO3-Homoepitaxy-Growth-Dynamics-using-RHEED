@@ -60,7 +60,7 @@ jobs:
           conda init bash
           conda activate book
           rm -rf ./book/_build
-          jupyter-book build ./book
+          jupyter-book build ./book --config baseurl="${{ github.event.repository.name }}"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
