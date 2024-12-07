@@ -59,7 +59,7 @@ jobs:
           eval "$($HOME/miniconda/bin/conda shell.bash hook)"
           conda activate book
           rm -rf ./book/_build
-          jupyter-book build ./book --exclude-execute  # Skip execution temporarily
+          jupyter-book build ./book
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
