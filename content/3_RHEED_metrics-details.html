@@ -445,10 +445,10 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="kn">from</span> <span class="nn">util.file_IO</span> <span class="kn">import</span> <span class="n">download_and_unzip</span>
-<span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
-<span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
-<span class="kn">from</span> <span class="nn">viz.layout</span> <span class="kn">import</span> <span class="n">layout_fig</span><span class="p">,</span> <span class="n">labelfigs</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.layout</span> <span class="kn">import</span> <span class="n">layout_fig</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.text</span> <span class="kn">import</span> <span class="n">labelfigs</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Dataset</span> <span class="kn">import</span> <span class="n">RHEED_spot_Dataset</span><span class="p">,</span> <span class="n">RHEED_parameter_dataset</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Viz</span> <span class="kn">import</span> <span class="n">Viz</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Fit</span> <span class="kn">import</span> <span class="n">RHEED_image_processer</span><span class="p">,</span> <span class="n">Gaussian</span><span class="p">,</span> <span class="n">NormalizeData</span>
@@ -461,16 +461,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span> <span class="nn">util.file_IO</span> <span class="kn">import</span> <span class="n">download_and_unzip</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;util&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>printing set for seaborn
 </pre></div>
 </div>
 </div>
@@ -525,20 +516,52 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Growth: background_with_heater, Size of data: f(2251, 300, 300)
-Growth: background_without_heater, Size of data: f(2942, 300, 300)
-Growth: growth_1, Size of data: f(13189, 300, 300)
-Growth: growth_10, Size of data: f(12336, 300, 300)
-Growth: growth_11, Size of data: f(12799, 300, 300)
-Growth: growth_12, Size of data: f(12563, 300, 300)
-Growth: growth_2, Size of data: f(12858, 300, 300)
-Growth: growth_3, Size of data: f(11392, 300, 300)
-Growth: growth_4, Size of data: f(13067, 300, 300)
-Growth: growth_5, Size of data: f(12619, 300, 300)
-Growth: growth_6, Size of data: f(12610, 300, 300)
-Growth: growth_7, Size of data: f(12431, 300, 300)
-Growth: growth_8, Size of data: f(12553, 300, 300)
-Growth: growth_9, Size of data: f(12568, 300, 300)
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/STO_STO_test6_06292022-standard.h5&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">D1_spot</span> <span class="o">=</span> <span class="n">RHEED_spot_Dataset</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">sample_name</span><span class="o">=</span><span class="s1">&#39;treated_213nm&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">D1_spot</span><span class="o">.</span><span class="n">data_info</span>
+
+<span class="nn">File ~/work/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED/src/sto_rheed/Dataset.py:166,</span> in <span class="ni">RHEED_spot_Dataset.data_info</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">160</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">161</span><span class="sd"> Prints information about the dataset.</span>
+<span class="g g-Whitespace">    </span><span class="mi">162</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">163</span><span class="sd"> This method reads the dataset file and prints the growth names along with the size of their data arrays.</span>
+<span class="g g-Whitespace">    </span><span class="mi">164</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">165</span> <span class="o">...</span>
+<span class="ne">--&gt; </span><span class="mi">166</span> <span class="k">with</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">h5</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">167</span>     <span class="k">for</span> <span class="n">g</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">h5</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="g g-Whitespace">    </span><span class="mi">168</span>         <span class="k">try</span><span class="p">:</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/h5py/_hl/files.py:561,</span> in <span class="ni">File.__init__</span><span class="nt">(self, name, mode, driver, libver, userblock_size, swmr, rdcc_nslots, rdcc_nbytes, rdcc_w0, track_order, fs_strategy, fs_persist, fs_threshold, fs_page_size, page_buf_size, min_meta_keep, min_raw_keep, locking, alignment_threshold, alignment_interval, meta_block_size, **kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">552</span>     <span class="n">fapl</span> <span class="o">=</span> <span class="n">make_fapl</span><span class="p">(</span><span class="n">driver</span><span class="p">,</span> <span class="n">libver</span><span class="p">,</span> <span class="n">rdcc_nslots</span><span class="p">,</span> <span class="n">rdcc_nbytes</span><span class="p">,</span> <span class="n">rdcc_w0</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">553</span>                      <span class="n">locking</span><span class="p">,</span> <span class="n">page_buf_size</span><span class="p">,</span> <span class="n">min_meta_keep</span><span class="p">,</span> <span class="n">min_raw_keep</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">554</span>                      <span class="n">alignment_threshold</span><span class="o">=</span><span class="n">alignment_threshold</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">555</span>                      <span class="n">alignment_interval</span><span class="o">=</span><span class="n">alignment_interval</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">556</span>                      <span class="n">meta_block_size</span><span class="o">=</span><span class="n">meta_block_size</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">557</span>                      <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">558</span>     <span class="n">fcpl</span> <span class="o">=</span> <span class="n">make_fcpl</span><span class="p">(</span><span class="n">track_order</span><span class="o">=</span><span class="n">track_order</span><span class="p">,</span> <span class="n">fs_strategy</span><span class="o">=</span><span class="n">fs_strategy</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">559</span>                      <span class="n">fs_persist</span><span class="o">=</span><span class="n">fs_persist</span><span class="p">,</span> <span class="n">fs_threshold</span><span class="o">=</span><span class="n">fs_threshold</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">560</span>                      <span class="n">fs_page_size</span><span class="o">=</span><span class="n">fs_page_size</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">561</span>     <span class="n">fid</span> <span class="o">=</span> <span class="n">make_fid</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">userblock_size</span><span class="p">,</span> <span class="n">fapl</span><span class="p">,</span> <span class="n">fcpl</span><span class="p">,</span> <span class="n">swmr</span><span class="o">=</span><span class="n">swmr</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">563</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">libver</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">564</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_libver</span> <span class="o">=</span> <span class="n">libver</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/h5py/_hl/files.py:235,</span> in <span class="ni">make_fid</span><span class="nt">(name, mode, userblock_size, fapl, fcpl, swmr)</span>
+<span class="g g-Whitespace">    </span><span class="mi">233</span>     <span class="k">if</span> <span class="n">swmr</span> <span class="ow">and</span> <span class="n">swmr_support</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">234</span>         <span class="n">flags</span> <span class="o">|=</span> <span class="n">h5f</span><span class="o">.</span><span class="n">ACC_SWMR_READ</span>
+<span class="ne">--&gt; </span><span class="mi">235</span>     <span class="n">fid</span> <span class="o">=</span> <span class="n">h5f</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">flags</span><span class="p">,</span> <span class="n">fapl</span><span class="o">=</span><span class="n">fapl</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">236</span> <span class="k">elif</span> <span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;r+&#39;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">237</span>     <span class="n">fid</span> <span class="o">=</span> <span class="n">h5f</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">h5f</span><span class="o">.</span><span class="n">ACC_RDWR</span><span class="p">,</span> <span class="n">fapl</span><span class="o">=</span><span class="n">fapl</span><span class="p">)</span>
+
+<span class="nn">File h5py/_objects.pyx:54,</span> in <span class="ni">h5py._objects.with_phil.wrapper</span><span class="nt">()</span>
+
+<span class="nn">File h5py/_objects.pyx:55,</span> in <span class="ni">h5py._objects.with_phil.wrapper</span><span class="nt">()</span>
+
+<span class="nn">File h5py/h5f.pyx:102,</span> in <span class="ni">h5py.h5f.open</span><span class="nt">()</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] Unable to synchronously open file (unable to open file: name = &#39;D:/STO_STO-Data/RHEED/STO_STO_Berkeley/STO_STO_test6_06292022-standard.h5&#39;, errno = 2, error message = &#39;No such file or directory&#39;, flags = 0, o_flags = 0)
 </pre></div>
 </div>
 </div>

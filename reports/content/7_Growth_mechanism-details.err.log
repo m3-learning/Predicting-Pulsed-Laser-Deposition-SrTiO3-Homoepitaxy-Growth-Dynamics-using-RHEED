@@ -30,10 +30,10 @@ from matplotlib import gridspec
 from matplotlib import colors as mcolors 
 from mayavi import mlab
 
-sys.path.append('../../src')
-from viz.style import set_style
-from viz.printing import printer
-from viz.layout import imagemap, layout_fig, labelfigs
+from m3util.viz.style import set_style
+from m3util.viz.printing import printer
+from m3util.viz.layout import imagemap, layout_fig
+from m3util.viz.text import labelfigs
 from sto_rheed.Dataset import RHEED_parameter_dataset, RHEED_spot_Dataset
 from sto_rheed.Viz import Viz, rgba_to_rgb
 from sto_rheed.drawing_3d import draw_box, sphere_to_surface
@@ -61,8 +61,8 @@ Cell [0;32mIn[1], line 11[0m
 [1;32m      9[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmatplotlib[39;00m [38;5;28;01mimport[39;00m gridspec
 [1;32m     10[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmatplotlib[39;00m [38;5;28;01mimport[39;00m colors [38;5;28;01mas[39;00m mcolors 
 [0;32m---> 11[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmayavi[39;00m [38;5;28;01mimport[39;00m mlab
-[1;32m     13[0m sys[38;5;241m.[39mpath[38;5;241m.[39mappend([38;5;124m'[39m[38;5;124m../../src[39m[38;5;124m'[39m)
-[1;32m     14[0m [38;5;28;01mfrom[39;00m [38;5;21;01mviz[39;00m[38;5;21;01m.[39;00m[38;5;21;01mstyle[39;00m [38;5;28;01mimport[39;00m set_style
+[1;32m     13[0m [38;5;28;01mfrom[39;00m [38;5;21;01mm3util[39;00m[38;5;21;01m.[39;00m[38;5;21;01mviz[39;00m[38;5;21;01m.[39;00m[38;5;21;01mstyle[39;00m [38;5;28;01mimport[39;00m set_style
+[1;32m     14[0m [38;5;28;01mfrom[39;00m [38;5;21;01mm3util[39;00m[38;5;21;01m.[39;00m[38;5;21;01mviz[39;00m[38;5;21;01m.[39;00m[38;5;21;01mprinting[39;00m [38;5;28;01mimport[39;00m printer
 
 [0;31mModuleNotFoundError[0m: No module named 'mayavi'
 

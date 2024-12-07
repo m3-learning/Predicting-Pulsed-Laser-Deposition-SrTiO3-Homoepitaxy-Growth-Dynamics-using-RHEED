@@ -409,24 +409,37 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;load_ext&#39;</span><span class="p">,</span> <span class="s1">&#39;autoreload&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;autoreload&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">sto_rheed.Packed_functions</span> <span class="kn">import</span> <span class="n">visualize_characteristic_time</span><span class="p">,</span> <span class="n">violinplot_characteristic_time</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;sto_rheed&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">visualize_characteristic_time</span><span class="p">(</span><span class="n">align_time</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">visualize_characteristic_time</span><span class="p">(</span><span class="n">align_time</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nn">File ~/work/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED/src/sto_rheed/Packed_functions.py:181,</span> in <span class="ni">visualize_characteristic_time</span><span class="nt">(align_time, normalize)</span>
+<span class="g g-Whitespace">    </span><span class="mi">178</span> <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">layout_fig</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">179</span> <span class="n">ax1</span><span class="p">,</span> <span class="n">ax3</span><span class="p">,</span> <span class="n">ax5</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="ne">--&gt; </span><span class="mi">181</span> <span class="n">x_all_sample1</span><span class="p">,</span> <span class="n">y_all_sample1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../Data/Plume_results/treated_213nm-x_all.npy&#39;</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../Data/Plume_results/treated_213nm-y_all.npy&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">182</span> <span class="n">x_sklearn_sample1</span><span class="p">,</span> <span class="n">tau_sklearn_sample1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">swapaxes</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../Data/Plume_results/treated_213nm-fitting_results(sklearn).npy&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+<span class="g g-Whitespace">    </span><span class="mi">183</span> <span class="n">bg_growth_sample1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;../Data/Plume_results/treated_213nm-bg_growth.npy&#39;</span><span class="p">)</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/numpy/lib/npyio.py:427,</span> in <span class="ni">load</span><span class="nt">(file, mmap_mode, allow_pickle, fix_imports, encoding, max_header_size)</span>
+<span class="g g-Whitespace">    </span><span class="mi">425</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="g g-Whitespace">    </span><span class="mi">426</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">427</span>     <span class="n">fid</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">enter_context</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">os_fspath</span><span class="p">(</span><span class="n">file</span><span class="p">),</span> <span class="s2">&quot;rb&quot;</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">428</span>     <span class="n">own_fid</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">430</span> <span class="c1"># Code to distinguish from NumPy binary files and pickles.</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../Data/Plume_results/treated_213nm-x_all.npy&#39;
+</pre></div>
+</div>
+<img alt="../_images/c6da649cfcd2dbed6759a22f34646bd109a82b453bfedfb17df3f45f3d0552f1.png" src="../_images/c6da649cfcd2dbed6759a22f34646bd109a82b453bfedfb17df3f45f3d0552f1.png" />
 </div>
 </div>
 <div class="cell docutils container">

@@ -459,10 +459,10 @@
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colors</span> <span class="k">as</span> <span class="n">mcolors</span> 
 <span class="kn">from</span> <span class="nn">mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
 
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../../src&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
-<span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
-<span class="kn">from</span> <span class="nn">viz.layout</span> <span class="kn">import</span> <span class="n">imagemap</span><span class="p">,</span> <span class="n">layout_fig</span><span class="p">,</span> <span class="n">labelfigs</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.layout</span> <span class="kn">import</span> <span class="n">imagemap</span><span class="p">,</span> <span class="n">layout_fig</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.text</span> <span class="kn">import</span> <span class="n">labelfigs</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Dataset</span> <span class="kn">import</span> <span class="n">RHEED_parameter_dataset</span><span class="p">,</span> <span class="n">RHEED_spot_Dataset</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Viz</span> <span class="kn">import</span> <span class="n">Viz</span><span class="p">,</span> <span class="n">rgba_to_rgb</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.drawing_3d</span> <span class="kn">import</span> <span class="n">draw_box</span><span class="p">,</span> <span class="n">sphere_to_surface</span>
@@ -491,8 +491,8 @@
 <span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">gridspec</span>
 <span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colors</span> <span class="k">as</span> <span class="n">mcolors</span> 
 <span class="ne">---&gt; </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../../src&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span> <span class="nn">m3util.viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">m3util.viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
 
 <span class="ne">ModuleNotFoundError</span>: No module named &#39;mayavi&#39;
 </pre></div>
