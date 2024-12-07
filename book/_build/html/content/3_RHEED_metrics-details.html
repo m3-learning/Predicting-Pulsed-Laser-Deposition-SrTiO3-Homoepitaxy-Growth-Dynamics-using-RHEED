@@ -445,10 +445,10 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="kn">from</span> <span class="nn">util.file_IO</span> <span class="kn">import</span> <span class="n">download_and_unzip</span>
-<span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
-<span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
-<span class="kn">from</span> <span class="nn">viz.layout</span> <span class="kn">import</span> <span class="n">layout_fig</span><span class="p">,</span> <span class="n">labelfigs</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.layout</span> <span class="kn">import</span> <span class="n">layout_fig</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.text</span> <span class="kn">import</span> <span class="n">labelfigs</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Dataset</span> <span class="kn">import</span> <span class="n">RHEED_spot_Dataset</span><span class="p">,</span> <span class="n">RHEED_parameter_dataset</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Viz</span> <span class="kn">import</span> <span class="n">Viz</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Fit</span> <span class="kn">import</span> <span class="n">RHEED_image_processer</span><span class="p">,</span> <span class="n">Gaussian</span><span class="p">,</span> <span class="n">NormalizeData</span>
@@ -461,16 +461,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span> <span class="nn">util.file_IO</span> <span class="kn">import</span> <span class="n">download_and_unzip</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;util&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>printing set for seaborn
 </pre></div>
 </div>
 </div>
@@ -526,7 +517,9 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Growth: background_with_heater, Size of data: f(2251, 300, 300)
-Growth: background_without_heater, Size of data: f(2942, 300, 300)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Growth: background_without_heater, Size of data: f(2942, 300, 300)
 Growth: growth_1, Size of data: f(13189, 300, 300)
 Growth: growth_10, Size of data: f(12336, 300, 300)
 Growth: growth_11, Size of data: f(12799, 300, 300)
@@ -555,10 +548,12 @@ Growth: growth_9, Size of data: f(12568, 300, 300)
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> a: RHEED spot image for growth_2 at index 0.
 ../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_growth_2_0.png
-../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_growth_2_0.svg
 </pre></div>
 </div>
-<img alt="../_images/f1dd8688e3defb590a86baedc4a0579ad948e976e6fa75a8cfb88f8cb60c4281.png" src="../_images/f1dd8688e3defb590a86baedc4a0579ad948e976e6fa75a8cfb88f8cb60c4281.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_growth_2_0.svg
+</pre></div>
+</div>
+<img alt="../_images/210fb1e736650416261a814fdeb1b58ed6ba7855329784dac564b94a9592450b.png" src="../_images/210fb1e736650416261a814fdeb1b58ed6ba7855329784dac564b94a9592450b.png" />
 </div>
 </div>
 </section>
@@ -686,7 +681,9 @@ height=27.90, x=13.87, y=44.06, width_x=20.56, width_y_max=62.86.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_growth_1_spot_2_0_img,img_rec,differerce.png
-../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_growth_1_spot_2_0_img,img_rec,differerce.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_213nm_growth_1_spot_2_0_img,img_rec,differerce.svg
 </pre></div>
 </div>
 <img alt="../_images/a35471d38142d6606f6657ac6631b4fb80a97b121a549aa485452a1e3cb6c7ff.png" src="../_images/a35471d38142d6606f6657ac6631b4fb80a97b121a549aa485452a1e3cb6c7ff.png" />
@@ -779,8 +776,12 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S3-treated_213nm-RHEED_metrics.png
-../Figures/1.Fit_RHEED_spot/S3-treated_213nm-RHEED_metrics.svg
-../Figures/1.Fit_RHEED_spot/S3-treated_213nm-RHEED_metrics.tif
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S3-treated_213nm-RHEED_metrics.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S3-treated_213nm-RHEED_metrics.tif
 </pre></div>
 </div>
 <img alt="../_images/559bbe18dac3c67a3fec1c1a3a92d60a2648638c1d50c7a346f007b0f56bd38a.png" src="../_images/559bbe18dac3c67a3fec1c1a3a92d60a2648638c1d50c7a346f007b0f56bd38a.png" />
@@ -834,10 +835,12 @@ Growth: growth_9, Size of data: f(9704, 300, 600)
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> a: RHEED spot image for growth_2 at index 10.
 ../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_10.png
-../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_10.svg
 </pre></div>
 </div>
-<img alt="../_images/da14143919bce98cd396cffa1875e5b688568981704b97e951844c3a152a9664.png" src="../_images/da14143919bce98cd396cffa1875e5b688568981704b97e951844c3a152a9664.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_10.svg
+</pre></div>
+</div>
+<img alt="../_images/3e7ce8b9fb64512371d7ecf7358b0a4db880b4a3831675586222c31d0d37a768.png" src="../_images/3e7ce8b9fb64512371d7ecf7358b0a4db880b4a3831675586222c31d0d37a768.png" />
 </div>
 </div>
 </section>
@@ -964,7 +967,9 @@ height=22.32, x=23.81, y=49.66, width_x=33.31, width_y_max=115.16.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_spot_2_10000_img,img_rec,differerce.png
-../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_spot_2_10000_img,img_rec,differerce.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_treated_81nm_growth_2_spot_2_10000_img,img_rec,differerce.svg
 </pre></div>
 </div>
 <img alt="../_images/4aa01c898979f1da28f655bd1d42ac0df24701cdb44a02579658300b23f95198.png" src="../_images/4aa01c898979f1da28f655bd1d42ac0df24701cdb44a02579658300b23f95198.png" />
@@ -1023,8 +1028,12 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S4-treated_81nm-RHEED_metrics.png
-../Figures/1.Fit_RHEED_spot/S4-treated_81nm-RHEED_metrics.svg
-../Figures/1.Fit_RHEED_spot/S4-treated_81nm-RHEED_metrics.tif
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S4-treated_81nm-RHEED_metrics.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S4-treated_81nm-RHEED_metrics.tif
 </pre></div>
 </div>
 <img alt="../_images/0ee9a9bbee0db93b5a17d3735a21e185b074daad145feb426fa11fc0b87251c6.png" src="../_images/0ee9a9bbee0db93b5a17d3735a21e185b074daad145feb426fa11fc0b87251c6.png" />
@@ -1084,10 +1093,12 @@ Growth: growth_9, Size of data: f(12222, 300, 300)
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> a: RHEED spot image for growth_2 at index 0.
 ../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_0.png
-../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_0.svg
 </pre></div>
 </div>
-<img alt="../_images/fb7c573cd064db0455ddddf17228c6f3603e6ff5d0d7b58af595e2f6b533f544.png" src="../_images/fb7c573cd064db0455ddddf17228c6f3603e6ff5d0d7b58af595e2f6b533f544.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_2_0.svg
+</pre></div>
+</div>
+<img alt="../_images/6139eb2e558f69f06dda24cf25f8d3e7ae9fd0ab0e901d58e6bcfd8992bd7c77.png" src="../_images/6139eb2e558f69f06dda24cf25f8d3e7ae9fd0ab0e901d58e6bcfd8992bd7c77.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1100,16 +1111,20 @@ Growth: growth_9, Size of data: f(12222, 300, 300)
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> a: RHEED spot image for growth_1 at index 0.
 ../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_0.png
-../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_0.svg
 </pre></div>
 </div>
-<img alt="../_images/364df2807a4d93fa52d937583edf7c4ed02035709c5bc4b0f70e3837fd40ec6e.png" src="../_images/364df2807a4d93fa52d937583edf7c4ed02035709c5bc4b0f70e3837fd40ec6e.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_0.svg
+</pre></div>
+</div>
+<img alt="../_images/7877bce0bd76cee5625ec39f26751ead296f9917dab9ac19f2236bf7cce81f97.png" src="../_images/7877bce0bd76cee5625ec39f26751ead296f9917dab9ac19f2236bf7cce81f97.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold">Fig.</span> b: RHEED spot image for growth_1 at index 13000.
 ../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_13000.png
-../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_13000.svg
 </pre></div>
 </div>
-<img alt="../_images/741e0d9917e9de1634df5c1fb66b515fd1aced98ea37c30f1b7a8949ea8d0ed8.png" src="../_images/741e0d9917e9de1634df5c1fb66b515fd1aced98ea37c30f1b7a8949ea8d0ed8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/RHEED_untreated_162nm_growth_1_13000.svg
+</pre></div>
+</div>
+<img alt="../_images/cb3be0af64cafcf467faa82f90e7392e5a902cee626a664aaea7d748ef5c5763.png" src="../_images/cb3be0af64cafcf467faa82f90e7392e5a902cee626a664aaea7d748ef5c5763.png" />
 </div>
 </div>
 </section>
@@ -2168,8 +2183,12 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S5-untreated_162nm-RHEED_metrics.png
-../Figures/1.Fit_RHEED_spot/S5-untreated_162nm-RHEED_metrics.svg
-../Figures/1.Fit_RHEED_spot/S5-untreated_162nm-RHEED_metrics.tif
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S5-untreated_162nm-RHEED_metrics.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/1.Fit_RHEED_spot/S5-untreated_162nm-RHEED_metrics.tif
 </pre></div>
 </div>
 <img alt="../_images/b9a8049e44ffe88fafd4c18545d067ff709b2a2adfd265f8760052df2bc4a3bc.png" src="../_images/b9a8049e44ffe88fafd4c18545d067ff709b2a2adfd265f8760052df2bc4a3bc.png" />
@@ -2243,7 +2262,7 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/446758b116edf4ee9731a836be9f7153e0e345a08bdecc370c4139cd22e3cecb.png" src="../_images/446758b116edf4ee9731a836be9f7153e0e345a08bdecc370c4139cd22e3cecb.png" />
+<img alt="../_images/ee8e6cdc5f0a0743f01c7fd8e5fbf74c45a33fd6b9d74e58f09587ea4afbe905.png" src="../_images/ee8e6cdc5f0a0743f01c7fd8e5fbf74c45a33fd6b9d74e58f09587ea4afbe905.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -2292,7 +2311,7 @@ c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-dep
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/5c720d4a312f5acb4912d4d5c63a3451ec96b86a45b847d25baf5e81e3c5909c.png" src="../_images/5c720d4a312f5acb4912d4d5c63a3451ec96b86a45b847d25baf5e81e3c5909c.png" />
+<img alt="../_images/e5f3a2045f849ec6abf21c009b54cddcea37255315438bf7d97e55dd62a30fa1.png" src="../_images/e5f3a2045f849ec6abf21c009b54cddcea37255315438bf7d97e55dd62a30fa1.png" />
 </div>
 </div>
 </section>

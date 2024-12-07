@@ -409,18 +409,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;load_ext&#39;</span><span class="p">,</span> <span class="s1">&#39;autoreload&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;autoreload&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">sto_rheed.Packed_functions</span> <span class="kn">import</span> <span class="n">visualize_characteristic_time</span><span class="p">,</span> <span class="n">violinplot_characteristic_time</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;sto_rheed&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -428,12 +416,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/e1b60604c59cdc3a9c2624fe873b7b1a53039b5a2a6715a9131430b103d31573.png" src="../_images/e1b60604c59cdc3a9c2624fe873b7b1a53039b5a2a6715a9131430b103d31573.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">violinplot_characteristic_time</span><span class="p">(</span><span class="n">align_time</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\yig319\lehigh university dropbox\yichen guo\predicting-pulsed-laser-deposition-srtio3-homoepitaxy-growth-dynamics-using-rheed\src\sto_rheed\Packed_functions.py:314: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_xticklabels(titles)
+</pre></div>
+</div>
+<img alt="../_images/79466e12c4e2989eec266a0328ec9ccf7d1abebec5ee44c921407f7f9e805d03.png" src="../_images/79466e12c4e2989eec266a0328ec9ccf7d1abebec5ee44c921407f7f9e805d03.png" />
 </div>
 </div>
 </section>

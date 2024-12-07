@@ -459,10 +459,10 @@
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colors</span> <span class="k">as</span> <span class="n">mcolors</span> 
 <span class="kn">from</span> <span class="nn">mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
 
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../../src&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
-<span class="kn">from</span> <span class="nn">viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
-<span class="kn">from</span> <span class="nn">viz.layout</span> <span class="kn">import</span> <span class="n">imagemap</span><span class="p">,</span> <span class="n">layout_fig</span><span class="p">,</span> <span class="n">labelfigs</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.printing</span> <span class="kn">import</span> <span class="n">printer</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.layout</span> <span class="kn">import</span> <span class="n">imagemap</span><span class="p">,</span> <span class="n">layout_fig</span>
+<span class="kn">from</span> <span class="nn">m3util.viz.text</span> <span class="kn">import</span> <span class="n">labelfigs</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Dataset</span> <span class="kn">import</span> <span class="n">RHEED_parameter_dataset</span><span class="p">,</span> <span class="n">RHEED_spot_Dataset</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.Viz</span> <span class="kn">import</span> <span class="n">Viz</span><span class="p">,</span> <span class="n">rgba_to_rgb</span>
 <span class="kn">from</span> <span class="nn">sto_rheed.drawing_3d</span> <span class="kn">import</span> <span class="n">draw_box</span><span class="p">,</span> <span class="n">sphere_to_surface</span>
@@ -910,9 +910,7 @@ Growth: growth_4:
 ----reconstructed_image:, Size of data: (13067, 40, 60)
 ----width_x:, Size of data: (13067,)
 ----width_y:, Size of data: (13067,)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----x:, Size of data: (13067,)
+----x:, Size of data: (13067,)
 ----y:, Size of data: (13067,)
 --spot: spot_2:
 ----height:, Size of data: (13067,)
@@ -1185,7 +1183,7 @@ Growth: growth_9:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0d24ac3286effe7b56010e35c4ed200c43bed110d0b0a30e413e80cd3df2a93e.png" src="../_images/0d24ac3286effe7b56010e35c4ed200c43bed110d0b0a30e413e80cd3df2a93e.png" />
+<img alt="../_images/29e0d84c6f22381b9353b07bede12f61107f816137fb1521042066a55b4e12d6.png" src="../_images/29e0d84c6f22381b9353b07bede12f61107f816137fb1521042066a55b4e12d6.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1898,6 +1896,10 @@ y1=(0.06t+0.11)*(1-exp(-t/0.04))
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\Anaconda3\envs\test_rheed\Lib\site-packages\m3util\viz\layout.py:255: UserWarning: This figure was using a layout engine that is incompatible with subplots_adjust and/or tight_layout; not calling subplots_adjust.
+  fig.subplots_adjust(wspace=wspace, hspace=hspace)
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/loss_difference.png
 </pre></div>
 </div>
@@ -1907,7 +1909,7 @@ y1=(0.06t+0.11)*(1-exp(-t/0.04))
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/loss_difference.tif
 </pre></div>
 </div>
-<img alt="../_images/d00ffa9bd2130f06c90d3349a5c9aff63c8cde6b816af47a2e9dd27e2a980b92.png" src="../_images/d00ffa9bd2130f06c90d3349a5c9aff63c8cde6b816af47a2e9dd27e2a980b92.png" />
+<img alt="../_images/2e80f0a7340021613257b9c27aae6367404d32fd5d6591f7a3e3f63483eabf03.png" src="../_images/2e80f0a7340021613257b9c27aae6367404d32fd5d6591f7a3e3f63483eabf03.png" />
 </div>
 </div>
 <p>Temporal evolution of RHEED intensity extracted from spot 2 region. RHEED intensity of deposition of a) treated_213nm, b) treated_81nm, and c) untreated_162nm, respectively. The medium and light background represents different fitting functions used to fit with the decay curves. Typical decay curves are provided on the corresponding background color. And the blue scatter plot represents the loss difference between predictions using two exponential curve functions and raw RHEED intensity data. Higher loss difference means the model predict with less confidence.</p>
