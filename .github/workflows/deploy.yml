@@ -40,7 +40,7 @@ jobs:
         shell: bash -l {0}
         run: |
           eval "$($HOME/miniconda/bin/conda shell.bash hook)"
-          conda create -n book python=3.11 -y
+          conda create -n book python=3.11 sqlite=3.39 -y  # Explicitly specify a compatible SQLite version
           conda activate book
           conda install -c conda-forge mayavi -y
 
