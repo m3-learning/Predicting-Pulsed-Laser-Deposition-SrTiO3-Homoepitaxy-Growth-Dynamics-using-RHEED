@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/theme.css?v=24b9ed36" />
@@ -471,7 +471,7 @@
 <span class="kn">from</span> <span class="nn">sto_rheed.Fit</span> <span class="kn">import</span> <span class="n">NormalizeData</span>
 
 <span class="n">printing</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/3.Growth_mechanism/&#39;</span><span class="p">)</span>
-<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/3.Growth_mechanism/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png, svg&#39;</span><span class="p">],</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">1200</span><span class="p">)</span>
+<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/3.Growth_mechanism/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">,</span> <span class="s1">&#39;tif&#39;</span><span class="p">],</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;../Data/Plume_results&#39;</span><span class="p">):</span> <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s1">&#39;../Data/Plume_results&#39;</span><span class="p">)</span>
 <span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;printing&quot;</span><span class="p">)</span>
 
@@ -485,16 +485,14 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">11</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">gridspec</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colors</span> <span class="k">as</span> <span class="n">mcolors</span> 
-<span class="ne">---&gt; </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">mayavi</span> <span class="kn">import</span> <span class="n">mlab</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../../src&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">viz.style</span> <span class="kn">import</span> <span class="n">set_style</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;mayavi&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>********************************************************************************
+WARNING: Imported VTK version (9.4) does not match the one used
+         to build the TVTK classes (9.3). This may cause problems.
+         Please rebuild TVTK.
+********************************************************************************
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>printing set for seaborn
 </pre></div>
 </div>
 </div>
@@ -912,7 +910,9 @@ Growth: growth_4:
 ----reconstructed_image:, Size of data: (13067, 40, 60)
 ----width_x:, Size of data: (13067,)
 ----width_y:, Size of data: (13067,)
-----x:, Size of data: (13067,)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>----x:, Size of data: (13067,)
 ----y:, Size of data: (13067,)
 --spot: spot_2:
 ----height:, Size of data: (13067,)
@@ -1253,6 +1253,15 @@ height=28.73, x=14.61, y=26.34, width_x=20.42, width_y_max=42.69
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/treated_81nm-curve_examples.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/treated_81nm-curve_examples.svg
+</pre></div>
+</div>
+<img alt="../_images/a7918154cca5556ee4cd21d05d708204bb2738996732b13e1eab172c25806d98.png" src="../_images/a7918154cca5556ee4cd21d05d708204bb2738996732b13e1eab172c25806d98.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1265,7 +1274,9 @@ height=28.73, x=14.61, y=26.34, width_x=20.42, width_y_max=42.69
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/treated_81nm-curve_examples.png
-../Figures/3.Growth_mechanism/treated_81nm-curve_examples.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/treated_81nm-curve_examples.svg
 </pre></div>
 </div>
 <img alt="../_images/a7918154cca5556ee4cd21d05d708204bb2738996732b13e1eab172c25806d98.png" src="../_images/a7918154cca5556ee4cd21d05d708204bb2738996732b13e1eab172c25806d98.png" />
@@ -1890,6 +1901,12 @@ y1=(0.06t+0.11)*(1-exp(-t/0.04))
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/loss_difference.png
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/loss_difference.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/loss_difference.tif
+</pre></div>
+</div>
 <img alt="../_images/d00ffa9bd2130f06c90d3349a5c9aff63c8cde6b816af47a2e9dd27e2a980b92.png" src="../_images/d00ffa9bd2130f06c90d3349a5c9aff63c8cde6b816af47a2e9dd27e2a980b92.png" />
 </div>
 </div>
@@ -1962,12 +1979,30 @@ y1=(0.06t+0.11)*(1-exp(-t/0.04))
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-a.png
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-a.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-a.tif
+</pre></div>
+</div>
 <img alt="../_images/a684376fb9b55c603fd0bee50f39822e25964a1a47ad633db8b448001f29365b.png" src="../_images/a684376fb9b55c603fd0bee50f39822e25964a1a47ad633db8b448001f29365b.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-b.png
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-b.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-b.tif
+</pre></div>
+</div>
 <img alt="../_images/0d627984297e9f9fa993b0e441c16f44c78db2b42a7466884c668ce2f6ab1961.png" src="../_images/0d627984297e9f9fa993b0e441c16f44c78db2b42a7466884c668ce2f6ab1961.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-c.png
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-c.svg
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/3.Growth_mechanism/fitting_results-gray_boxes-c.tif
 </pre></div>
 </div>
 <img alt="../_images/68f572b32fc93a4e56b5e062cf9d09de3ea5341f6e9563f0bd47ae972372e164.png" src="../_images/68f572b32fc93a4e56b5e062cf9d09de3ea5341f6e9563f0bd47ae972372e164.png" />
@@ -2095,6 +2130,54 @@ y1=(0.06t+0.11)*(1-exp(-t/0.04))
 <span class="n">sphere_to_surface</span><span class="p">(</span><span class="n">xrange</span><span class="o">=</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">70</span><span class="p">),</span> <span class="n">yrange</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">z</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">sr_color</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
 <span class="n">mlab</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;../Figures/3.Growth_mechanism/stage_1.png&#39;</span><span class="p">)</span>
 <span class="n">mlab</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">44</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">n1</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">mlab</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1024</span><span class="p">,</span><span class="mi">768</span><span class="p">),</span> <span class="n">bgcolor</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">fgcolor</span> <span class="o">=</span> <span class="p">(</span><span class="mi">146</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">197</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span><span class="mi">222</span><span class="o">/</span><span class="mi">255</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">draw_box</span><span class="p">(</span><span class="n">xrange</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">yrange</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">zrange</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="n">box1_ti_color</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">sphere_to_surface</span><span class="p">(</span><span class="n">xrange</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="n">yrange</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">z</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">sr_color</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+
+<span class="nn">File ~\Anaconda3\envs\test_rheed\Lib\site-packages\mayavi\tools\figure.py:64,</span> in <span class="ni">figure</span><span class="nt">(figure, bgcolor, fgcolor, engine, size)</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">63</span>     <span class="k">if</span> <span class="n">engine</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">64</span>         <span class="n">engine</span> <span class="o">=</span> <span class="n">get_engine</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">65</span>     <span class="k">if</span> <span class="n">figure</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">66</span>         <span class="n">name</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">__scene_number_list</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nn">File ~\Anaconda3\envs\test_rheed\Lib\site-packages\mayavi\tools\engine_manager.py:94,</span> in <span class="ni">EngineManager.get_engine</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span>     <span class="n">suitable</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">engines</span>
+<span class="g g-Whitespace">     </span><span class="mi">92</span>                 <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;Engine&#39;</span><span class="p">]</span>
+<span class="g g-Whitespace">     </span><span class="mi">93</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">suitable</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">94</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">new_engine</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="c1"># Return the most engine add to the list most recently.</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>     <span class="bp">self</span><span class="o">.</span><span class="n">current_engine</span> <span class="o">=</span> <span class="n">suitable</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="nn">File ~\Anaconda3\envs\test_rheed\Lib\site-packages\mayavi\tools\engine_manager.py:139,</span> in <span class="ni">EngineManager.new_engine</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span> <span class="k">def</span> <span class="nf">new_engine</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span><span class="w">     </span><span class="sd">&quot;&quot;&quot; Creates a new engine, envisage or not depending on the</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span><span class="sd">         options.</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">139</span>     <span class="n">check_backend</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span>     <span class="k">if</span> <span class="n">options</span><span class="o">.</span><span class="n">backend</span> <span class="o">==</span> <span class="s1">&#39;envisage&#39;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">141</span>         <span class="kn">from</span> <span class="nn">mayavi.plugins.app</span> <span class="kn">import</span> <span class="n">Mayavi</span>
+
+<span class="nn">File ~\Anaconda3\envs\test_rheed\Lib\site-packages\mayavi\tools\engine_manager.py:42,</span> in <span class="ni">check_backend</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="k">if</span> <span class="p">(</span><span class="n">options</span><span class="o">.</span><span class="n">backend</span> <span class="o">!=</span> <span class="s1">&#39;test&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">options</span><span class="o">.</span><span class="n">offscreen</span><span class="p">)</span> <span class="ow">and</span> \
+<span class="g g-Whitespace">     </span><span class="mi">38</span>    <span class="p">(</span><span class="n">ETSConfig</span><span class="o">.</span><span class="n">toolkit</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;null&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">env_toolkit</span> <span class="o">!=</span> <span class="s1">&#39;null&#39;</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Could not import backend for traitsui.  Make sure you</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span><span class="s1">     have a suitable UI toolkit like PyQt/PySide or wxPython</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span><span class="s1">     installed.&#39;&#39;&#39;</span>
+<span class="ne">---&gt; </span><span class="mi">42</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+<span class="ne">ImportError</span>: Could not import backend for traitsui.  Make sure you
+        <span class="n">have</span> <span class="n">a</span> <span class="n">suitable</span> <span class="n">UI</span> <span class="n">toolkit</span> <span class="n">like</span> <span class="n">PyQt</span><span class="o">/</span><span class="n">PySide</span> <span class="ow">or</span> <span class="n">wxPython</span>
+        <span class="n">installed</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>

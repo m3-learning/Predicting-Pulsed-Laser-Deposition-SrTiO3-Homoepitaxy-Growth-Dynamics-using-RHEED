@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/theme.css?v=24b9ed36" />
@@ -466,7 +466,7 @@
 <span class="kn">from</span> <span class="nn">sto_rheed.Fit</span> <span class="kn">import</span> <span class="n">NormalizeData</span>
 
 <span class="n">printing</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/4.Characteristic_time/&#39;</span><span class="p">)</span>
-<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/4.Characteristic_time/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">])</span>
+<span class="n">printing_plot</span> <span class="o">=</span> <span class="n">printer</span><span class="p">(</span><span class="n">basepath</span> <span class="o">=</span> <span class="s1">&#39;../Figures/4.Characteristic_time/&#39;</span><span class="p">,</span> <span class="n">fileformats</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;png&#39;</span><span class="p">,</span> <span class="s1">&#39;svg&#39;</span><span class="p">,</span> <span class="s1">&#39;tif&#39;</span><span class="p">],</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 
 <span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;printing&quot;</span><span class="p">)</span>
 
@@ -555,21 +555,25 @@
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-1.png
 ../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-1.svg
+../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-1.tif
 </pre></div>
 </div>
 <img alt="../_images/3e954e783de6204ec1a56075178d642e398265c0be4418a0436c564773686052.png" src="../_images/3e954e783de6204ec1a56075178d642e398265c0be4418a0436c564773686052.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-2.png
 ../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-2.svg
+../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-2.tif
 </pre></div>
 </div>
 <img alt="../_images/d2c982eccc865576b9c80a60b807ea8a31802115aa728f00343db2788f058587.png" src="../_images/d2c982eccc865576b9c80a60b807ea8a31802115aa728f00343db2788f058587.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-3.png
 ../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-3.svg
+../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-3.tif
 </pre></div>
 </div>
 <img alt="../_images/6c605c1a3a99a0b2d8b07fbe25bf1e4f3ac33df7cf4b28f295a7790810ea4040.png" src="../_images/6c605c1a3a99a0b2d8b07fbe25bf1e4f3ac33df7cf4b28f295a7790810ea4040.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-4.png
 ../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-4.svg
+../Figures/4.Characteristic_time/S10-fitting_details_treated_213nm-4.tif
 </pre></div>
 </div>
 <img alt="../_images/5e9f8344e1fd0279120eeae5c0724fd9066783f3be13b6fca74d55c7c39d9c7b.png" src="../_images/5e9f8344e1fd0279120eeae5c0724fd9066783f3be13b6fca74d55c7c39d9c7b.png" />
@@ -593,6 +597,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S7-treated_213nm-a_b_tau.png
 ../Figures/4.Characteristic_time/S7-treated_213nm-a_b_tau.svg
+../Figures/4.Characteristic_time/S7-treated_213nm-a_b_tau.tif
 </pre></div>
 </div>
 <img alt="../_images/b40cc15086897cea0b2e935f9067a56829cf1227244560de2412385aa47bc93c.png" src="../_images/b40cc15086897cea0b2e935f9067a56829cf1227244560de2412385aa47bc93c.png" />
@@ -706,21 +711,25 @@
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-1.png
 ../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-1.svg
+../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-1.tif
 </pre></div>
 </div>
 <img alt="../_images/ce76e490c3c29b0472138c88d02f8d118f5d15f14baccd5b62b948768b275b0a.png" src="../_images/ce76e490c3c29b0472138c88d02f8d118f5d15f14baccd5b62b948768b275b0a.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-2.png
 ../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-2.svg
+../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-2.tif
 </pre></div>
 </div>
 <img alt="../_images/da24d443c41e720faeb2eb64b96465074c03e8718819aba581ceaf5e028747df.png" src="../_images/da24d443c41e720faeb2eb64b96465074c03e8718819aba581ceaf5e028747df.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-3.png
 ../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-3.svg
+../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-3.tif
 </pre></div>
 </div>
 <img alt="../_images/7227c5894920b909bf766b60942e018c64555ba45648fc62b6c0a3597f1d5140.png" src="../_images/7227c5894920b909bf766b60942e018c64555ba45648fc62b6c0a3597f1d5140.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-4.png
 ../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-4.svg
+../Figures/4.Characteristic_time/S11-fitting_details_treated_81nm-4.tif
 </pre></div>
 </div>
 <img alt="../_images/53014b812c08e975fbcd1e218476004a512d90b9d2bf43ed8f471a5abb86392f.png" src="../_images/53014b812c08e975fbcd1e218476004a512d90b9d2bf43ed8f471a5abb86392f.png" />
@@ -745,6 +754,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S8-treated_81nm-a_b_tau.png
 ../Figures/4.Characteristic_time/S8-treated_81nm-a_b_tau.svg
+../Figures/4.Characteristic_time/S8-treated_81nm-a_b_tau.tif
 </pre></div>
 </div>
 <img alt="../_images/35cdd60a1bb0bfaf952294d10a9a55e64e91749c440e3b8b6f5524fc79af6049.png" src="../_images/35cdd60a1bb0bfaf952294d10a9a55e64e91749c440e3b8b6f5524fc79af6049.png" />
@@ -856,26 +866,31 @@
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-1.png
 ../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-1.svg
+../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-1.tif
 </pre></div>
 </div>
 <img alt="../_images/95d68bcdffd0a2f877bc3574fae60f645047c898fbaf33fe0570c56bedda069c.png" src="../_images/95d68bcdffd0a2f877bc3574fae60f645047c898fbaf33fe0570c56bedda069c.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-2.png
 ../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-2.svg
+../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-2.tif
 </pre></div>
 </div>
 <img alt="../_images/bf69f1827c44ccaa6d39644173a46e377690e0639c20d7167e37045788ed3b7b.png" src="../_images/bf69f1827c44ccaa6d39644173a46e377690e0639c20d7167e37045788ed3b7b.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-3.png
 ../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-3.svg
+../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-3.tif
 </pre></div>
 </div>
 <img alt="../_images/40407c578e9ce826f279dda6e5f6c366d815e1c6120e31238b6b3c503640d846.png" src="../_images/40407c578e9ce826f279dda6e5f6c366d815e1c6120e31238b6b3c503640d846.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-4.png
 ../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-4.svg
+../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-4.tif
 </pre></div>
 </div>
 <img alt="../_images/c22f3db02ee1690c94203a511b50d647ccfaef7b7e10ed276d52180838b34d2c.png" src="../_images/c22f3db02ee1690c94203a511b50d647ccfaef7b7e10ed276d52180838b34d2c.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-5.png
 ../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-5.svg
+../Figures/4.Characteristic_time/S12-fitting_details_untreated_162nm-5.tif
 </pre></div>
 </div>
 <img alt="../_images/1d54339add5149547e49a1600aecd134761ec12bcb5f1927608539a08615d21f.png" src="../_images/1d54339add5149547e49a1600aecd134761ec12bcb5f1927608539a08615d21f.png" />
@@ -899,6 +914,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/S9-untreated_162nm-a_b_tau.png
 ../Figures/4.Characteristic_time/S9-untreated_162nm-a_b_tau.svg
+../Figures/4.Characteristic_time/S9-untreated_162nm-a_b_tau.tif
 </pre></div>
 </div>
 <img alt="../_images/85252f9b4299e4b8e48a81e128ea7389fee4f159479b739963c00dac3ffca654.png" src="../_images/85252f9b4299e4b8e48a81e128ea7389fee4f159479b739963c00dac3ffca654.png" />
@@ -1015,6 +1031,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_213nm-no_bg.png
 ../Figures/4.Characteristic_time/treated_213nm-no_bg.svg
+../Figures/4.Characteristic_time/treated_213nm-no_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/02869524afcfeb549dc1a9a24fe569da6244b1ac836e2e742106bdf24069f501.png" src="../_images/02869524afcfeb549dc1a9a24fe569da6244b1ac836e2e742106bdf24069f501.png" />
@@ -1042,6 +1059,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_213nm-tau_bg.png
 ../Figures/4.Characteristic_time/treated_213nm-tau_bg.svg
+../Figures/4.Characteristic_time/treated_213nm-tau_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/460c7bfb2385ee25b32020321ac40f19da8ce78c867a9b7963d15b9b65fa9e9e.png" src="../_images/460c7bfb2385ee25b32020321ac40f19da8ce78c867a9b7963d15b9b65fa9e9e.png" />
@@ -1070,6 +1088,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_213nm-growth_bg.png
 ../Figures/4.Characteristic_time/treated_213nm-growth_bg.svg
+../Figures/4.Characteristic_time/treated_213nm-growth_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/12a217231946cc272013d9e1d1c1bbbcc1c213ee0e750ed84634e4f3be046bb7.png" src="../_images/12a217231946cc272013d9e1d1c1bbbcc1c213ee0e750ed84634e4f3be046bb7.png" />
@@ -1118,6 +1137,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_81nm-no_bg.png
 ../Figures/4.Characteristic_time/treated_81nm-no_bg.svg
+../Figures/4.Characteristic_time/treated_81nm-no_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/c5d3c430b45104f7e7ead8b7607a99a7582d3d6afaaf62a3e20cb0df6c42b932.png" src="../_images/c5d3c430b45104f7e7ead8b7607a99a7582d3d6afaaf62a3e20cb0df6c42b932.png" />
@@ -1145,6 +1165,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_81nm-tau_bg.png
 ../Figures/4.Characteristic_time/treated_81nm-tau_bg.svg
+../Figures/4.Characteristic_time/treated_81nm-tau_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/9a8aae1b99d698c1cdf258ae89ed669473ea2d9edb15e5bfc77edfcd01d0f94e.png" src="../_images/9a8aae1b99d698c1cdf258ae89ed669473ea2d9edb15e5bfc77edfcd01d0f94e.png" />
@@ -1173,6 +1194,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/treated_81nm-growth_bg.png
 ../Figures/4.Characteristic_time/treated_81nm-growth_bg.svg
+../Figures/4.Characteristic_time/treated_81nm-growth_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/019dcb0abeda4ef8c776e074a4b5151d7964fd5f46dafe655f9babbf61815b40.png" src="../_images/019dcb0abeda4ef8c776e074a4b5151d7964fd5f46dafe655f9babbf61815b40.png" />
@@ -1221,6 +1243,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/untreated_162nm-no_bg.png
 ../Figures/4.Characteristic_time/untreated_162nm-no_bg.svg
+../Figures/4.Characteristic_time/untreated_162nm-no_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/0b9c8e2cc2ffc1bfae48295b3b4eb64b1e4decb7a6044ccf7c7ebbb86f0c1efc.png" src="../_images/0b9c8e2cc2ffc1bfae48295b3b4eb64b1e4decb7a6044ccf7c7ebbb86f0c1efc.png" />
@@ -1248,6 +1271,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/untreated_162nm-tau_bg.png
 ../Figures/4.Characteristic_time/untreated_162nm-tau_bg.svg
+../Figures/4.Characteristic_time/untreated_162nm-tau_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/393c099da3a9bc20aa87d0f10c0a2c1d082e99d765acf59586fb1d09acfaff58.png" src="../_images/393c099da3a9bc20aa87d0f10c0a2c1d082e99d765acf59586fb1d09acfaff58.png" />
@@ -1277,6 +1301,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/untreated_162nm-growth_bg.png
 ../Figures/4.Characteristic_time/untreated_162nm-growth_bg.svg
+../Figures/4.Characteristic_time/untreated_162nm-growth_bg.tif
 </pre></div>
 </div>
 <img alt="../_images/348d05c3b076c9884683e3a317c55d22dd3504f5cb003d6164f77f6f770c00df.png" src="../_images/348d05c3b076c9884683e3a317c55d22dd3504f5cb003d6164f77f6f770c00df.png" />
@@ -1428,7 +1453,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_4020\1078332159.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_37564\1078332159.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels(titles)
 </pre></div>
 </div>
@@ -1457,7 +1482,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_4020\3436764359.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_37564\3436764359.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels(titles)
 </pre></div>
 </div>
@@ -1501,7 +1526,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_4020\3436764359.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\yig319\AppData\Local\Temp\ipykernel_37564\3436764359.py:10: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
   ax.set_xticklabels(titles)
 </pre></div>
 </div>
@@ -1622,6 +1647,7 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>../Figures/4.Characteristic_time/growth_bg-characterization_time.png
 ../Figures/4.Characteristic_time/growth_bg-characterization_time.svg
+../Figures/4.Characteristic_time/growth_bg-characterization_time.tif
 </pre></div>
 </div>
 <img alt="../_images/84349fb17bb7d921960f63b8f7d5effa16b9e9f7aeef2775cf783b7bda15f8ff.png" src="../_images/84349fb17bb7d921960f63b8f7d5effa16b9e9f7aeef2775cf783b7bda15f8ff.png" />

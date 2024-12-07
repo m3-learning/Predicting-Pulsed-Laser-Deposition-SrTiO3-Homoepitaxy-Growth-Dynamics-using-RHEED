@@ -56,6 +56,7 @@ jobs:
           source ~/.bashrc
           conda activate book
           pip install -r requirements.txt
+          pip install -e .
 
       - name: Build the book
         shell: bash -l {0}
