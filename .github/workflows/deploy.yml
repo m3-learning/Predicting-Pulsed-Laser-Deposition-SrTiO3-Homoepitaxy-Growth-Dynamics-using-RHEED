@@ -3,7 +3,7 @@ name: deploy-book
 on:
   push:
     branches:
-      - main
+      - main # Adjust branch name if necessary
 
 env:
   BASE_URL: /${{ github.event.repository.name }}
@@ -30,19 +30,22 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y wget libjpeg-dev zlib1g-dev libfreetype6-dev \
                                   liblcms2-dev libwebp-dev libtiff-dev \
-                                  libopenjp2-7 libavif-dev libgeos-dev libarchive-dev
+                                  libopenjp2-7 libavif-dev libgeos-dev
 
       - name: Install and Configure Conda
         run: |
           wget -qO- https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh > miniconda.sh
           bash miniconda.sh -b -p $HOME/miniconda
-          eval "$($HOME/miniconda/bin/conda shell.bash hook)"  # Initialize Conda in current shell
-          conda init
+          echo ". $HOME/miniconda/etc/profile.d/conda.sh" >> ~/.bashrc
+          echo "export PATH=\"$HOME/miniconda/bin:\$PATH\"" >> ~/.bashrc
+          source ~/.bashrc
+          conda init bash
 
       - name: Create and Activate Conda Environment
         shell: bash -l {0}
         run: |
-          eval "$($HOME/miniconda/bin/conda shell.bash hook)"
+          source ~/.bashrc
+          conda activate
           conda create -n book python=3.11 -y
           conda activate book
           conda install -c conda-forge mayavi -y
@@ -50,16 +53,15 @@ jobs:
       - name: Install Dependencies
         shell: bash -l {0}
         run: |
-          eval "$($HOME/miniconda/bin/conda shell.bash hook)"
+          source ~/.bashrc
           conda activate book
           pip install -r requirements.txt
           pip install -e .
-          pip install jupyter-book
 
       - name: Build the book
         shell: bash -l {0}
         run: |
-          eval "$($HOME/miniconda/bin/conda shell.bash hook)"
+          source ~/.bashrc
           conda activate book
           rm -rf ./book/_build
           jupyter-book build ./book
