@@ -7,7 +7,7 @@ import glob
 from matplotlib import ticker, cm, colors
 
 
-def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequence=[], label_size=10, tick_size=8, legend_size=10):
+def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequence=[], label_size=10, tick_size=8, legend_size=10, colors=None):
     """
     Plot X-ray diffraction patterns.
 
@@ -19,10 +19,16 @@ def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequenc
     - xrange (tuple, optional): The x-axis range of the plot (default: (0, 90)).
     - diff (float, optional): Scaling factor for intensity differences between patterns (default: 1e3).
     - pad_sequence (list, optional): Padding sequence for X-ray diffraction patterns with different scan ranges (default: []).
-
+    - label_size (int, optional): The font size of the labels (default: 10).
+    - tick_size (int, optional): The font size of the ticks (default: 8).
+    - legend_size (int, optional): The font size of the legend (default: 10).
+    - colors (list, optional): The colors for each X-ray diffraction pattern (default: None).
+    
     Returns:
     None
     """
+    if colors is None:
+        colors = plt.cm.tab10(np.linspace(0, 1, len(files)))
     
     Xs, Ys = [], []
     length_list = []
@@ -47,7 +53,7 @@ def plot_xrd(ax, files, labels, title=None, xrange=(0,90), diff=1e3, pad_sequenc
         Y[Y==0] = 1  # remove all 0 value
         if diff:
             Y = Y * diff**(len(Ys)-i-1)
-        ax.plot(X, Y, label=labels[i])
+        ax.plot(X, Y, label=labels[i], color=colors[i], linewidth=1.5)
         
     ax.set_xlabel(r"2$\Theta$", fontsize=label_size)
     ax.set_ylabel('Intensity [a.u.]', fontsize=label_size)
